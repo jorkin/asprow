@@ -196,6 +196,7 @@ public function save_new_record
 		response.write "En az 1 bilgiyi doldurmalisiniz.."
 	end if
 	on error resume next
+	call user("before_execute_sql_save_record_new")
 	conn.Execute sql
 	if err<>0 then
 		response.write "Hata: "&err.description&"<BR>"&sql
