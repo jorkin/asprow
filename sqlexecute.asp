@@ -1,4 +1,4 @@
-ï»¿<!--#include file="inc\baglanti.inc"-->
+<!--#include file="inc\baglanti.inc"-->
 <%
 dim sql
 Session.CodePage = 65001
@@ -11,7 +11,7 @@ sql=trim(request.form("sql"))
 <table align=center border=0>
 	<tr align="center"><td>
 	<textarea style="width:600px;height:200px;" name="sql" size="40"><% if request("sql")="" then response.write "SELECT * FROM WEBPAGES" else response.write request("sql")%></textarea><br>
-	<input style="width:600px;height:20px;" type="submit" value="GÃ¶nder">
+	<input style="width:600px;height:20px;" type="submit" value="Gönder">
 	</td></tr>
 </table>
 </form>
@@ -21,14 +21,14 @@ if sql="" then
 	response.end
 end if
 	on error resume next
-if instr(sql,"INSERT")>0 OR instr(sql,"DELETE")>0 OR instr(sql,"UPDATE")>0 OR instr(sql,"ALTER")>0 then
+if instr(sql,"INSERT")>0 OR instr(sql,"DELETE")>0 OR instr(sql,"UPDATE")>0 OR instr(sql,"ALTER") OR instr(sql,"CREATE")>0 OR instr(sql,"DROP")>0 then
 	conn.Execute sql
 else
 	rs.Open sql, conn
 end if
 if err<>0 then
 %>
-	<b>Database HatasÄ±! , KayÄ±t GÃ¼ncellenemedi!:</b>
+	<b>Database Hatası! , Kayıt Güncellenemedi!:</b>
 	<br>Sebep : "<%=err.description%>"<br>
 	<textarea cols = '20' rows = '5' disabled><%=sql%></textarea>
 <%
