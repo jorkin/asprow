@@ -159,11 +159,11 @@ td {
 	}
  
 .HeaderLeft { 
-	background-image: url('Glassy/images/HeaderLeft.gif');
+	background-image: url('/Glassy/images/HeaderLeft.gif');
 	}
  
 .HeaderRight { 
-	background-image: url('Glassy/images/HeaderRight.gif');
+	background-image: url('/Glassy/images/HeaderRight.gif');
 	}
  
 .HeaderLeft img{
