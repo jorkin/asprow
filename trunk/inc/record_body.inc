@@ -183,7 +183,7 @@ if REQUEST_LINKED_COLUMN<>"" then
 			}
 			<% end if %>
 		</script>
-		<link rel=stylesheet href="stylee.css" type="text/css">
+		<link rel=stylesheet href="css/stylee.css" type="text/css">
 		<script type="text/javascript" src="js/calendarDateInput.js">
 		</script>
 		<script type="text/javascript" src="js/bsn.AutoSuggest_2.1.3_comp.js" charset="utf-8" >
