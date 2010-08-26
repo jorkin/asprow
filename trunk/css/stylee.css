@@ -159,11 +159,11 @@ td {
 	}
  
 .HeaderLeft { 
-	background-image: url('http://www.elektrabilisim.net/yeniservis/Styles/Talya/Images/HeaderLeft.gif');
+	background-image: url('Glassy/images/HeaderLeft.gif');
 	}
  
 .HeaderRight { 
-	background-image: url('http://www.elektrabilisim.net/yeniservis/Styles/Talya/Images/HeaderRight.gif');
+	background-image: url('Glassy/images/HeaderRight.gif');
 	}
  
 .HeaderLeft img{
@@ -185,7 +185,7 @@ td {
 	font-size: 70%; text-align: left; vertical-align: top;
 	padding: 1px;
 	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
-	background-image: url('http://www.elektrabilisim.net/yeniservis/Styles/Talya/Images/CaptionBg.gif'); color: #000000;
+	background-image: url('Glassy/images/CaptionBg.gif'); color: #000000;
 	white-space: nowrap;
 	}
  
@@ -193,7 +193,7 @@ td {
 	font-size: 70%; text-align: left; vertical-align: top;
 	padding: 1px;
 	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
-	background-image: url('http://www.elektrabilisim.net/yeniservis/Styles/Talya/Images/CaptionBg.gif'); color: #000000;
+	background-image: url('Glassy/images/CaptionBg.gif'); color: #000000;
 	white-space: nowrap;
 	}
  
