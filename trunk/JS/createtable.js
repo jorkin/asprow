@@ -1,5 +1,6 @@
 var DBTYPE = "ACCESS";
 var access_types = new Array("TEXT(5)","TEXT(20)","TEXT(50)","TEXT(100)","TEXT(250)","MEMO","BYTE","INTEGER","LONG","COUNTER","SINGLE","DOUBLE","CURRENCY","GUID","DATETIME","YESNO","LONGBINARY")
+var mssql_types = new Array("NVARCHAR(5)","NVARCHAR(20)","NVARCHAR(50)","NVARCHAR(100)","NVARCHAR(250)","NTEXT","BYTE","INTEGER","FLOAT","DATETIME","BIT")
 function createtable()
 {
 	var table_name = document.getElementById("tablename").value;
@@ -42,7 +43,7 @@ function tableTemplate()
 {
 	var html = "<table id='create_table' align='center' width='400'>"
 	html += "<tr><td>"
-	html += "DB: <select onchange='{DBTYPE=this.value;}' id='DBTYPE'><option value='ACCESS'>ACCESS</option><option value='ACCESS'>ACCESS</option></select>"
+	html += "DB: <select onchange='{DBTYPE=this.value;}' id='DBTYPE'><option value='ACCESS'>ACCESS</option><option value='MSSQL'>MSSQL</option></select>"
 	html += "</td>"
 	html += "<td>"
 	html += "TABLE NAME: <input type='text' id='tablename'>"
@@ -72,6 +73,12 @@ function addcolumn()
 		ihtml += "<option value=''>Seciniz</option>"
 		for (var i=0;i<access_types.length;i++)
 			ihtml += "<option value='"+access_types[i]+"'>"+access_types[i]+"</option>"
+	}
+	if (DBTYPE=="MSSQL")
+	{
+		ihtml += "<option value=''>Seciniz</option>"
+		for (var i=0;i<mssql_types.length;i++)
+			ihtml += "<option value='"+mssql_types[i]+"'>"+mssql_types[i]+"</option>"
 	}
 	ihtml += "</select></td>"
 	ihtml += "</tr></table>";
