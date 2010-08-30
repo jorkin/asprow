@@ -1,4 +1,4 @@
-﻿<%
+<%
 '    This file is part of ASPROW.
 
 '    ASPROW is free software: you can redistribute it and/or modify
@@ -547,14 +547,18 @@ Function getFileName()
 End Function
 
 Function getID(table)
-	Dim RsF
-	Set RsF = Server.CreateObject("Adodb.Recordset")
-	RsF.Open "SELECT TOP 1 * FROM "&table,conn
 	getID = ""
-	for each xq in RsF.fields
-		if xq.attributes = 16 then
-			getID = xq.name
-			exit for
+	Set adox = CreateObject("ADOX.Catalog")
+	adox.activeConnection = conn
+	for each table in adox.tables
+		if ucase(table.name)=ucase(TABLENAME) then
+			For Each idxADOX In table.Indexes
+				if idxADOX.PrimaryKey then 
+					getID =  idxADOX.columns(0).name 
+					exit for
+				end if
+			next
+		exit for
 		end if
 	next
 end Function
