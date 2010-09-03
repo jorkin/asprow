@@ -18,6 +18,7 @@
 THIS_PAGE = getFileName()
 RECORD_ID = getID(TABLENAME)
 if RECORD_ID="" then RECORD_ID = LINKED_COLUMN end if
+if LINKED_COLUMN="" then LINKED_COLUMN = RECORD_ID end if
 JAVASCRIPT = ""	
 REQUEST_LINKED_COLUMN = request(LINKED_COLUMN)
 call user("after_definations_record_body")
