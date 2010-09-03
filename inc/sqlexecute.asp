@@ -56,15 +56,7 @@ if sql="" then
 	response.end
 end if
 	on error resume next
-	ksql = sql
-	sql = ucase(sql)
-if instr(sql,"INSERT")>0 OR instr(sql,"DELETE")>0 OR instr(sql,"UPDATE")>0 OR instr(sql,"ALTER") OR instr(sql,"CREATE")>0 OR instr(sql,"DROP")>0 then
-	sql = ksql
-	conn.Execute sql
-else
-	sql = ksql
-	rs.Open sql, conn
-end if
+	set rs = conn.Execute(sql)
 if err<>0 then
 %>
 	<b>Database Hatası! , Kayıt Güncellenemedi!:</b>
@@ -73,8 +65,8 @@ if err<>0 then
 <%
 else 
 	response.write("<b>Kod Basarili</b>")
-	sql = ucase(sql)
-	if not (instr(sql,"INSERT")>0 OR instr(sql,"DELETE")>0 OR instr(sql,"UPDATE")>0 OR instr(sql,"ALTER")>0 OR instr(sql,"CREATE")>0 OR instr(sql,"DROP")>0) then
+	
+	if rs.Fields.Count>0 then
 	%>
 	<table border="1" width="100%" bgcolor="#fff5ee">
 	<tr>
@@ -92,9 +84,9 @@ else
 	<%loop
 	rs.close
 	conn.close
+	end if
 	%>
 	</table>
 	<%
-	end if
 end if
 %>
