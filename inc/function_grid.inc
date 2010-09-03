@@ -166,7 +166,19 @@ public function getURL
 		url = url & "&custom_style="&request.querystring("custom_style")
 	end if
 	RsF.close
-	getURL = url
+	getURL = url&"&"&getShowURL
+end function
+
+public function getShowURL
+	dim show_requests,shows
+	shows = ""
+	show_requests = Split(Request.Querystring,"&")
+	for i = 0 to ubound(show_requests)
+		if Left(ucase(show_requests(i)),Len("SHOW_"))="SHOW_" then
+			shows = shows & show_requests(i)&"&"
+		end if
+	next
+	getShowURL = shows
 end function
 
 public function getBackURL
@@ -551,5 +563,26 @@ Function getStyleFromNumber(style_no)
 		style_return = "Glassy"
 	end if
 	getStyleFromNumber = style_return
+end Function
+
+Function createStyleSelector
+	dim fs,fo,x,sayac,html
+	sayac = 0
+	html = ""
+	set fs=Server.CreateObject("Scripting.FileSystemObject")
+	set fo=fs.GetFolder(Server.Mappath("css\multistyle"))
+	html = "<form action="""&THIS_PAGE&""" method=""get"" id=""form_style"">"
+	html = html & "<select name=""custom_style"" onchange=""form_style.submit();"" style=""width:100%;"">"
+	for each x in fo.SubFolders
+		sayac = sayac + 1
+		html = html & "<option value="""&sayac&""""
+		if PAGE_STYLE=x.Name then html = html & " selected" end if
+		html = html & ">"&x.Name
+		html = html & "</option>"
+	next
+	html = html & "</select>"
+	html = html & getURLform
+	html = html & "</form>"
+	createStyleSelector = html
 end Function
 %>

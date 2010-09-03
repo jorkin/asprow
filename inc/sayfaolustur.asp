@@ -15,6 +15,8 @@
 '    along with ASPROW.  If not, see <http://www.gnu.org/licenses/>.
 %>
 <%
+Response.charset = "UTF-8"
+Session.codepage = 65001
 MyMapPath = Server.MapPath(".")
 MyMapPath = replace(MyMapPath,"\inc","\")
 set fs=Server.CreateObject("Scripting.FileSystemObject")
@@ -278,30 +280,26 @@ end if
 	
 	if (request("bitti")<>"") then
 		if (request("grid_columns")<>"" and request("grid_table")<>"" and request("record_columns")<>"" and request("record_table")<>"" and request("grid")<>"" and request("record")<>"" and request("grid_baslik")<>"" and request("record_baslik")<>"" and request("grid_ad")<>"" and request("record_ad")<>"" and request("record_ad")<>request("grid_ad")) then
-			
+			grid_texts = ""
 			'Grid.asp
-			set fs=Server.CreateObject("Scripting.FileSystemObject")
-			set f=fs.CreateTextFile(MyMapPath&request("grid_ad")&".asp",false)
-			f.WriteLine("<!--#include file=""inc/grid_head.inc""-->")
-			f.WriteLine("<"&"%")
-			f.WriteLine("sub user(myFunction)")
-			f.WriteLine("	'myFunction: %function_name%_begin , %function_name%_end")
-			f.WriteLine("End sub")
-			f.WriteLine("'Sabitlerin Ayarlanmasi")
-			f.WriteLine("LIST_TITLE = """&request("grid_baslik")&"""	'Listenin Basligi")
-			f.WriteLine("TABLENAME = """&request("grid_table")&"""	'SELECT COLUMNS FROM ______")
-			f.WriteLine("COLUMNS = """&request("grid_columns")&"""	'SELECT _______ FROM TABLENAME")
-			f.WriteLine("RECORD_PAGE = """&request("record_ad")&".asp""	'Linki verilecek sayfa")
-			f.WriteLine("CHANGEABLE_COLUMNS = """&request("grid_kisisel")&"""	'Kolon ayarlarinda cikacak fieldlari yazin f1,f2")
-			f.WriteLine("LINKED_COLUMN = """&request("grid")&"""	'Linki verilecek sutun")
-			f.WriteLine("%"&">")
-			f.WriteLine("<!--#include file=""inc/grid_body.inc""-->")
+			grid_texts = grid_texts & ("<!--#include file=""inc/grid_head.inc""-->") & vbcrlf
+			grid_texts = grid_texts & ("<"&"%") & vbcrlf
+			grid_texts = grid_texts & ("sub user(myFunction)") & vbcrlf
+			grid_texts = grid_texts & ("	'myFunction: %function_name%_begin , %function_name%_end") & vbcrlf
+			grid_texts = grid_texts & ("End sub") & vbcrlf
+			grid_texts = grid_texts & ("'Sabitlerin Ayarlanmasi") & vbcrlf
+			grid_texts = grid_texts & ("LIST_TITLE = """&request("grid_baslik")&"""	'Listenin Basligi") & vbcrlf
+			grid_texts = grid_texts & ("TABLENAME = """&request("grid_table")&"""	'SELECT COLUMNS FROM ______") & vbcrlf
+			grid_texts = grid_texts & ("COLUMNS = """&request("grid_columns")&"""	'SELECT _______ FROM TABLENAME") & vbcrlf
+			grid_texts = grid_texts & ("RECORD_PAGE = """&request("record_ad")&".asp""	'Linki verilecek sayfa") & vbcrlf
+			grid_texts = grid_texts & ("CHANGEABLE_COLUMNS = """&request("grid_kisisel")&"""	'Kolon ayarlarinda cikacak fieldlari yazin f1,f2") & vbcrlf
+			grid_texts = grid_texts & ("LINKED_COLUMN = """&request("grid")&"""	'Linki verilecek sutun") & vbcrlf
+			grid_texts = grid_texts & ("%"&">") & vbcrlf
+			grid_texts = grid_texts & ("<!--#include file=""inc/grid_body.inc""-->") & vbcrlf
 			if request("addtomenu")<>"" and request("menu_name")<>"" then
-				f.WriteLine("<table align='center'><!--#include file="""&request("menu_name")&"""--></table>")
+				grid_texts = grid_texts & ("<table align='center'><!--#include file="""&request("menu_name")&"""--></table>") & vbcrlf
 			end if
-			f.close
-			set f=nothing
-			set fs=nothing
+			call saveFile(MyMapPath&request("grid_ad")&".asp",grid_texts)
 			response.write request("grid_ad")&".asp Dosyasi olusturuldu > <a href='../"&request("grid_ad")&".asp'>Link</a><br>" 
 			'Record.asp
 				'Casesi bul
@@ -337,36 +335,33 @@ end if
 					end if
 				next
 			
-			set fs=Server.CreateObject("Scripting.FileSystemObject")
-			set f=fs.CreateTextFile(MyMapPath&request("record_ad")&".asp",false)
-			
-			f.WriteLine("<!--#include file=""inc/record_head.inc""-->")
-			f.WriteLine("<"&"%")
-			f.WriteLine("'User Sub")
-			f.WriteLine("sub user(myFunction)")
-			f.WriteLine("	'myFunction: %function_name%_begin , %function_name%_end")
-			f.WriteLine("End sub")
-			f.WriteLine("")
-			f.WriteLine("'Sabitlerin Ayarlanmasi")
-			f.WriteLine("CASES = """&CASES&"""")
-			f.WriteLine("REQUIRED_COLUMNS= """&UCase(replace(replace(request("record_zorunlu"),","," "),"""",""))&"""	'Doldurulmasi zorunlu fieldlar")
-			if request("C_KAYDET")="" then f.WriteLine("KAYDET=0") end if
-			if request("C_GERIAL")="" then f.WriteLine("GERIAL=0") end if
-			if request("C_SIL")="" then f.WriteLine("SIL=0") end if
-			if request("C_GERIDON")="" then f.WriteLine("GERIDON=0") end if
-			f.WriteLine("RECORD_TITLE = """&request("record_baslik")&"""	'Record Basligi")
-			f.WriteLine("TABLENAME = """&request("record_table")&"""	'SELECT COLUMNS FROM ______")
-			f.WriteLine("COLUMNS = """&REQ_RECORDS_COLUMN&"""	'SELECT _______ FROM TABLENAME")
-			f.WriteLine("LIST_PAGE = """&request("grid_ad")&".asp""	'Liste Sayfasi")
-			f.WriteLine("LINKED_COLUMN = """&request("grid")&"""	'Kayitlar hangi kolon adindan yollaniyor")
-			f.WriteLine("%"&">")
-			f.WriteLine("<!--#include file=""inc/record_body.inc""-->")
+			record_texts = ""
+			record_texts = record_texts & ("<!--#include file=""inc/record_head.inc""-->") & vbcrlf
+			record_texts = record_texts & ("<"&"%") & vbcrlf
+			record_texts = record_texts & ("'User Sub") & vbcrlf
+			record_texts = record_texts & ("sub user(myFunction)") & vbcrlf
+			record_texts = record_texts & ("	'myFunction: %function_name%_begin , %function_name%_end") & vbcrlf
+			record_texts = record_texts & ("End sub") & vbcrlf
+			record_texts = record_texts & ("") & vbcrlf
+			record_texts = record_texts & ("'Sabitlerin Ayarlanmasi") & vbcrlf
+			record_texts = record_texts & ("CASES = """&CASES&"""") & vbcrlf
+			record_texts = record_texts & ("REQUIRED_COLUMNS= """&UCase(replace(replace(request("record_zorunlu"),","," "),"""",""))&"""	'Doldurulmasi zorunlu fieldlar") & vbcrlf
+			if request("C_KAYDET")="" then record_texts = record_texts & ("KAYDET=0") & vbcrlf end if
+			if request("C_GERIAL")="" then record_texts = record_texts & ("GERIAL=0") & vbcrlf end if
+			if request("C_SIL")="" then record_texts = record_texts & ("SIL=0") & vbcrlf end if
+			if request("C_GERIDON")="" then record_texts = record_texts & ("GERIDON=0") & vbcrlf end if
+			record_texts = record_texts & ("RECORD_TITLE = """&request("record_baslik")&"""	'Record Basligi") & vbcrlf
+			record_texts = record_texts & ("TABLENAME = """&request("record_table")&"""	'SELECT COLUMNS FROM ______") & vbcrlf
+			record_texts = record_texts & ("COLUMNS = """&REQ_RECORDS_COLUMN&"""	'SELECT _______ FROM TABLENAME") & vbcrlf
+			record_texts = record_texts & ("LIST_PAGE = """&request("grid_ad")&".asp""	'Liste Sayfasi") & vbcrlf
+			record_texts = record_texts & ("LINKED_COLUMN = """&request("grid")&"""	'Kayitlar hangi kolon adindan yollaniyor") & vbcrlf
+			record_texts = record_texts & ("%"&">") & vbcrlf
+			record_texts = record_texts & ("<!--#include file=""inc/record_body.inc""-->") & vbcrlf
 			if request("addtomenu")<>"" and request("menu_name")<>"" then
-				f.WriteLine("<table align='center'><!--#include file="""&request("menu_name")&"""--></table>")
+				record_texts = record_texts & ("<table align='center'><!--#include file="""&request("menu_name")&"""--></table>") & vbcrlf
 			end if
-			f.close
-			set f=nothing
-			set fs=nothing
+			call saveFile(MyMapPath&request("record_ad")&".asp",record_texts)
+			
 			response.write request("record_ad")&".asp Dosyasi olusturuldu > <a href='../"&request("record_ad")&".asp'>Link</a><br>" 
 			
 			
@@ -390,5 +385,20 @@ end if
 		
 		
 	end if
-
+	
+	function saveFile(fileName,texts)
+	on error resume next
+		dim objStream
+		Set objStream = Server.CreateObject("ADODB.Stream")
+		objStream.Open
+		objStream.CharSet = "UTF-8"
+		objStream.WriteText(texts)
+		objStream.SaveToFile fileName , 1
+		objStream.Close
+		if err<>0 then
+			response.write fileName&"<br>"
+			response.write err.description
+			response.end
+		end if
+	end function
 %>

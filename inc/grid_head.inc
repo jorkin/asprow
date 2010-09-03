@@ -1,26 +1,42 @@
 ﻿<!--#include file="baglanti.inc"-->
 <!--#include file="function_grid.inc"-->
 <%
-'Sabitlerin Tanimi
-Dim COLUMN_count
+'Kullanicinin Girecegi sabitler
 Dim LIST_TITLE
+Dim CASES
+Dim PAGE_STYLE
+Dim LINKED_COLUMN
+Dim RECORD_PAGE
+'Database Degiskenleri
 Dim TABLENAME
 Dim COLUMNS
-Dim RECORD_PAGE
+Dim COLUMN_count
 Dim TOTAL_RECORD_COUNT
 Dim RECORD_COUNT
-Dim LINKED_COLUMN
+'Gosterilen Componentler
+Dim SHOW_HEADER
+Dim SHOW_FOOTER
+Dim SHOW_TITLE
+Dim SHOW_PAGER
+Dim SHOW_PAGE_SIZER
+Dim SHOW_ALL_ICONS
+Dim SHOW_CAPTIONS
+Dim SHOW_FILTERS
+Dim SHOW_STYLER
+Dim SHOW_TABLE_INFO
+Dim SHOW_WIDTH
+'Diger
 Dim LINK_FORMAT
 Dim PAGE_COUNT
 Dim LESS_COUNT
 Dim THIS_PAGE
+Dim GENERICPAGE
+'Requestler
 Dim REQUEST_ORDER
 Dim REQUEST_ORDERBY
 Dim REQUEST_EXPORT_STYLE
-Dim CASES
-Dim GENERICPAGE
+'Javascriptler
 Dim JAVASCRIPT
-Dim PAGE_STYLE
 Dim TARIHKUTULARI
 TARIHKUTULARI = ""
 JAVASCRIPT = ""
