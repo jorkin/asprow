@@ -18,6 +18,7 @@
 
 <html>
 	<head>
+			<link rel="stylesheet" type="text/css" href="/css/multistyle/<%=request.querystring("custom_style")%>/Style_doctype.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 	<script>
 	function ayarla()
@@ -77,6 +78,7 @@
 	}
 	</script>
 	</head>
+	<body>
 <!--#include file="baglanti.inc"-->
 <%
 	Session.codepage = 1254
@@ -84,14 +86,14 @@
 	
 if request("delete_columns")=1 then
 	Response.Cookies(page_name&"_column_order") = ""
-	response.write "Column ayarlari kaldirildi!<br>"
+	response.write "<h1>Column settings have been reset!<br><a href='../"&replace(request("back_url"),"-","&")&"'>Show</a></h1>"
 end if
 if request("edit_column")<>"" then
 	if request("sonuc")<>"" then
 	
 		Response.Cookies(page_name&"_column_order") = request("sonuc")
 		Response.Cookies(page_name&"_column_order").Expires = date+365
-		response.write "Columns are settled !:<br>Select<br>"&request("sonuc")&"<br> FROM <BR>"&table&"<br><br><a href='../"&page_name&"'>Show</a>"
+		response.write "Columns are settled !:<br>Select<br>"&request("sonuc")&"<br> FROM <BR>"&table&"<br><br><a href='../"&replace(request("back_url"),"-","&")&"'>Show</a>"
 	end if
 end if
 
@@ -136,21 +138,20 @@ end if
 
 		loop
 	else
-		response.write "ArNameğınız sayfa bulunamName!"
+		response.write "There are not any page for this criteria!"
 		response.end
 	end if
 	if not changeable then
 		columns = c_columns
 	end if
 	if table="" or columns="" then
-		response.write "Bu sayfa Column ayarları yapmanıza izin vermiyor!"
+		response.write "This page does not allow you to change column settings!<br /><a href='../"&replace(request("back_url"),"-","&")&"'>Back to Page</a>"
 		response.write table&"- "&columns
 		response.end
 	end if
 
 	if request.Cookies(page_name&"_column_order")<>"" then columns = request.Cookies(page_name&"_column_order") end if
-	form_caption = "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr><td colspan='3' align='center'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"'>Reset Settings</a><br>Column settings for : <i>"&page_name&"</i></td></tr><tr><td><input id='call_b' type='checkbox' onchange='uncheckall(this.checked)' checked><b>Add to Columns</b></td><td><b>Column Name</b></td><td><b>Show Order</b></td></tr>"
-		
+	form_caption = "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr class='Footer'><td colspan='3' align='center'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"&back_url="&request("back_url")&"&custom_style="&request("custom_style")&"'>Reset Settings</a><br>Column settings for : <i>"&page_name&"</i></td></tr><tr><td><input id='call_b' type='checkbox' onchange='uncheckall(this.checked)' checked><b>Add to Columns</b></td><td><b>Column Name</b></td><td><b>Show Order</b></td></tr>"
 if request("column_editor")=1 then
 	Set Rs = Server.CreateObject("Adodb.Recordset")
 	Set Rs2 = Server.CreateObject("Adodb.Recordset")
@@ -188,13 +189,13 @@ if request("column_editor")=1 then
 							for each y in Rs2.fields	
 								if x.name = y.name then
 									counter = counter+1
-									response.write chr(13)&chr(13)&"<tr bgcolor='lightgreen'><td><input id='"&counter2&"_c' type='checkbox' name='"&g_tablolar(i)&"."&x.name&"_display' checked>"
+									response.write chr(13)&chr(13)&"<tr class='Altrow'><td><input id='"&counter2&"_c' type='checkbox' name='"&g_tablolar(i)&"."&x.name&"_display' checked>"
 									found = true
 									exit for
 								end if
 							next
 							if found=false then
-								response.write chr(13)&"<tr bgcolor='pink'><td><input id='"&counter2&"_c' type='checkbox' name='"&g_tablolar(i)&"."&x.name&"_display'>"
+								response.write chr(13)&"<tr class='Row'><td><input id='"&counter2&"_c' type='checkbox' name='"&g_tablolar(i)&"."&x.name&"_display'>"
 							end if
 							response.write "</td><td> <i>"&g_tablolar(i)&"</i> <b>. "&x.name&"</b></td><td><input type='text' id='"&counter2&"_cc' name='"&g_tablolar(i)&"."&x.name&"_no' size='2'"
 							if found=true then
@@ -233,13 +234,13 @@ if request("column_editor")=1 then
 				for each y in Rs2.fields
 					counter = counter+1
 					if x.name = y.name then
-						response.write chr(13)&chr(13)&"<tr bgcolor='lightgreen'><td><input id='"&counter2&"_c' type='checkbox' name='"&x.name&"_display' checked>"
+						response.write chr(13)&chr(13)&"<tr class='AltRow'><td><input id='"&counter2&"_c' type='checkbox' name='"&x.name&"_display' checked>"
 						found = true
 						exit for
 					end if
 				next
 				if found=false then
-					response.write chr(13)&"<tr bgcolor='pink'><td><input id='"&counter2&"_c' type='checkbox' name='"&x.name&"_display'>"
+					response.write chr(13)&"<tr class='Row'><td><input id='"&counter2&"_c' type='checkbox' name='"&x.name&"_display'>"
 				end if
 				response.write "</td><td>"&x.name&"</td><td><input  id='"&counter2&"_cc' type='text' name='"&x.name&"_no' size='2'"
 				if found=true then
@@ -249,9 +250,8 @@ if request("column_editor")=1 then
 			end if
 		next
 	end if
-	response.write chr(13)&"<tr align='center'><td colspan='3'><input type='hidden' name='sonuc' id='sonuc'><input type='hidden' id='cc' value='"&counter2&"'><input type='hidden' name='page_name' value='"&page_name&"'><input type='hidden' name='table' value="""&table&"""><input type='hidden' name='columns' value="""&columns&"""><input type='submit' name='edit_column' value='Submit'></td></tr></table></form>"
+	response.write chr(13)&"<tr align='center'><td colspan='3'><input type='hidden' name='sonuc' id='sonuc'><input type='hidden' id='cc' value='"&counter2&"'><input type='hidden' name='page_name' value='"&page_name&"'><input type='hidden' name='table' value="""&table&"""><input type='hidden' name='columns' value="""&columns&"""><input type='hidden' name='back_url' value="""&request("back_url")&"""><input type='submit' name='edit_column' value='Submit'></td></tr></table></form>"
 end if
-
-
-
 %>
+</body>
+</html>

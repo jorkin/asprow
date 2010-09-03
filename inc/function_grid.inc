@@ -151,21 +151,17 @@ public function getValue(the_text,table_from,filter)
 end function
 
 public function getURL
-	dim xk
-	Set RsF = Server.CreateObject("Adodb.Recordset")
+	dim show_requests,url
 	url = ""
-	RsF.Open "SELECT TOP 1 "&COLUMNS&" FROM "&TABLENAME,conn
-	
-	for each xk in rsF.Fields
-	
-		if request.querystring("q_"&xk.name)<>"" then 
-			url = url & "&q_" & xk.name&"="&request.querystring("q_"&xk.name)
+	show_requests = Split(Request.Querystring,"&")
+	for i = 0 to ubound(show_requests)
+		if Left(ucase(show_requests(i)),Len("q_"))="q_" then
+			url = url &"&"& show_requests(i)
 		end if
 	next
 	if request.querystring("custom_style")<>"" then 
 		url = url & "&custom_style="&request.querystring("custom_style")
 	end if
-	RsF.close
 	getURL = url&"&"&getShowURL
 end function
 
@@ -178,6 +174,9 @@ public function getShowURL
 			shows = shows & show_requests(i)&"&"
 		end if
 	next
+	if shows<>"" then
+	shows = left(shows,len(shows)-1)
+	end if
 	getShowURL = shows
 end function
 
@@ -192,24 +191,43 @@ public function getBackURL
 end function
 
 public function getURLform
-	dim xk
-	Set RsF = Server.CreateObject("Adodb.Recordset")
+	dim show_requests,show_requests2,url
 	url = ""
 	'if request("page")<>"" then url = url & "<input type='hidden' name='page' value='"&request.querystring("page")&"'>" end if
 	'if request("page_counter")<>"" then url = url & "<input type='hidden' name='page_counter' value='"&request.querystring("page_counter")&"'>" end if
 	if REQUEST_ORDER<>"" then url = url & "<input type='hidden' name='order' value='"&REQUEST_ORDER&"'>" end if
 	if REQUEST_ORDERBY<>"" then url = url & "<input type='hidden' name='orderby' value='"&REQUEST_ORDERBY&"'>" end if
 	if GENERICPAGE=1 then url = url & "<input type='hidden' name='gnrTABLENAME' value='"&trim(request.querystring("gnrTABLENAME"))&"'>" end if
-	RsF.Open "SELECT TOP 1 "&COLUMNS&" FROM "&TABLENAME,conn
-	
-	for each xk in rsF.Fields
-	
-		if request.querystring("q_"&xk.name)<>"" then 
-			url = url & "<input type='hidden' name='q_"&xk.name&"' value='"&request.querystring("q_"&xk.name)&"'>"
+	url = ""
+	show_requests = Split(replace(Request.Querystring,"&&","&"),"&")
+	for i = 0 to ubound(show_requests)
+		if Left(lcase(show_requests(i)),2)="q_" then
+			show_requests2 = Split(show_requests(i),"=")
+			arg1 = cstr(show_requests2(0))
+			if ubound(show_requests2)>0 then
+				arg2 = cstr(show_requests2(1))
+				url = url &"<input type='hidden' name='"&arg1&"' value='"&arg2&"'>"
+			end if
 		end if
 	next
-	RsF.close
-	getURLform = url
+	getURLform = url&getURLFormShow
+end function
+
+public function getURLFormShow
+	dim url
+	url = ""
+	show_requests = Split(Request.Querystring,"&")
+	for i = 0 to ubound(show_requests)
+		if Left(ucase(show_requests(i)),Len("SHOW_"))="SHOW_" then
+			show_requests2 = Split(show_requests(i),"=")
+			arg1 = cstr(show_requests2(0))
+			if ubound(show_requests2)>0 then
+				arg2 = cstr(show_requests2(1))
+				url = url &"<input type='hidden' name='"&arg1&"' value='"&arg2&"'>"
+			end if
+		end if
+	next
+	getURLFormShow = url
 end function
 
 public function tableInf
@@ -217,7 +235,7 @@ public function tableInf
 End function
 
 public function createPageCounter
-	response.write "<form action="""&THIS_PAGE&""" method=""get"" id=""form2"">Size: <select name=""page_counter"" onchange=""form2.submit();"">"
+	response.write "<form action="""&THIS_PAGE&""" method=""get"" id=""form_page_counter"">Size: <select name=""page_counter"" onchange=""form_page_counter.submit();"">"
 for k=25 to 250 step 25
 	response.write "<option value='"&k&"'"
 	if request.querystring("page_counter")<>"" then
@@ -227,12 +245,13 @@ for k=25 to 250 step 25
 next
 	response.write "</select>"
 	response.write getURLform
+	if request.querystring("custom_style")<>"" then response.write "<input type='hidden' name='custom_style' value='"&request.querystring("custom_style")&"'>" end if
 	response.write "</form>"
 end function
 
-public function createPager(recordCount,pageSize)
-	response.write "<form action="""&THIS_PAGE&""" method=""get"" id=""form1"">Page: <select name=""page"" onchange=""form1.submit();"">"
-for k=1 to int(recordCount/pageSize)+1
+public function createPager(recordCount,page)
+	response.write "<form action="""&THIS_PAGE&""" method=""get"" id=""form_pager"">Page: <select name=""page"" onchange=""form_pager.submit();"">"
+for k=1 to int(recordCount/page)+1
 	response.write "<option value='"&k&"'"
 	if int(request.querystring("page"))=k then response.write " selected" end if
 	response.write ">"&k&"</option>"
@@ -240,6 +259,7 @@ next
 	response.write "</select>"
 	response.write getURLform
 	if request.querystring("page_counter")<>"" then response.write "<input type='hidden' name='page_counter' value='"&request.querystring("page_counter")&"'>" end if
+	if request.querystring("custom_style")<>"" then response.write "<input type='hidden' name='custom_style' value='"&request.querystring("custom_style")&"'>" end if
 	response.write "</form>"
 end function
 
@@ -582,6 +602,8 @@ Function createStyleSelector
 	next
 	html = html & "</select>"
 	html = html & getURLform
+	html = html & "<input type='hidden' name='page_counter' value='"&getPageCount()&"'>"
+	html = html & "<input type='hidden' name='page' value='"&getPage&"'>"
 	html = html & "</form>"
 	createStyleSelector = html
 end Function
