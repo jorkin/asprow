@@ -162,8 +162,21 @@ public function getURL
 			url = url & "&q_" & xk.name&"="&request.querystring("q_"&xk.name)
 		end if
 	next
+	if request.querystring("custom_style")<>"" then 
+		url = url & "&custom_style="&request.querystring("custom_style")
+	end if
 	RsF.close
 	getURL = url
+end function
+
+public function getBackURL
+	dim backurl
+	backurl = THIS_PAGE&"?order="&request.querystring("order")&"-orderby="&request.querystring("orderby")
+	backurl = backurl &replace(getURL,"&","-")&"-page_counter="&getPageCount&"-page="&getPage
+	if request.querystring("gnrTABLENAME")<>"" then 
+		backurl = backurl & "-gnrTABLENAME="&request.querystring("gnrTABLENAME")
+	end if
+	getBackURL = backurl
 end function
 
 public function getURLform
@@ -290,7 +303,7 @@ end function
 
 public function getPage
 	if request("page")<>"" then
-		getPage = request("page")
+		getPage = int(request("page"))
 	else
 		getPage = 1
 	end if
@@ -504,5 +517,39 @@ Function getID(mytable)
 		exit for
 		end if
 	next
+end Function
+
+Function setStyle()
+	if PAGE_STYLE="" then
+		if request.querystring("custom_style")<>"" then
+			if IsNumeric(request.querystring("custom_style")) then
+				PAGE_STYLE = getStyleFromNumber(request.querystring("custom_style"))
+			else
+				PAGE_STYLE = request.querystring("custom_style")
+			end if
+		else
+			PAGE_STYLE = "Glassy"
+		end if
+	end if
+end Function
+
+Function getStyleFromNumber(style_no)
+	dim fs,fo,x,sayac,style_return
+	sayac = 0
+	style_return = ""
+	set fs=Server.CreateObject("Scripting.FileSystemObject")
+	set fo=fs.GetFolder(Server.Mappath("css\multistyle"))
+	
+	for each x in fo.SubFolders
+		sayac = sayac + 1
+		if sayac=int(style_no) then
+			style_return = x.Name
+			exit for
+		end if
+	next
+	if style_return="" then
+		style_return = "Glassy"
+	end if
+	getStyleFromNumber = style_return
 end Function
 %>

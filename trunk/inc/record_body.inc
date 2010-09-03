@@ -15,6 +15,7 @@
 '    along with ASPROW.  If not, see <http://www.gnu.org/licenses/>.
 %>
 <%
+call setStyle()
 THIS_PAGE = getFileName()
 RECORD_ID = getID(TABLENAME)
 if RECORD_ID="" then RECORD_ID = LINKED_COLUMN end if
@@ -190,7 +191,7 @@ if REQUEST_LINKED_COLUMN<>"" then
 		<script type="text/javascript" src="js/bsn.AutoSuggest_2.1.3_comp.js" charset="utf-8" >
 		</script>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<link rel="stylesheet" type="text/css" href="Glassy/Style_doctype.css">
+		<link rel="stylesheet" type="text/css" href="css/multistyle/<%=PAGE_STYLE%>/Style_doctype.css">
 		<link rel="stylesheet" href="css/autosuggest_inquisitor.css" type="text/css" media="screen" charset="utf-8">
 		<title>Kayıt</title>
 	</head>

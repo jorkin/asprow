@@ -1,5 +1,7 @@
 ﻿<%
+if LINKED_COLUMN="" then LINKED_COLUMN = getID(TABLENAME) end if
 THIS_PAGE = getFileName()
+call setStyle()
 if request("AJAX")=1 then
 	response.clear
 	response.write showAjax(request.querystring("ID"),request.querystring("VIEW"),request.querystring("INFO"),request.querystring("TABLE"),request.querystring("KEYWORD"))
@@ -20,6 +22,55 @@ if Instr(LINK_FORMAT,"www.")>0 and Left(LINK_FORMAT,7)<>"http://" then
 end if
 PAGE_COUNT = getPageCount	
 call user("after_definations")
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Liste</title>
+		<link rel="stylesheet" type="text/css" href="css/multistyle/<%=PAGE_STYLE%>/Style_doctype.css">
+		<link rel="stylesheet" href="css/autosuggest_inquisitor.css" type="text/css" media="screen" charset="utf-8" />
+		<link type="text/css" href="css/datepicker/ui.all.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/bsn.AutoSuggest_2.1.3_comp.js" charset="utf-8">
+		</script>
+		<script type="text/javascript" src="js/datepicker/jquery-1.3.2.js">
+		</script> 
+		<script type="text/javascript" src="js/datepicker/ui.core.js">
+		</script> 
+		<script type="text/javascript" src="js/datepicker/ui.datepicker.js">
+		</script> 
+		<script type="text/javascript" src="js/datepicker/ui.datepicker-tr.js">
+		</script> 
+		<script type="text/javascript" src="js/calendarDateInput.js">
+		</script>
+		<script type="text/javascript">
+		function control_ajax(gid)
+			{
+				if (document.getElementById(gid).value=="")
+				{
+					document.getElementById(gid.replace("_id","")).value = "";
+				}
+			}
+		</script>
+		<style type="text/css">
+		.parlak  td { 
+			font-size: 100%;
+			padding: 3px;
+			border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+			text-align: left;
+			vertical-align: top;
+			background-color: pink; 
+			color: #000000;
+			}
+		tr.c4 {cursor:hand;}
+		input.c3 {width:100%;}
+		input.c5 {width:49%;}
+		td.c2 {border:0px;}
+		td.c1 {text-align:center;}
+		</style>
+	</head>
+	<body>
+<%
 '(Siralama Linkine tiklandiginda..) Daha once artan siralandiysa simdi azalan sirala
 if REQUEST_ORDERBY="desc" then
 	orderby = "asc"
@@ -56,7 +107,6 @@ if err<>0 then
 	response.end
 end if
 sayac=1+((getPage-1)*PAGE_COUNT)
-if REQUEST_EXPORT_STYLE="" then
 %>
 		<table width="80%" align="center" cellspacing="0" cellpadding="0">
 			<tr>
@@ -78,7 +128,7 @@ if REQUEST_EXPORT_STYLE="" then
 									<table align="center" border="0" width="50%">
 										<tr>
 											<td class="c2">
-												<a href="<%=RECORD_PAGE%><%if instr(RECORD_PAGE,"?")>0 then response.write "&amp;" else response.write "?" end if%><%=LINKED_COLUMN&"=NEWID"%>"><img src="css/images/new1.png" border="0" alt="Yeni Kayıt" width="30" height="30"></a>
+												<a href="<%=RECORD_PAGE%><%if instr(RECORD_PAGE,"?")>0 then response.write "&amp;" else response.write "?" end if%><%=LINKED_COLUMN&"=NEWID&amp;back_url="&getBackURL%>&amp;custom_style=<%=PAGE_STYLE%>"><img src="css/images/new1.png" border="0" alt="Yeni Kayıt" width="30" height="30"></a>
 											</td>
 											<td class="c2">
 												<a href="<%=replace((THIS_PAGE&"?EXPORT_STYLE=xls&order="&request("order")&"&orderby="&request("orderby")&"&page_counter="&getPageCount&getURL&"&page="),"&","&amp;")%><%if int(request("page"))=0 then response.write "1" else response.write int(request("page")) end if%><%="&amp;gnrTABLENAME="&request("gnrTABLENAME")%>"><img src="css/images/exel1.png" border="0" alt="Verileri Excele Yolla" width="30" height="30"></a>
@@ -116,9 +166,9 @@ if REQUEST_EXPORT_STYLE="" then
 					end if
 					response.write PrintTitle(x)
 					if REQUEST_ORDER=x.name and REQUEST_ORDERBY="asc" then
-						response.write "<img border=""0"" src=""Glassy/Images/Asc.gif"" alt='Artan'>"
+						response.write "<img border=""0"" src=""css/multistyle/"&PAGE_STYLE&"/Images/Asc.gif"" alt='Artan'>"
 					elseif REQUEST_ORDER=x.name and REQUEST_ORDERBY="desc" then
-						response.write "<img border=""0"" src=""Glassy/Images/Desc.gif"" alt='Azalan'>"
+						response.write "<img border=""0"" src=""css/multistyle/"&PAGE_STYLE&"/Images/Desc.gif"" alt='Azalan'>"
 					end if
 				
 					if not (x.type=201 or x.type=203 or x.type=205) then
@@ -202,7 +252,7 @@ if REQUEST_EXPORT_STYLE="" then
 				
 				'Satiri yaz
 				%>
-				<tr class="c4 <%=color%>" <% if EDITABLE<>1 AND LINKED_COLUMN<>"" then%>onclick="window.location.assign('<%=replace(LINK_FORMAT&LinkId&"&back_url="&THIS_PAGE&"?order="&request.querystring("order")&"-orderby="&request.querystring("orderby")&replace(getURL,"&","-")&"-page_counter="&getPageCount&"-page=","&","&amp;")%><%if int(request("page"))=0 then response.write "1" else response.write int(request.querystring("page"))%><%if request.querystring("gnrTABLENAME")<>"" then response.write "-gnrTABLENAME="&request.querystring("gnrTABLENAME") end if %>');" <% end if %>onmouseover="this.className='parlak'" onmouseout="this.className='<%=color%>'"><td align='center'><b><%=sayac%></b></td><%=myTds%></tr>
+				<tr class="c4 <%=color%>" <% if EDITABLE<>1 AND LINKED_COLUMN<>"" then%>onclick="window.location.assign('<%=replace(LINK_FORMAT&LinkId&"&custom_style="&PAGE_STYLE&"&back_url="&getBackURL,"&","&amp;")%>');"<%end if%> onmouseover="this.className='parlak'" onmouseout="this.className='<%=color%>'"><td align='center'><b><%=sayac%></b></td><%=myTds%></tr>
 				<%
 				sayac = sayac+1
 				rs.MoveNext
@@ -238,7 +288,7 @@ if REQUEST_EXPORT_STYLE="" then
 	</body>
 </html>
 <% 
-else
+if REQUEST_EXPORT_STYLE<>"" then
 	'Excel ise
 	Response.Clear()
 	Response.Buffer = True

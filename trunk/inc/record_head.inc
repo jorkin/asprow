@@ -28,6 +28,7 @@ Dim fsql
 Dim REQUEST_LINKED_COLUMN
 Dim BEFORE_TABLE_HTML
 Dim GENERICPAGE
+Dim PAGE_STYLE
 
 Dim RECORD_TITLE 	'Record Basligi
 Dim TABLENAME 	'SELECT COLUMNS FROM ______
@@ -561,5 +562,39 @@ Function getID(mytable)
 		exit for
 		end if
 	next
+end Function
+
+Function setStyle()
+	if PAGE_STYLE="" then
+		if request.querystring("custom_style")<>"" then
+			if IsNumeric(request.querystring("custom_style")) then
+				PAGE_STYLE = getStyleFromNumber(request.querystring("custom_style"))
+			else
+				PAGE_STYLE = request.querystring("custom_style")
+			end if
+		else
+			PAGE_STYLE = "Glassy"
+		end if
+	end if
+end Function
+
+Function getStyleFromNumber(style_no)
+	dim fs,fo,x,sayac,style_return
+	sayac = 0
+	style_return = ""
+	set fs=Server.CreateObject("Scripting.FileSystemObject")
+	set fo=fs.GetFolder(Server.Mappath("css\multistyle"))
+	
+	for each x in fo.SubFolders
+		sayac = sayac + 1
+		if sayac=int(style_no) then
+			style_return = x.Name
+			exit for
+		end if
+	next
+	if style_return="" then
+		style_return = "Glassy"
+	end if
+	getStyleFromNumber = style_return
 end Function
 %>
