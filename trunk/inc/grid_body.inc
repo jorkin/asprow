@@ -179,7 +179,7 @@ sayac=1+((getPage-1)*PAGE_COUNT)
 												<a href="<%=replace((THIS_PAGE&"?EXPORT_STYLE=doc&order="&request("order")&"&orderby="&request("orderby")&"&page_counter="&getPageCount&getURL&"&gnrTABLENAME="&request("gnrTABLENAME")),"&","&amp;")%>"><img src="css/images/word1.png" border="0" alt="Verileri Worde Yolla" width="30" height="30"></a>
 											</td>
 											<td class="c2">
-												<a href="inc/column_editor.asp?column_editor=1&amp;page_name=<%=THIS_PAGE%>"><img src="css/images/setting1.png" border="0" alt="Sütunlari Duzenle" width="30" height="30"></a>
+												<a href="inc/column_editor.asp?column_editor=1&amp;back_url=<%=getBackURL%>&amp;custom_style=<%=PAGE_STYLE%>&amp;page_name=<%=THIS_PAGE%>"><img src="css/images/setting1.png" border="0" alt="Sütunlari Duzenle" width="30" height="30"></a>
 											</td>
 										</tr>
 									</table>
@@ -226,7 +226,7 @@ sayac=1+((getPage-1)*PAGE_COUNT)
 					response.write "<input type='hidden' name='gnrTABLENAME' value='"&trim(request.querystring("gnrTABLENAME"))&"'>"
 				end if
 				response.write "<input type='hidden' name='order' value='"&REQUEST_ORDER&"'><input type='hidden' name='orderby' value='"&REQUEST_ORDERBY&"'>"
-				response.write " <input type='hidden' name='page_counter' value='"&getPageCount()&"'></th>"&chr(13)
+				response.write getURLFormShow&"<input type='hidden' name='custom_style' value='"&request.querystring("custom_style")&"'><input type='hidden' name='page_counter' value='"&getPageCount()&"'></th>"&chr(13)
 				'Filtreleme Inputlari
 				for each x in rs.Fields
 					if not (EXTRA_COLUMN<>"" and LCASE(x.name)=LCASE(LINKED_COLUMN)) then ' Secilmeyen IDnin yazilmasi sevimsiz olur
