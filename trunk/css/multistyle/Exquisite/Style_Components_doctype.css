@@ -1,0 +1,1224 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorExquisite {
+	background-color: #f1f1f1;
+	}
+
+.FormTitleBgColorExquisite {
+	background-color: #dbd8d8;
+	}
+
+.FormTitleFontColorExquisite {
+	color: #cc0005;
+	}
+
+.CaptionBgColorExquisite {
+	background-color: #e5e5e5;
+	}
+
+.CaptionFontColorExquisite {
+	color: #585555;
+	}
+
+.DataBgColorExquisite {
+	background-color: #bbbbbb;
+	}
+
+.AltDataBgColorExquisite {
+	background-color: #d5d5d5;
+	}
+
+.DataFontColorExquisite {
+	color: #343434;
+	}
+
+.LinkColorExquisite {
+	color: #0000f7;
+	}
+
+.VisitedLinkColorExquisite {
+	color: #000000;
+	}
+
+.HoverLinkColorExquisite {
+	color: #005475;
+	}
+
+.ColorBgButtonExquisite {
+	background-color: #dbd8d8;
+}
+
+.ColorFontButtonExquisite {
+	color: #cc0005;
+}
+
+.ColorBgButtonPassiveExquisite {
+	background-color: #fcfcfc;
+}
+
+.ColorFontButtonPassiveExquisite {
+	color: #f77a7d;
+}
+
+
+
+.HeaderExquisite {
+	width: 100%;
+	}
+
+.HeaderExquisite th { 
+	font-family: Arial; font-size: 90%; text-align: left;
+	padding: 3px;
+	background-image: url('Images/HeaderBg.gif'); color: #cc0005;
+	width: 100%;
+	white-space: nowrap;
+	
+	}
+
+
+html>body .HeaderExquisite th {
+	font-family: Arial; font-size: 130%; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeaderExquisite th {
+	font-family: Arial; font-size: 130%; text-align: left;
+}
+/*end*/
+
+.HeaderExquisite a:link { 
+	color: #cc0005;
+	}
+
+.HeaderExquisite a:visited { 
+	color: #cc0005;
+	}
+
+.HeaderExquisite a:hover, .CaptionExquisite a:active { 
+	color: #cc0005; text-decoration: none;
+	}
+
+.HeaderLeftExquisite { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightExquisite { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftExquisite img{
+	width: 12px;
+	}
+
+.HeaderRightExquisite img{
+	width: 12px;
+	}
+
+
+/* Grid Options */
+.GridExquisite { 
+	
+	width: 100%;
+	}
+
+.CaptionExquisite th { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #e5e5e5; color: #585555;
+	white-space: nowrap;
+	}
+
+.CaptionExquisite td { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #e5e5e5; color: #585555;
+	white-space: nowrap;
+	}
+
+
+html>body .CaptionExquisite th, html>body .CaptionExquisite td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionExquisite th, * html body .CaptionExquisite td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionExquisite a:link { 
+	color: #585555;
+	}
+
+.CaptionExquisite a:visited { 
+	color: #585555;
+	}
+
+.CaptionExquisite a:hover, .CaptionExquisite a:active { 
+	color: #005475;
+	}
+
+.CaptionExquisite img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionExquisite input {
+	vertical-align: middle;
+	}
+
+.RowExquisite th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #bbbbbb; color: #343434;
+	white-space: nowrap;
+	color: #343434;
+	}
+
+.RowExquisite td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	vertical-align: top;
+	background-color: #bbbbbb; 
+	color: #343434;
+	}
+	
+
+html>body .RowExquisite th, html>body .RowExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .RowExquisite th, * html body .RowExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+caption.RowExquisite { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	
+	text-align: left;
+	vertical-align: top;
+	background-color: #bbbbbb; 
+	color: #343434;
+	}
+
+
+html>body caption.RowExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body caption.RowExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.RowExquisite a:link { 
+	color: #0000f7;
+	}
+
+.RowExquisite a:visited { 
+	color: #000000;
+	}
+
+.RowExquisite a:hover, .RowExquisite a:active { 
+	color: #005475;
+	}
+
+.SeparatorExquisite{
+	color: #dbd8d8;
+	}
+
+.SeparatorExquisite td{
+	height: 1px;
+	}
+
+
+.AltRowExquisite th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #bbbbbb; color: #343434;
+	white-space: nowrap;
+	color: #343434;
+	}
+
+.AltRowExquisite td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	vertical-align: top;
+	background-color: #d5d5d5; 
+	color: #343434;
+	}
+
+
+html>body .AltRowExquisite th, html>body .AltRowExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .AltRowExquisite th, * html body .AltRowExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.AltRowExquisite a:link { 
+	color: #0000f7;
+	}
+
+.AltRowExquisite a:visited { 
+	color: #000000;
+	}
+
+.AltRowExquisite a:hover, .AltRowExquisite a:active { 
+	color: #005475;
+	}
+
+.NoRecordsExquisite td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	background-color: #bbbbbb; 
+	color: #343434;
+	vertical-align: top;
+	}
+
+.FooterExquisite td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #e5e5e5; color: #585555;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #343434;
+	}
+
+
+html>body .NoRecordsExquisite td, html>body .FooterExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .NoRecordsExquisite td, * html body .FooterExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.FooterExquisite a:link { 
+	color: #0000f7;
+	}
+
+.FooterExquisite a:visited { 
+	color: #000000;
+	}
+
+.FooterExquisite a:hover, .FooterExquisite a:active { 
+	color: #005475;
+	}
+
+.FooterExquisite img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterExquisite input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordExquisite { 
+	
+	width: 100%;
+	}
+
+.ErrorExquisite td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #bbbbbb; 
+	}
+
+
+* html>body .ErrorExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ErrorExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.ControlsExquisite th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #bbbbbb; color: #343434;
+	white-space: nowrap;
+	color: #343434;
+	}
+
+.ControlsExquisite td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	vertical-align: top;
+	background-color: #bbbbbb; 
+	color: #343434;
+	}
+	
+.BottomExquisite td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #e5e5e5; color: #585555;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #343434;
+	}
+
+
+html>body .ControlsExquisite th, html>body .ControlsExquisite td, html>body .BottomExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ControlsExquisite th, * html body .ControlsExquisite td, * html body .BottomExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.BottomExquisite a:link { 
+	color: #0000f7;
+	}
+
+.BottomExquisite a:visited { 
+	color: #000000;
+	}
+
+.BottomExquisite a:hover, .CaptionExquisite a:active { 
+	color: #005475;
+	}
+
+.BottomExquisite img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomExquisite input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionExquisite th{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #d5d5d5; 
+	color: #343434;
+	}
+
+.GroupCaptionExquisite td{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #bbbbbb; 
+	color: #343434;
+	}
+
+
+html>body .GroupCaptionExquisite th, html>body .GroupCaptionExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionExquisite th, * html body .GroupCaptionExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionExquisite a:link {
+	color: #585555;
+	}
+
+.GroupCaptionExquisite a:visited{
+	color: #585555;
+	}
+
+.GroupCaptionExquisite a:hover, .GroupCaptionExquisite a:active{
+	color: #005475;
+	}
+
+.GroupFooterExquisite td{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #e5e5e5; 
+	color: #343434;
+	}
+
+
+html>body .GroupFooterExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupFooterExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterExquisite a:link {
+	color: #0000f7;
+	}
+
+.GroupFooterExquisite a:visited{
+	color: #000000;
+	}
+
+.GroupFooterExquisite a:hover, .GroupFooterExquisite a:active{
+	color: #005475;
+	}
+
+.GroupFooterExquisite img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterExquisite input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalExquisite td{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #d5d5d5; 
+	color: #343434;
+	border-bottom: 2px solid #dbd8d8;
+	}
+
+
+html>body .SubTotalExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .SubTotalExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.SubTotalExquisite a:link {
+	color: #0000f7;
+	}
+
+.SubTotalExquisite a:visited{
+	color: #000000;
+	}
+
+.SubTotalExquisite a:hover, .SubTotalExquisite a:active{
+	color: #005475;
+	}
+
+.TotalExquisite td{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #d5d5d5; 
+	color: #343434;
+	}
+
+
+html>body .TotalExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .TotalExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.TotalExquisite a:link {
+	color: #0000f7;
+	}
+
+.TotalExquisite a:visited{
+	color: #000000;
+	}
+
+.TotalExquisite a:hover, .TotalExquisite a:active{
+	color: #005475;
+	}
+
+/* Form Options */
+.ButtonExquisite { 
+	background-color: #dbd8d8; color: #cc0005; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 10px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarExquisite { 
+	
+	width: 100%;
+	}
+
+.CalendarWeekdayNameExquisite{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #d5d5d5; 
+	color: #343434;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekdayNameExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekdayNameExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNameExquisite a:link {
+	color: #0000f7;
+	}
+
+.CalendarWeekdayNameExquisite a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekdayNameExquisite a:hover, .CalendarWeekdayNameExquisite a:active{
+	color: #005475;
+	}
+
+.CalendarWeekendNameExquisite{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #d5d5d5;	
+	color: #343434;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekendNameExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendNameExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNameExquisite a:link {
+	color: #585555;
+	}
+
+.CalendarWeekendNameExquisite a:visited{
+	color: #585555;
+	}
+
+.CalendarWeekendNameExquisite a:link, .CalendarWeekendNameExquisite a:visited{
+	color: #005475;
+	}
+
+/* Calendar Day */
+.CalendarDayExquisite{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: center;
+	background-color: #bbbbbb;	
+	color: #343434;
+	}
+
+
+html>body .CalendarDayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarDayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayExquisite a:link {
+	color: #0000f7;
+	}
+
+.CalendarDayExquisite a:visited{
+	color: #000000;
+	}
+
+.CalendarDayExquisite a:hover, .CalendarDayExquisite a:active{
+	color: #005475;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendExquisite{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: center;
+	background-color: #d5d5d5;	
+	color: #343434;
+	}
+
+
+html>body .CalendarWeekendExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendExquisite a:link {
+	color: #0000f7;
+	}
+
+.CalendarWeekendExquisite a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendExquisite a:hover, .CalendarWeekendExquisite a:active{
+	color: #005475;
+	}
+
+/* Calendar Today */
+.CalendarTodayExquisite {
+	font-family: Arial; font-size: 70%;
+	padding: 1px;
+	border: 2px solid #dbd8d8; border-top: 1px solid #dbd8d8;
+	text-align: center;
+	background-color: #bbbbbb;	
+	color: #343434;
+	}
+
+
+html>body .CalendarTodayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarTodayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayExquisite a:link {
+	color: #0000f7;
+	}
+
+.CalendarTodayExquisite a:visited{
+	color: #000000;
+	}
+
+.CalendarTodayExquisite a:hover, .CalendarTodayExquisite a:active {
+	color: #005475;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayExquisite {
+	font-family: Arial; font-size: 70%;
+	padding: 1px;
+	border: 2px solid #dbd8d8; border-top: 1px solid #dbd8d8;
+	text-align: center;
+	background-color: #d5d5d5;	
+	color: #343434;
+	}
+
+
+html>body .CalendarWeekendTodayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayExquisite a:link {
+	color: #0000f7;
+	}
+
+.CalendarWeekendTodayExquisite a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendTodayExquisite a:hover, .CalendarWeekendTodayExquisite a:active{
+	color: #005475;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayExquisite{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: center;
+	background-color: #bbbbbb;	
+	color: #dbd8d8;
+	}
+
+
+html>body .CalendarOtherMonthDayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayExquisite a:link {
+	color: #dbd8d8;
+	}
+
+.CalendarOtherMonthDayExquisite a:visited{
+	color: #dbd8d8;
+	}
+
+.CalendarOtherMonthDayExquisite a:hover, .CalendarOtherMonthDayExquisite a:active{
+	color: #005475;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayExquisite {
+	font-family: Arial; font-size: 70%;
+	padding: 1px;
+	border: 2px solid #dbd8d8; border-top: 1px solid #dbd8d8;
+	text-align: center;
+	background-color: #bbbbbb;	
+	color: #dbd8d8;
+	}
+
+
+html>body .CalendarOtherMonthTodayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayExquisite a:link {
+	color: #dbd8d8;
+	}
+
+.CalendarOtherMonthTodayExquisite a:visited{
+	color: #dbd8d8;
+	}
+
+.CalendarOtherMonthTodayExquisite a:hover, .CalendarOtherMonthTodayExquisite a:active{
+	color: #005475;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendExquisite {
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: center;
+	background-color: #d5d5d5;	
+	color: #dbd8d8;
+	}
+
+
+html>body .CalendarOtherMonthWeekendExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendExquisite a:link {
+	color: #dbd8d8;
+	}
+
+.CalendarOtherMonthWeekendExquisite a:visited{
+	color: #dbd8d8;
+	}
+
+.CalendarOtherMonthWeekendExquisite a:hover, .CalendarOtherMonthWeekendExquisite a:active{
+	color: #005475;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayExquisite {
+	font-family: Arial; font-size: 70%;
+	padding: 1px;
+	border: 2px solid #dbd8d8; border-top: 1px solid #dbd8d8;
+	text-align: center;
+	color: #dbd8d8;
+	background-color: #d5d5d5;	
+	}
+	
+
+html>body .CalendarOtherMonthWeekendTodayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayExquisite a:link {
+	color: #dbd8d8;
+	}
+
+.CalendarOtherMonthWeekendTodayExquisite a:visited{
+	color: #dbd8d8;
+	}
+
+.CalendarOtherMonthWeekendTodayExquisite a:hover, .CalendarOtherMonthWeekendTodayExquisite a:active{
+	color: #005475;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayExquisite{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #e5e5e5;
+	color: #585555;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+html>body .CalendarSelectedDayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarSelectedDayExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayExquisite a:link {
+	color: #585555;
+	}
+
+.CalendarSelectedDayExquisite a:visited{
+	color: #585555;
+	}
+
+.CalendarSelectedDayExquisite a:hover, .CalendarSelectedDayExquisite a:active{
+	color: #005475;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorExquisite {
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	background-color: #e5e5e5; color: #585555;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #343434;
+	}
+
+
+html>body .CalendarNavigatorExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorExquisite a:link {
+	color: #0000f7;
+	}
+
+.CalendarNavigatorExquisite a:visited{
+	color: #000000;
+	}
+
+.CalendarNavigatorExquisite a:hover, .CalendarNavigatorExquisite a:active{
+	color: #005475;
+	}
+
+.CalendarNavigatorExquisite img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorExquisite td {
+	font-family: Arial; font-size: 70%;
+	}
+
+.CalendarNavigatorExquisite th {
+	font-family: Arial; font-size: 70%;
+	}
+
+
+html>body .CalendarNavigatorExquisite th, html>body .CalendarNavigatorExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorExquisite th, * html body .CalendarNavigatorExquisite td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventExquisite{
+	font-family: Arial; font-size: 70%;
+	text-align: left;
+	}
+
+
+html>body .CalendarEventExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarEventExquisite {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventExquisite a:link {
+	color: #0000f7;
+	}
+
+.CalendarEventExquisite a:visited{
+	color: #000000;
+	}
+
+.CalendarEventExquisite a:hover, .CalendarEventExquisite a:active{
+	color: #005475;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thExquisite { 
+	font-family: Arial; font-size: 70%;
+	font-weight: bold;
+}
+
+
+html>body .thExquisite {
+	font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .thExquisite {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderExquisite .thExquisite { 
+	font-family: Arial; font-size: 90%; text-align: left;
+	padding: 3px;
+	background-image: url('Images/HeaderBg.gif'); color: #cc0005;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+html>body .HeaderExquisite .thExquisite {
+	font-family: Arial; font-size: 130%; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeaderExquisite .thExquisite {
+	font-family: Arial; font-size: 130%; text-align: left;
+}
+/*end*/
+
+.CaptionExquisite .thExquisite { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #e5e5e5; color: #585555;
+	white-space: nowrap;
+}
+
+
+html>body .CaptionExquisite .thExquisite {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionExquisite .thExquisite {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowExquisite .thExquisite { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #bbbbbb; color: #343434;
+	white-space: nowrap;
+	color: #343434;
+}
+
+.AltRowExquisite .thExquisite { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #bbbbbb; color: #343434;
+	white-space: nowrap;
+	color: #343434;
+}
+
+.ControlsExquisite .thExquisite { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	background-color: #bbbbbb; color: #343434;
+	white-space: nowrap;
+	color: #343434;
+}
+
+.GroupCaptionExquisite .thExquisite {
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #dbd8d8;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #d5d5d5; 
+	color: #343434;
+}
+
+
+html>body .GroupCaptionExquisite .thExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+html>body .RowExquisite .thExquisite, html>body .AltRowExquisite .thExquisite, html>body .ControlsExquisite .thExquisite {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionExquisite .thExquisite {
+	font-family: Arial; font-size: 100%;
+}
+
+* html body .RowExquisite .thExquisite, * html body .AltRowExquisite .thExquisite, * html body .ControlsExquisite .thExquisite {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuExquisite td {
+	font-family: Arial; font-size: 70%;
+}
+
+
+html>body .simpleMenuExquisite td {
+	font-family: Arial; font-size: 100%;
+} 
+
+
+/*ie6*/
+* html body .simpleMenuExquisite td {
+	font-family: Arial; font-size: 100%;
+} 
+/*end*/

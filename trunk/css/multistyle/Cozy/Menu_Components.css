@@ -1,0 +1,746 @@
+/* htb - Horizontal Top to Bottom Menu */
+
+/* begin  hide/show blocks */
+	.Cozy .menu_htb .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Cozy .menu_htb a {
+	background-color: #8d2b3c;
+	background-image: none;
+	height: auto;
+	width: auto;
+}
+
+.Cozy .menu_htb a:hover, .Cozy .menu_htb li:hover>a, .Cozy ul.menu_htb .selected a {
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+/* <= ie6 */
+.Cozy .menu_htb a:hover, .Cozy .menu_htb .adxmhoverA, .Cozy ul.menu_htb .selected a {		/* li:hover>a selector */
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+.Cozy .menu_htb .text {
+	position: relative;
+	color: #ffffff;
+	margin-left: 1em; margin-right: 1em; 
+	padding-top: .5em; padding-bottom: .5em;
+	width: auto;
+	height: auto;
+	.display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+html:first-child .Cozy .menu_htb .text { /* Opera */
+	display: block;
+	float: none;
+}
+
+.Cozy .menu_htb a:hover .text, .Cozy .menu_htb li:hover>a .text, .Cozy ul.menu_htb .selected a .text {
+	color: #ffffff;
+}
+
+/* <= ie6 */
+.Cozy .menu_htb a:hover .text, .Cozy .menu_htb .adxmhoverA .text, .Cozy ul.menu_htb .selected a .text {
+	color: #ffffff;
+}
+
+.Cozy .menu_htb a {
+	border: 0;
+}
+
+.Cozy .menu_htb a:hover, .Cozy .menu_htb li:hover>a, .Cozy ul.menu_htb .selected a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_htb a:hover, .Cozy .menu_htb .adxmhoverA, .Cozy ul.menu_htb .selected a {
+	border: 0;
+}
+
+.Cozy .menu_htb, .Cozy .menu_htb ul li {
+	background: transparent;
+}
+
+.Cozy .menu_htb li {
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Cozy .menu_htb ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Cozy .menu_htb ul .submenu .right2 {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 25%;
+	width: 10px;
+	height: 11px;
+	background-color: transparent;
+	background-image: url('Images/SubmenuArrow.gif');background-repeat: no-repeat;background-position: center left;
+}
+
+.Cozy .menu_htb ul>li .submenu .right2 {
+	right: 0;
+	top: 0;
+	width: 10px;
+	height: 100%;
+}
+
+.Cozy .menu_htb li li {	/* create borders around each item */
+	border: 0;
+}
+
+.Cozy .menu_htb ul .text, .Cozy ul.menu_htb .selected ul .text {
+	position: relative;
+	color: #ffffff;
+	height: auto;
+	margin-left: .5em; margin-right: .5em;
+	padding-top: .5em; padding-bottom: .5em;
+	.display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+html:first-child .Cozy .menu_htb ul .text { /* Opera */
+	display: block;
+	float: none;
+}
+
+.Cozy .menu_htb ul a:hover .text, .Cozy .menu_htb ul li:hover>a .text, .Cozy ul.menu_htb .selected ul a:hover .text, .Cozy ul.menu_htb .selected ul li:hover>a .text {
+	color: #ffffff;
+}
+
+/* <= ie6 */
+.Cozy .menu_htb ul a:hover .text, .Cozy .menu_htb ul .adxmhoverA .text, .Cozy ul.menu_htb .selected ul a:hover .text, .Cozy ul.menu_htb .selected ul .adxmhoverA .text {
+	color: #ffffff;
+}
+
+.Cozy .menu_htb ul a, .Cozy ul.menu_htb .selected ul a {
+	border: 0;
+}
+
+.Cozy .menu_htb ul a:hover, .Cozy .menu_htb ul li:hover>a, .Cozy ul.menu_htb .selected ul a:hover, .Cozy ul.menu_htb .selected ul li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_htb ul a:hover, .Cozy .menu_htb ul .adxmhoverA, .Cozy ul.menu_htb .selected ul a:hover, .Cozy ul.menu_htb .selected ul .adxmhoverA {
+	border: 0;
+}
+
+.Cozy ul.menu_htb ul li a, .Cozy ul.menu_htb .selected ul li a { 
+	width: 100%;
+	height: auto;
+	background-color: #8d2b3c;
+	background-image: none;
+}
+
+.Cozy .menu_htb ul a:hover, .Cozy .menu_htb ul li:hover>a, .Cozy ul.menu_htb .selected ul a:hover, .Cozy ul.menu_htb .selected ul li:hover>a {
+	background-color: #610918;
+	background-image: none;
+}
+
+/* <= ie6 */
+.Cozy .menu_htb ul a:hover, .Cozy .menu_htb ul .adxmhoverA, .Cozy ul.menu_htb .selected ul a:hover, .Cozy ul.menu_htb .selected ul .adxmhoverA {
+	background-color: #610918;
+	background-image: none;
+}
+
+
+/* position of items */
+.Cozy .menu_htb ul {
+	width: 15em;
+}
+
+.Cozy .menu_htb a {
+	width: auto;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	float: left; /* is needed for ie, because it puts items to the next line */
+}
+
+html:first-child .Cozy .menu_htb a { /* Opera */
+	float: none;
+}
+
+.Cozy ul.menu_htb ul li a { 
+	width: 15em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+	float: none;
+}
+
+.Cozy .menu_htb li li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+.Cozy .menu_htb .adxmhoverUL .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+
+/* hbt - Horizontal Bottom to Top */
+
+
+/* vlr - Vertical Left to Right */
+
+/* begin  hide/show blocks */
+	.Cozy .menu_vlr .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Cozy .menu_vlr a {
+	width: 100%;
+	height: auto;
+	background-color: #8d2b3c;
+	background-image: none;
+}
+
+.Cozy .menu_vlr a:hover, .Cozy .menu_vlr li:hover>a, .Cozy ul.menu_vlr .selected a {
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr a:hover, .Cozy .menu_vlr .adxmhoverA, .Cozy ul.menu_vlr .selected a {		/* li:hover>a selector */
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+.Cozy .menu_vlr .text {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	padding-top: .5em; padding-bottom: .5em;
+}
+
+.Cozy .menu_vlr a:hover .text, .Cozy .menu_vlr li:hover>a .text, .Cozy ul.menu_vlr .selected a .text {
+	color: #ffffff;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr a:hover .text, .Cozy .menu_vlr .adxmhoverA .text, .Cozy ul.menu_vlr .selected a .text {		/* li:hover>a selector */
+	color: #ffffff;
+}
+
+.Cozy .menu_vlr a {
+	border: 0;
+}
+
+.Cozy .menu_vlr a:hover, .Cozy .menu_vlr li:hover>a, .Cozy ul.menu_vlr .selected a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr a:hover, .Cozy .menu_vlr .adxmhoverA, .Cozy ul.menu_vlr .selected a {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Cozy .menu_vlr, .Cozy .menu_vlr ul li {
+	background: transparent;
+}
+
+.Cozy .menu_vlr li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Cozy .menu_vlr ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Cozy .menu_vlr ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Cozy .menu_vlr ul .text, .Cozy ul.menu_vlr .selected ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	color: #ffffff;
+	text-align: left;
+	margin-left: .5em; margin-right: .5em;
+	padding-top: .5em; padding-bottom: .5em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Cozy .menu_vlr ul a:hover .text, .Cozy .menu_vlr ul li:hover>a .text, .Cozy ul.menu_vlr .selected ul a:hover .text, .Cozy ul.menu_vlr .selected ul li:hover>a .text {
+	color: #ffffff;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr ul a:hover .text, .Cozy .menu_vlr ul .adxmhoverA .text, .Cozy ul.menu_vlr .selected ul a:hover .text, .Cozy ul.menu_vlr .selected ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #ffffff;
+}
+
+.Cozy .menu_vlr ul a, .Cozy ul.menu_vlr .selected ul a {
+	border: 0;
+}
+
+.Cozy .menu_vlr ul a:hover, .Cozy .menu_vlr ul li:hover>a, .Cozy ul.menu_vlr .selected ul a:hover, .Cozy ul.menu_vlr .selected ul li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr ul a:hover, .Cozy .menu_vlr ul .adxmhoverA, .Cozy ul.menu_vlr .selected ul a:hover, .Cozy ul.menu_vlr .selected ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Cozy .menu_vlr ul a, .Cozy ul.menu_vlr .selected ul a {
+	width: 100%;
+	height: auto;
+	background-color: #8d2b3c;
+	background-image: none;
+}
+
+.Cozy .menu_vlr ul a:hover, .Cozy .menu_vlr ul li:hover>a, .Cozy ul.menu_vlr .selected ul a:hover, .Cozy ul.menu_vlr .selected ul li:hover>a {
+	background-color: #610918;
+	background-image: none;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr ul a:hover, .Cozy .menu_vlr ul .adxmhoverA, .Cozy ul.menu_vlr .selected ul a:hover, .Cozy ul.menu_vlr .selected ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #610918;
+	background-image: none;
+}
+
+/* position of items */
+.Cozy .menu_vlr, .Cozy .menu_vlr ul {
+	width: 15em;
+}
+
+.Cozy .menu_vlr li {
+	clear: both;
+}
+
+.Cozy .menu_vlr a {
+	width: 15em;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Cozy .menu_vlr ul a {
+	width: 15em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.Cozy .menu_vlr li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+.Cozy .menu_vlr .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+
+/* vrl - Vertical Right to Left */
+
+
+/* vlr_tree - Vertical Left to Right Tree */
+
+/* styles that are used with javascript */
+	.Cozy .menu_vlr_tree .menu_vlr_tree_openedA .text {
+		font-weight: bold;
+	}
+
+	.Cozy .menu_vlr_tree .menu_vlr_tree_openedUL {
+		display: block; 
+		visibility: visible;
+	}
+	
+	.Cozy .menu_vlr_tree .menu_vlr_tree_closedUL {
+		display: none;
+		visibility: hidden;
+	}
+/* begin  hide/show blocks */
+	.Cozy .menu_vlr_tree .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Cozy .menu_vlr_tree a {
+	width: 100%;
+	height: auto;
+	background-color: #610918;
+	background-image: none;
+}
+
+.Cozy .menu_vlr_tree ul a {
+	background-color: #8d2b3c;
+	background-image: none;
+}
+
+.Cozy .menu_vlr_tree a:hover, .Cozy .menu_vlr_tree li:hover>a {
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr_tree a:hover, .Cozy .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+.Cozy .menu_vlr_tree ul a:hover, .Cozy .menu_vlr_tree ul li:hover>a {
+	background-image: none;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr_tree ul a:hover, .Cozy .menu_vlr_tree ul .adxmhoverA {		/* li:hover>a selector */
+	background-image: none;
+}
+
+.Cozy .menu_vlr_tree .menu_vlr_tree_openedA {
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+.Cozy .menu_vlr_tree .text {
+	position: relative;
+	height: auto;
+	text-align: center;
+	color: #ffffff;
+	width: 100%;
+	padding-top: .5em; padding-bottom: .5em;
+}
+
+.Cozy .menu_vlr_tree ul .text {
+	width: auto;
+	text-align: left;
+	margin-left: .5em; margin-right: .5em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Cozy .menu_vlr_tree a:hover .text, .Cozy .menu_vlr_tree li:hover>a .text {
+	color: #ffffff;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr_tree a:hover .text, .Cozy .menu_vlr_tree .adxmhoverA .text {		/* li:hover>a selector */
+	color: #ffffff;
+}
+
+.Cozy .menu_vlr_tree .menu_vlr_tree_openedA .text {
+	color: #ffffff;
+}
+
+.Cozy .menu_vlr_tree a {
+	border: 0;
+}
+
+.Cozy .menu_vlr_tree ul a {
+	border: 0;
+}
+
+.Cozy .menu_vlr_tree a:hover, .Cozy .menu_vlr_tree li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr_tree a:hover, .Cozy .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Cozy .menu_vlr_tree .menu_vlr_tree_openedA {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr_tree a:hover, .Cozy .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+.Cozy .menu_vlr_tree, .Cozy .menu_vlr_tree ul li {
+	background: transparent;
+}
+
+.Cozy .menu_vlr_tree li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Cozy .menu_vlr_tree ul ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Cozy .menu_vlr_tree ul ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Cozy .menu_vlr_tree ul ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	text-align: left;
+	color: #ffffff;
+	margin-left: .5em; margin-right: .5em;
+	padding-top: .5em; padding-bottom: .5em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Cozy .menu_vlr_tree ul ul a:hover .text, .Cozy .menu_vlr_tree ul ul li:hover>a .text {
+	color: #ffffff;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr_tree ul ul a:hover .text, .Cozy .menu_vlr_tree ul ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #ffffff;
+}
+
+.Cozy .menu_vlr_tree ul ul a {
+	border: 0;
+}
+
+.Cozy .menu_vlr_tree ul ul a:hover, .Cozy .menu_vlr_tree ul ul li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr_tree ul ul a:hover, .Cozy .menu_vlr_tree ul ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Cozy .menu_vlr_tree ul ul a {
+	width: 100%;
+	height: auto;
+	background-color: #8d2b3c;
+	background-image: none;
+}
+
+.Cozy .menu_vlr_tree ul ul a:hover, .Cozy .menu_vlr_tree ul ul li:hover>a {
+	background-color: #610918;
+	background-image: none;
+}
+
+/* <= ie6 */
+.Cozy .menu_vlr_tree ul ul a:hover, .Cozy .menu_vlr_tree ul ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #610918;
+	background-image: none;
+}
+
+/* position of items */
+.Cozy .menu_vlr_tree, .Cozy .menu_vlr_tree ul {
+	width: 15em;
+}
+
+.Cozy .menu_vlr_tree ul {
+	float: left;
+}
+
+.Cozy .menu_vlr_tree ul ul {
+	float: none;
+}
+
+.Cozy .menu_vlr_tree a {
+	width: 15em;
+	height: auto;
+	padding: 0;
+	float: left;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Cozy .menu_vlr_tree ul ul a {
+	width: 15em;
+	height: auto;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+
+.Cozy .menu_vlr_tree li {
+	float: left;
+}
+
+/* vrl_tree - Vertical Right to Left Tree */
+
+
+/* vrl - Vertical Right to Left */
+
+/* begin  hide/show blocks */
+	.Cozy .menu_vrl .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Cozy .menu_vrl a {
+	width: 100%;
+	height: auto;
+	background-color: #8d2b3c;
+	background-image: none;
+}
+
+.Cozy .menu_vrl a:hover, .Cozy .menu_vrl li:hover>a, .Cozy ul.menu_vrl .selected a {
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+/* <= ie6 */
+.Cozy .menu_vrl a:hover, .Cozy .menu_vrl .adxmhoverA, .Cozy ul.menu_vrl .selected a {		/* li:hover>a selector */
+	background-color: #610918;
+	background-image: url('Images/MenuActiveBg.gif');background-repeat: repeat-x;background-position: top left;
+}
+
+.Cozy .menu_vrl .text {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	padding-top: .5em; padding-bottom: .5em;
+}
+
+.Cozy .menu_vrl a:hover .text, .Cozy .menu_vrl li:hover>a .text, .Cozy ul.menu_vrl .selected a .text {
+	color: #ffffff;
+}
+
+/* <= ie6 */
+.Cozy .menu_vrl a:hover .text, .Cozy .menu_vrl .adxmhoverA .text, .Cozy ul.menu_vrl .selected a .text {		/* li:hover>a selector */
+	color: #ffffff;
+}
+
+.Cozy .menu_vrl a {
+	border: 0;
+}
+
+.Cozy .menu_vrl a:hover, .Cozy .menu_vrl li:hover>a, .Cozy ul.menu_vrl .selected a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_vrl a:hover, .Cozy .menu_vrl .adxmhoverA, .Cozy ul.menu_vrl .selected a {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Cozy .menu_vrl, .Cozy .menu_vrl ul li {
+	background: transparent;
+}
+
+.Cozy .menu_vrl li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Cozy .menu_vrl ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Cozy .menu_vrl ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Cozy .menu_vrl ul .text, .Cozy ul.menu_vrl .selected ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	color: #ffffff;
+	text-align: left;
+	margin-left: .5em; margin-right: .5em;
+	padding-top: .5em; padding-bottom: .5em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Cozy .menu_vrl ul a:hover .text, .Cozy .menu_vrl ul li:hover>a .text, .Cozy ul.menu_vrl .selected ul a:hover .text, .Cozy ul.menu_vrl .selected ul li:hover>a .text {
+	color: #ffffff;
+}
+
+/* <= ie6 */
+.Cozy .menu_vrl ul a:hover .text, .Cozy .menu_vrl ul .adxmhoverA .text, .Cozy ul.menu_vrl .selected ul a:hover .text, .Cozy ul.menu_vrl .selected ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #ffffff;
+}
+
+.Cozy .menu_vrl ul a, .Cozy ul.menu_vrl .selected ul a {
+	border: 0;
+}
+
+.Cozy .menu_vrl ul a:hover, .Cozy .menu_vrl ul li:hover>a, .Cozy ul.menu_vrl .selected ul a:hover, .Cozy ul.menu_vrl .selected ul li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Cozy .menu_vrl ul a:hover, .Cozy .menu_vrl ul .adxmhoverA, .Cozy ul.menu_vrl .selected ul a:hover, .Cozy ul.menu_vrl .selected ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Cozy .menu_vrl ul a, .Cozy ul.menu_vrl .selected ul a {
+	width: 100%;
+	height: auto;
+	background-color: #8d2b3c;
+	background-image: none;
+}
+
+.Cozy .menu_vrl ul a:hover, .Cozy .menu_vrl ul li:hover>a, .Cozy ul.menu_vrl .selected ul a:hover, .Cozy ul.menu_vrl .selected ul li:hover>a {
+	background-color: #610918;
+	background-image: none;
+}
+
+/* <= ie6 */
+.Cozy .menu_vrl ul a:hover, .Cozy .menu_vrl ul .adxmhoverA, .Cozy ul.menu_vrl .selected ul a:hover, .Cozy ul.menu_vrl .selected ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #610918;
+	background-image: none;
+}
+
+/* position of items */
+.Cozy .menu_vrl, .Cozy .menu_vrl ul {
+	width: 15em;
+}
+
+.Cozy .menu_vrl li {
+	clear: both;
+}
+
+.Cozy .menu_vrl a {
+	width: 15em;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Cozy .menu_vrl ul a {
+	width: 15em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.Cozy .menu_vrl li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	right: 100%;
+}
+
+.Cozy .menu_vrl .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	right: 100%;
+}
+

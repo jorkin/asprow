@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<Theme Name="Coffee Break" Version="3.0" ReadOnly="True">
+	<Library FormTitle="2" Padding="3" Border="1" Font="Arial" Section="4" Filling="2" Background="1" ButtonShape="1" ButtonEffect="7" Color="Cacao Tree" Brightness="0" Saturation="0" ButtonSize="100" ButtonShadow="2_2" ButtonOutline="-1" ButtonArrow="4" MenuSizeHorizontal="2" MenuSizeVertical="2" MenuMargin0="2" MenuMargin1="2" MenuEffect="5" MenuShading="1"/>
+	<Items>
+		<!-- Form Title -->
+		<Item Name="FormTitle" ClassName="Header"/>
+		<Item Name="FormTitleLeftTD" ClassName="HeaderLeft"/>
+		<Item Name="FormTitleRightTD" ClassName="HeaderRight"/>
+		<!-- Grid -->
+		<Item Name="Grid" ClassName="Grid" ExtHTML="cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;"/>
+		<Item Name="HeaderTR" ClassName="Caption"/>
+		<Item Name="RowTR" ClassName="Row"/>
+		<Item Name="SeparatorTR" ClassName="Separator"/>
+		<Item Name="AltRowTR" ClassName="AltRow"/>
+		<Item Name="NoRecordsTR" ClassName="NoRecords"/>
+		<Item Name="FooterTR" ClassName="Footer"/>
+		<!-- Record -->
+		<Item Name="Record" ClassName="Record" ExtHTML="cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;"/>
+		<Item Name="ErrorTR" ClassName="Error"/>
+		<Item Name="ControlsTR" ClassName="Controls"/>
+		<Item Name="BottomTR" ClassName="Bottom"/>
+		<Item Name="TdLikeTh" ClassName="th"/>
+		<!-- Report -->
+		<Item Name="GroupHeaderTR" ClassName="GroupCaption"/>
+		<Item Name="GroupFooterTR" ClassName="GroupFooter"/>
+		<Item Name="SubTotalTR" ClassName="SubTotal"/>
+		<Item Name="TotalTR" ClassName="Total"/>
+		<Item Name="HeaderCaption" ClassName="Row"/>
+		<!-- Calendar -->
+		<Item Name="Calendar" ClassName="Calendar" ExtHTML="cellspacing=&quot;3&quot; cellpadding=&quot;0&quot;"/>
+		<Item Name="CalendarWeekdayNameTD" ClassName="CalendarWeekdayName"/>
+		<Item Name="CalendarWeekdayTodayNameTD" ClassName="CalendarWeekdayTodayName"/>
+		<Item Name="CalendarWeekendNameTD" ClassName="CalendarWeekendName"/>
+		<Item Name="CalendarWeekendTodayNameTD" ClassName="CalendarWeekendTodayName"/>
+		<Item Name="CalendarDayTD" ClassName="CalendarDay"/>
+		<Item Name="CalendarWeekendTD" ClassName="CalendarWeekend"/>
+		<Item Name="CalendarTodayTD" ClassName="CalendarToday"/>
+		<Item Name="CalendarWeekendTodayTD" ClassName="CalendarWeekendToday"/>
+		<Item Name="CalendarWeekdayTodayTD" ClassName="CalendarWeekdayToday"/>
+		<Item Name="CalendarOtherMonthDayTD" ClassName="CalendarOtherMonthDay"/>
+		<Item Name="CalendarOtherMonthTodayTD" ClassName="CalendarOtherMonthToday"/>
+		<Item Name="CalendarOtherMonthWeekendTD" ClassName="CalendarOtherMonthWeekend"/>
+		<Item Name="CalendarOtherMonthWeekendTodayTD" ClassName="CalendarOtherMonthWeekendToday"/>
+		<Item Name="CalendarSelectedDayTD" ClassName="CalendarSelectedDay"/>
+		<Item Name="CalendarNavigatorTD" ClassName="CalendarNavigator"/>
+		<Item Name="CalendarSchedulerTimeScaleTD" ClassName="CalendarSchedulerTimeScale"/>
+		<Item Name="CalendarYear" ClassName="CalendarYear" ExtHTML="cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;"/>
+		<Item Name="CalendarYearHeaderTD" ClassName="CalendarYearHeader"/>
+		<Item Name="CalendarMonthTD" ClassName="CalendarMonth"/>
+		<Item Name="CalendarCurrentMonthTD" ClassName="CalendarCurrentMonth"/>
+		<Item Name="CalendarButton" ClassName="CalendarButton"/>
+		<Item Name="CalendarSeparatorTR" ClassName="CalendarSeparator"/>
+		<Item Name="CalendarEventDIV" ClassName="CalendarEvent"/>
+		<Item Name="CalendarNoEventsDIV" ClassName="CalendarNoEvents"/>
+		<!-- Forms -->
+		<Item Name="Button" ClassName="Button"/>
+	</Items>
+	<Files>
+	</Files>
+	<ColorScheme><Item name="Cacao Tree">
+			<Var name="ColorBgPage" value="#D4CEC3"/>
+			<Var name="ColorBgFormTitle" value="#876A55"/>
+			<Var name="ColorFontFormTitle" value="#FFFFFF"/>
+			<Var name="ColorBgCaption" value="#C9B9B1"/>
+			<Var name="ColorFontCaption" value="#000000"/>
+			<Var name="ColorBgData" value="#EDEBE4"/>
+			<Var name="ColorBgAltData" value="#E3DFD1"/>
+			<Var name="ColorFontData" value="#000000"/>
+			<Var name="ColorFontLink" value="#0033CC"/>
+			<Var name="ColorFontVisitedLink" value="#840000"/>
+			<Var name="ColorFontHoverLink" value="#FF0000"/>
+		</Item>
+	</ColorScheme><FontScheme><Item name="Arial">
+			<Var name="PageBody" value="font-family: Arial; font-size: 80%;"/>
+			<Var name="PageBodyDoctype" value="font-family: Arial; font-size: 80%;"/>
+			<Var name="FormTitle" value="font-size: 110%; font-weight: bold; text-align: left;"/>
+			<Var name="FormTitleDoctype" value="font-size: 140%; font-weight: bold; text-align: left;"/>
+			<Var name="Caption" value="font-size: 80%; 	text-align: left; vertical-align: top;"/>
+			<Var name="CaptionDoctype" value="font-size: 100%; 	text-align: left; vertical-align: top;"/>
+			<Var name="Controls" value="font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;"/>
+			<Var name="ControlsDoctype" value="font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;"/>
+			<Var name="Data" value="font-size: 80%;"/>
+			<Var name="DataDoctype" value="font-size: 100%;"/>
+			<Var name="ButtonText" value="font-family: Tahoma; font-size: 11px; font-weight: bold;"/>
+			<Var name="Header1" value="font-size: 150%;"/>
+			<Var name="Header2" value="font-size: 130%;"/>
+			<Var name="Header3" value="font-size: 110%; font-style: italic;"/>
+			<Var name="Header4" value="font-size: 100%;"/>
+			<Var name="Header5" value="font-size: 100%; font-style: italic;"/>
+			<Var name="Header6" value="font-size: 90%;"/>
+		</Item>
+	</FontScheme></Theme>

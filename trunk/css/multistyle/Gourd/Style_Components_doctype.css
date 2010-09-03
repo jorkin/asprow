@@ -1,0 +1,1224 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorGourd {
+	background-color: #e6e2cf;
+	}
+
+.FormTitleBgColorGourd {
+	background-color: #d16521;
+	}
+
+.FormTitleFontColorGourd {
+	color: #ffffff;
+	}
+
+.CaptionBgColorGourd {
+	background-color: #f2eac2;
+	}
+
+.CaptionFontColorGourd {
+	color: #000000;
+	}
+
+.DataBgColorGourd {
+	background-color: #f7f7f7;
+	}
+
+.AltDataBgColorGourd {
+	background-color: #fffae0;
+	}
+
+.DataFontColorGourd {
+	color: #000000;
+	}
+
+.LinkColorGourd {
+	color: #0033cc;
+	}
+
+.VisitedLinkColorGourd {
+	color: #830000;
+	}
+
+.HoverLinkColorGourd {
+	color: #ff0000;
+	}
+
+.ColorBgButtonGourd {
+	background-color: #d16521;
+}
+
+.ColorFontButtonGourd {
+	color: #ffffff;
+}
+
+.ColorBgButtonPassiveGourd {
+	background-color: #ffaf7e;
+}
+
+.ColorFontButtonPassiveGourd {
+	color: #ffffff;
+}
+
+
+
+.HeaderGourd {
+	width: 100%;
+	}
+
+.HeaderGourd th { 
+	font-family: Tahoma; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #ffffff;
+	width: 100%;
+	white-space: nowrap;
+	padding-left: 8px;
+	}
+
+
+html>body .HeaderGourd th {
+	font-family: Tahoma; font-size: 140%; font-weight: bold; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeaderGourd th {
+	font-family: Tahoma; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.HeaderGourd a:link { 
+	color: #ffffff;
+	}
+
+.HeaderGourd a:visited { 
+	color: #ffffff;
+	}
+
+.HeaderGourd a:hover, .CaptionGourd a:active { 
+	color: #ffffff; text-decoration: none;
+	}
+
+.HeaderLeftGourd { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightGourd { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftGourd img{
+	width: 1px;
+	}
+
+.HeaderRightGourd img{
+	width: 1px;
+	}
+
+
+/* Grid Options */
+.GridGourd { 
+	border-left: 1px solid #d16521; border-bottom: 1px solid #d16521;
+	width: 100%;
+	}
+
+.CaptionGourd th { 
+	font-family: Tahoma; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionGourd td { 
+	font-family: Tahoma; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+
+html>body .CaptionGourd th, html>body .CaptionGourd td {
+	font-family: Tahoma; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionGourd th, * html body .CaptionGourd td {
+	font-family: Tahoma; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionGourd a:link { 
+	color: #000000;
+	}
+
+.CaptionGourd a:visited { 
+	color: #000000;
+	}
+
+.CaptionGourd a:hover, .CaptionGourd a:active { 
+	color: #ff0000;
+	}
+
+.CaptionGourd img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionGourd input {
+	vertical-align: middle;
+	}
+
+.RowGourd th { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.RowGourd td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f7f7f7; 
+	color: #000000;
+	}
+	
+
+html>body .RowGourd th, html>body .RowGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .RowGourd th, * html body .RowGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+caption.RowGourd { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border: 1px solid #d16521; border-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f7f7f7; 
+	color: #000000;
+	}
+
+
+html>body caption.RowGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body caption.RowGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.RowGourd a:link { 
+	color: #0033cc;
+	}
+
+.RowGourd a:visited { 
+	color: #830000;
+	}
+
+.RowGourd a:hover, .RowGourd a:active { 
+	color: #ff0000;
+	}
+
+.SeparatorGourd{
+	color: #d16521;
+	}
+
+.SeparatorGourd td{
+	height: 1px;
+	}
+
+
+.AltRowGourd th { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.AltRowGourd td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	vertical-align: top;
+	background-color: #fffae0; 
+	color: #000000;
+	}
+
+
+html>body .AltRowGourd th, html>body .AltRowGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .AltRowGourd th, * html body .AltRowGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.AltRowGourd a:link { 
+	color: #0033cc;
+	}
+
+.AltRowGourd a:visited { 
+	color: #830000;
+	}
+
+.AltRowGourd a:hover, .AltRowGourd a:active { 
+	color: #ff0000;
+	}
+
+.NoRecordsGourd td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	background-color: #f7f7f7; 
+	color: #000000;
+	vertical-align: top;
+	}
+
+.FooterGourd td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .NoRecordsGourd td, html>body .FooterGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .NoRecordsGourd td, * html body .FooterGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.FooterGourd a:link { 
+	color: #0033cc;
+	}
+
+.FooterGourd a:visited { 
+	color: #830000;
+	}
+
+.FooterGourd a:hover, .FooterGourd a:active { 
+	color: #ff0000;
+	}
+
+.FooterGourd img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterGourd input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordGourd { 
+	border-left: 1px solid #d16521; border-bottom: 1px solid #d16521;
+	width: 100%;
+	}
+
+.ErrorGourd td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #f7f7f7; 
+	}
+
+
+* html>body .ErrorGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ErrorGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.ControlsGourd th { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.ControlsGourd td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f7f7f7; 
+	color: #000000;
+	}
+	
+.BottomGourd td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .ControlsGourd th, html>body .ControlsGourd td, html>body .BottomGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ControlsGourd th, * html body .ControlsGourd td, * html body .BottomGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.BottomGourd a:link { 
+	color: #0033cc;
+	}
+
+.BottomGourd a:visited { 
+	color: #830000;
+	}
+
+.BottomGourd a:hover, .CaptionGourd a:active { 
+	color: #ff0000;
+	}
+
+.BottomGourd img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomGourd input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionGourd th{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #fffae0; 
+	color: #000000;
+	}
+
+.GroupCaptionGourd td{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f7f7f7; 
+	color: #000000;
+	}
+
+
+html>body .GroupCaptionGourd th, html>body .GroupCaptionGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionGourd th, * html body .GroupCaptionGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionGourd a:link {
+	color: #000000;
+	}
+
+.GroupCaptionGourd a:visited{
+	color: #000000;
+	}
+
+.GroupCaptionGourd a:hover, .GroupCaptionGourd a:active{
+	color: #ff0000;
+	}
+
+.GroupFooterGourd td{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #f2eac2; 
+	color: #000000;
+	}
+
+
+html>body .GroupFooterGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupFooterGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterGourd a:link {
+	color: #0033cc;
+	}
+
+.GroupFooterGourd a:visited{
+	color: #830000;
+	}
+
+.GroupFooterGourd a:hover, .GroupFooterGourd a:active{
+	color: #ff0000;
+	}
+
+.GroupFooterGourd img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterGourd input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalGourd td{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #fffae0; 
+	color: #000000;
+	border-bottom: 2px solid #d16521;
+	}
+
+
+html>body .SubTotalGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .SubTotalGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.SubTotalGourd a:link {
+	color: #0033cc;
+	}
+
+.SubTotalGourd a:visited{
+	color: #830000;
+	}
+
+.SubTotalGourd a:hover, .SubTotalGourd a:active{
+	color: #ff0000;
+	}
+
+.TotalGourd td{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #fffae0; 
+	color: #000000;
+	}
+
+
+html>body .TotalGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .TotalGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.TotalGourd a:link {
+	color: #0033cc;
+	}
+
+.TotalGourd a:visited{
+	color: #830000;
+	}
+
+.TotalGourd a:hover, .TotalGourd a:active{
+	color: #ff0000;
+	}
+
+/* Form Options */
+.ButtonGourd { 
+	background-color: #fffae0; color: #000000; border: solid 1px #d16521; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 11px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarGourd { 
+	border: 1px solid #d16521;
+	width: 100%;
+	}
+
+.CalendarWeekdayNameGourd{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #fffae0; 
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekdayNameGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekdayNameGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNameGourd a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekdayNameGourd a:visited{
+	color: #830000;
+	}
+
+.CalendarWeekdayNameGourd a:hover, .CalendarWeekdayNameGourd a:active{
+	color: #ff0000;
+	}
+
+.CalendarWeekendNameGourd{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #fffae0;	
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekendNameGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendNameGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNameGourd a:link {
+	color: #000000;
+	}
+
+.CalendarWeekendNameGourd a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendNameGourd a:link, .CalendarWeekendNameGourd a:visited{
+	color: #ff0000;
+	}
+
+/* Calendar Day */
+.CalendarDayGourd{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: center;
+	background-color: #f7f7f7;	
+	color: #000000;
+	}
+
+
+html>body .CalendarDayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarDayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayGourd a:link {
+	color: #0033cc;
+	}
+
+.CalendarDayGourd a:visited{
+	color: #830000;
+	}
+
+.CalendarDayGourd a:hover, .CalendarDayGourd a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendGourd{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: center;
+	background-color: #fffae0;	
+	color: #000000;
+	}
+
+
+html>body .CalendarWeekendGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendGourd a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekendGourd a:visited{
+	color: #830000;
+	}
+
+.CalendarWeekendGourd a:hover, .CalendarWeekendGourd a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Today */
+.CalendarTodayGourd {
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-top: 3px solid #d16521; border-right: 3px solid #d16521; border-left: 2px solid #d16521; border-bottom: 2px solid #d16521;
+	text-align: center;
+	background-color: #f7f7f7;	
+	color: #000000;
+	}
+
+
+html>body .CalendarTodayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarTodayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayGourd a:link {
+	color: #0033cc;
+	}
+
+.CalendarTodayGourd a:visited{
+	color: #830000;
+	}
+
+.CalendarTodayGourd a:hover, .CalendarTodayGourd a:active {
+	color: #ff0000;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayGourd {
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-top: 3px solid #d16521; border-right: 3px solid #d16521; border-left: 2px solid #d16521; border-bottom: 2px solid #d16521;
+	text-align: center;
+	background-color: #fffae0;	
+	color: #000000;
+	}
+
+
+html>body .CalendarWeekendTodayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayGourd a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekendTodayGourd a:visited{
+	color: #830000;
+	}
+
+.CalendarWeekendTodayGourd a:hover, .CalendarWeekendTodayGourd a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayGourd{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: center;
+	background-color: #f7f7f7;	
+	color: #d16521;
+	}
+
+
+html>body .CalendarOtherMonthDayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayGourd a:link {
+	color: #d16521;
+	}
+
+.CalendarOtherMonthDayGourd a:visited{
+	color: #d16521;
+	}
+
+.CalendarOtherMonthDayGourd a:hover, .CalendarOtherMonthDayGourd a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayGourd {
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-top: 3px solid #d16521; border-right: 3px solid #d16521; border-left: 2px solid #d16521; border-bottom: 2px solid #d16521;
+	text-align: center;
+	background-color: #f7f7f7;	
+	color: #d16521;
+	}
+
+
+html>body .CalendarOtherMonthTodayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayGourd a:link {
+	color: #d16521;
+	}
+
+.CalendarOtherMonthTodayGourd a:visited{
+	color: #d16521;
+	}
+
+.CalendarOtherMonthTodayGourd a:hover, .CalendarOtherMonthTodayGourd a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendGourd {
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: center;
+	background-color: #fffae0;	
+	color: #d16521;
+	}
+
+
+html>body .CalendarOtherMonthWeekendGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendGourd a:link {
+	color: #d16521;
+	}
+
+.CalendarOtherMonthWeekendGourd a:visited{
+	color: #d16521;
+	}
+
+.CalendarOtherMonthWeekendGourd a:hover, .CalendarOtherMonthWeekendGourd a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayGourd {
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-top: 3px solid #d16521; border-right: 3px solid #d16521; border-left: 2px solid #d16521; border-bottom: 2px solid #d16521;
+	text-align: center;
+	color: #d16521;
+	background-color: #fffae0;	
+	}
+	
+
+html>body .CalendarOtherMonthWeekendTodayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayGourd a:link {
+	color: #d16521;
+	}
+
+.CalendarOtherMonthWeekendTodayGourd a:visited{
+	color: #d16521;
+	}
+
+.CalendarOtherMonthWeekendTodayGourd a:hover, .CalendarOtherMonthWeekendTodayGourd a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayGourd{
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-color: #f2eac2;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+html>body .CalendarSelectedDayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarSelectedDayGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayGourd a:link {
+	color: #000000;
+	}
+
+.CalendarSelectedDayGourd a:visited{
+	color: #000000;
+	}
+
+.CalendarSelectedDayGourd a:hover, .CalendarSelectedDayGourd a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorGourd {
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .CalendarNavigatorGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorGourd a:link {
+	color: #0033cc;
+	}
+
+.CalendarNavigatorGourd a:visited{
+	color: #830000;
+	}
+
+.CalendarNavigatorGourd a:hover, .CalendarNavigatorGourd a:active{
+	color: #ff0000;
+	}
+
+.CalendarNavigatorGourd img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorGourd td {
+	font-family: Tahoma; font-size: 80%;
+	}
+
+.CalendarNavigatorGourd th {
+	font-family: Tahoma; font-size: 80%;
+	}
+
+
+html>body .CalendarNavigatorGourd th, html>body .CalendarNavigatorGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorGourd th, * html body .CalendarNavigatorGourd td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventGourd{
+	font-family: Tahoma; font-size: 80%;
+	text-align: left;
+	}
+
+
+html>body .CalendarEventGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarEventGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventGourd a:link {
+	color: #0033cc;
+	}
+
+.CalendarEventGourd a:visited{
+	color: #830000;
+	}
+
+.CalendarEventGourd a:hover, .CalendarEventGourd a:active{
+	color: #ff0000;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thGourd { 
+	font-family: Tahoma; font-size: 80%;
+	font-weight: bold;
+}
+
+
+html>body .thGourd {
+	font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .thGourd {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderGourd .thGourd { 
+	font-family: Tahoma; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #ffffff;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+html>body .HeaderGourd .thGourd {
+	font-family: Tahoma; font-size: 140%; font-weight: bold; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeaderGourd .thGourd {
+	font-family: Tahoma; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.CaptionGourd .thGourd { 
+	font-family: Tahoma; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+}
+
+
+html>body .CaptionGourd .thGourd {
+	font-family: Tahoma; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionGourd .thGourd {
+	font-family: Tahoma; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowGourd .thGourd { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.AltRowGourd .thGourd { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.ControlsGourd .thGourd { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.GroupCaptionGourd .thGourd {
+	font-family: Tahoma; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #d16521; border-right: 1px solid #d16521;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #fffae0; 
+	color: #000000;
+}
+
+
+html>body .GroupCaptionGourd .thGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+html>body .RowGourd .thGourd, html>body .AltRowGourd .thGourd, html>body .ControlsGourd .thGourd {
+	font-family: Tahoma; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionGourd .thGourd {
+	font-family: Tahoma; font-size: 100%;
+}
+
+* html body .RowGourd .thGourd, * html body .AltRowGourd .thGourd, * html body .ControlsGourd .thGourd {
+	font-family: Tahoma; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuGourd td {
+	font-family: Tahoma; font-size: 80%;
+}
+
+
+html>body .simpleMenuGourd td {
+	font-family: Tahoma; font-size: 100%;
+} 
+
+
+/*ie6*/
+* html body .simpleMenuGourd td {
+	font-family: Tahoma; font-size: 100%;
+} 
+/*end*/

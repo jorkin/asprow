@@ -1,0 +1,1096 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorMaple {
+	background-color: #7990b0;
+	}
+
+.FormTitleBgColorMaple {
+	background-color: #d7871c;
+	}
+
+.FormTitleFontColorMaple {
+	color: #f9f7f0;
+	}
+
+.CaptionBgColorMaple {
+	background-color: #e3d2af;
+	}
+
+.CaptionFontColorMaple {
+	color: #5e6a83;
+	}
+
+.DataBgColorMaple {
+	background-color: #ccd1da;
+	}
+
+.AltDataBgColorMaple {
+	background-color: #f4f4eb;
+	}
+
+.DataFontColorMaple {
+	color: #3c4455;
+	}
+
+.LinkColorMaple {
+	color: #524af3;
+	}
+
+.VisitedLinkColorMaple {
+	color: #7b7bf7;
+	}
+
+.HoverLinkColorMaple {
+	color: #b9001c;
+	}
+
+.ColorBgButtonMaple {
+	background-color: #d7871c;
+}
+
+.ColorFontButtonMaple {
+	color: #f9f7f0;
+}
+
+.ColorBgButtonPassiveMaple {
+	background-color: #f7bf75;
+}
+
+.ColorFontButtonPassiveMaple {
+	color: #fcfaf7;
+}
+
+
+
+.HeaderMaple {
+	width: 100%;
+	}
+
+.HeaderMaple th { 
+	font-family: Verdana; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #f9f7f0;
+	width: 100%;
+	white-space: nowrap;
+	
+	}
+
+
+
+/*ie6*/
+* html body .HeaderMaple th {
+	font-family: Verdana; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.HeaderMaple a:link { 
+	color: #f9f7f0;
+	}
+
+.HeaderMaple a:visited { 
+	color: #f9f7f0;
+	}
+
+.HeaderMaple a:hover, .CaptionMaple a:active { 
+	color: #f9f7f0; text-decoration: none;
+	}
+
+.HeaderLeftMaple { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightMaple { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftMaple img{
+	width: 21px; height: 18px;
+	}
+
+.HeaderRightMaple img{
+	width: 21px; height: 18px;
+	}
+
+
+/* Grid Options */
+.GridMaple { 
+	border: 1px solid #d7871c;
+	width: 100%;
+	}
+
+.CaptionMaple th { 
+	font-family: Verdana; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	background-color: #e3d2af; color: #5e6a83;
+	white-space: nowrap;
+	}
+
+.CaptionMaple td { 
+	font-family: Verdana; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	background-color: #e3d2af; color: #5e6a83;
+	white-space: nowrap;
+	}
+
+
+
+/*ie6*/
+* html body .CaptionMaple th, * html body .CaptionMaple td {
+	font-family: Verdana; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionMaple a:link { 
+	color: #5e6a83;
+	}
+
+.CaptionMaple a:visited { 
+	color: #5e6a83;
+	}
+
+.CaptionMaple a:hover, .CaptionMaple a:active { 
+	color: #b9001c;
+	}
+
+.CaptionMaple img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionMaple input {
+	vertical-align: middle;
+	}
+
+.RowMaple th { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #ccd1da; color: #3c4455;
+	white-space: nowrap;
+	color: #3c4455;
+	}
+
+.RowMaple td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #ccd1da; 
+	color: #3c4455;
+	}
+	
+
+
+/*ie6*/
+* html body .RowMaple th, * html body .RowMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+caption.RowMaple { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border: 1px solid #d7871c; border-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #ccd1da; 
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body caption.RowMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.RowMaple a:link { 
+	color: #524af3;
+	}
+
+.RowMaple a:visited { 
+	color: #7b7bf7;
+	}
+
+.RowMaple a:hover, .RowMaple a:active { 
+	color: #b9001c;
+	}
+
+.SeparatorMaple{
+	color: #d7871c;
+	}
+
+.SeparatorMaple td{
+	height: 1px;
+	}
+
+
+.AltRowMaple th { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #ccd1da; color: #3c4455;
+	white-space: nowrap;
+	color: #3c4455;
+	}
+
+.AltRowMaple td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4eb; 
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .AltRowMaple th, * html body .AltRowMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.AltRowMaple a:link { 
+	color: #524af3;
+	}
+
+.AltRowMaple a:visited { 
+	color: #7b7bf7;
+	}
+
+.AltRowMaple a:hover, .AltRowMaple a:active { 
+	color: #b9001c;
+	}
+
+.NoRecordsMaple td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	text-align: left;
+	background-color: #ccd1da; 
+	color: #3c4455;
+	vertical-align: top;
+	}
+
+.FooterMaple td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #FFFFFF;
+	background-color: #e3d2af; color: #5e6a83;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .NoRecordsMaple td, * html body .FooterMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.FooterMaple a:link { 
+	color: #524af3;
+	}
+
+.FooterMaple a:visited { 
+	color: #7b7bf7;
+	}
+
+.FooterMaple a:hover, .FooterMaple a:active { 
+	color: #b9001c;
+	}
+
+.FooterMaple img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterMaple input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordMaple { 
+	border: 1px solid #d7871c;
+	width: 100%;
+	}
+
+.ErrorMaple td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #ccd1da; 
+	}
+
+
+
+/*ie6*/
+* html body .ErrorMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.ControlsMaple th { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #ccd1da; color: #3c4455;
+	white-space: nowrap;
+	color: #3c4455;
+	}
+
+.ControlsMaple td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #ccd1da; 
+	color: #3c4455;
+	}
+	
+.BottomMaple td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #FFFFFF;
+	background-color: #e3d2af; color: #5e6a83;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .ControlsMaple th, * html body .ControlsMaple td, * html body .BottomMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.BottomMaple a:link { 
+	color: #524af3;
+	}
+
+.BottomMaple a:visited { 
+	color: #7b7bf7;
+	}
+
+.BottomMaple a:hover, .CaptionMaple a:active { 
+	color: #b9001c;
+	}
+
+.BottomMaple img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomMaple input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionMaple th{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f4f4eb; 
+	color: #3c4455;
+	}
+
+.GroupCaptionMaple td{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #ccd1da; 
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .GroupCaptionMaple th, * html body .GroupCaptionMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionMaple a:link {
+	color: #5e6a83;
+	}
+
+.GroupCaptionMaple a:visited{
+	color: #5e6a83;
+	}
+
+.GroupCaptionMaple a:hover, .GroupCaptionMaple a:active{
+	color: #b9001c;
+	}
+
+.GroupFooterMaple td{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #e3d2af; 
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .GroupFooterMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterMaple a:link {
+	color: #524af3;
+	}
+
+.GroupFooterMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.GroupFooterMaple a:hover, .GroupFooterMaple a:active{
+	color: #b9001c;
+	}
+
+.GroupFooterMaple img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterMaple input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalMaple td{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f4f4eb; 
+	color: #3c4455;
+	border-bottom: 2px solid #d7871c;
+	}
+
+
+
+/*ie6*/
+* html body .SubTotalMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.SubTotalMaple a:link {
+	color: #524af3;
+	}
+
+.SubTotalMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.SubTotalMaple a:hover, .SubTotalMaple a:active{
+	color: #b9001c;
+	}
+
+.TotalMaple td{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #f4f4eb; 
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .TotalMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.TotalMaple a:link {
+	color: #524af3;
+	}
+
+.TotalMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.TotalMaple a:hover, .TotalMaple a:active{
+	color: #b9001c;
+	}
+
+/* Form Options */
+.ButtonMaple { 
+	background-color: #d7871c; color: #f9f7f0; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 11px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarMaple { 
+	border: 1px solid #d7871c;
+	width: 100%;
+	}
+
+.CalendarWeekdayNameMaple{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #f4f4eb; 
+	color: #3c4455;
+	font-weight: normal;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekdayNameMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNameMaple a:link {
+	color: #524af3;
+	}
+
+.CalendarWeekdayNameMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.CalendarWeekdayNameMaple a:hover, .CalendarWeekdayNameMaple a:active{
+	color: #b9001c;
+	}
+
+.CalendarWeekendNameMaple{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #f4f4eb;	
+	color: #3c4455;
+	font-weight: normal;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendNameMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNameMaple a:link {
+	color: #5e6a83;
+	}
+
+.CalendarWeekendNameMaple a:visited{
+	color: #5e6a83;
+	}
+
+.CalendarWeekendNameMaple a:link, .CalendarWeekendNameMaple a:visited{
+	color: #b9001c;
+	}
+
+/* Calendar Day */
+.CalendarDayMaple{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #ccd1da;	
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarDayMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayMaple a:link {
+	color: #524af3;
+	}
+
+.CalendarDayMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.CalendarDayMaple a:hover, .CalendarDayMaple a:active{
+	color: #b9001c;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendMaple{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #f4f4eb;	
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendMaple a:link {
+	color: #524af3;
+	}
+
+.CalendarWeekendMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.CalendarWeekendMaple a:hover, .CalendarWeekendMaple a:active{
+	color: #b9001c;
+	}
+
+/* Calendar Today */
+.CalendarTodayMaple {
+	font-family: Verdana; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #d7871c;
+	text-align: center;
+	background-color: #ccd1da;	
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarTodayMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayMaple a:link {
+	color: #524af3;
+	}
+
+.CalendarTodayMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.CalendarTodayMaple a:hover, .CalendarTodayMaple a:active {
+	color: #b9001c;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayMaple {
+	font-family: Verdana; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #d7871c;
+	text-align: center;
+	background-color: #f4f4eb;	
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayMaple a:link {
+	color: #524af3;
+	}
+
+.CalendarWeekendTodayMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.CalendarWeekendTodayMaple a:hover, .CalendarWeekendTodayMaple a:active{
+	color: #b9001c;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayMaple{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #ccd1da;	
+	color: #d7871c;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayMaple a:link {
+	color: #d7871c;
+	}
+
+.CalendarOtherMonthDayMaple a:visited{
+	color: #d7871c;
+	}
+
+.CalendarOtherMonthDayMaple a:hover, .CalendarOtherMonthDayMaple a:active{
+	color: #b9001c;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayMaple {
+	font-family: Verdana; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #d7871c;
+	text-align: center;
+	background-color: #ccd1da;	
+	color: #d7871c;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayMaple a:link {
+	color: #d7871c;
+	}
+
+.CalendarOtherMonthTodayMaple a:visited{
+	color: #d7871c;
+	}
+
+.CalendarOtherMonthTodayMaple a:hover, .CalendarOtherMonthTodayMaple a:active{
+	color: #b9001c;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendMaple {
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #f4f4eb;	
+	color: #d7871c;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendMaple a:link {
+	color: #d7871c;
+	}
+
+.CalendarOtherMonthWeekendMaple a:visited{
+	color: #d7871c;
+	}
+
+.CalendarOtherMonthWeekendMaple a:hover, .CalendarOtherMonthWeekendMaple a:active{
+	color: #b9001c;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayMaple {
+	font-family: Verdana; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #d7871c;
+	text-align: center;
+	color: #d7871c;
+	background-color: #f4f4eb;	
+	}
+	
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayMaple a:link {
+	color: #d7871c;
+	}
+
+.CalendarOtherMonthWeekendTodayMaple a:visited{
+	color: #d7871c;
+	}
+
+.CalendarOtherMonthWeekendTodayMaple a:hover, .CalendarOtherMonthWeekendTodayMaple a:active{
+	color: #b9001c;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayMaple{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #e3d2af;
+	color: #5e6a83;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+
+/*ie6*/
+* html body .CalendarSelectedDayMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayMaple a:link {
+	color: #5e6a83;
+	}
+
+.CalendarSelectedDayMaple a:visited{
+	color: #5e6a83;
+	}
+
+.CalendarSelectedDayMaple a:hover, .CalendarSelectedDayMaple a:active{
+	color: #b9001c;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorMaple {
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	background-color: #e3d2af; color: #5e6a83;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #3c4455;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarNavigatorMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorMaple a:link {
+	color: #524af3;
+	}
+
+.CalendarNavigatorMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.CalendarNavigatorMaple a:hover, .CalendarNavigatorMaple a:active{
+	color: #b9001c;
+	}
+
+.CalendarNavigatorMaple img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorMaple td {
+	font-family: Verdana; font-size: 80%;
+	}
+
+.CalendarNavigatorMaple th {
+	font-family: Verdana; font-size: 80%;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarNavigatorMaple th, * html body .CalendarNavigatorMaple td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventMaple{
+	font-family: Verdana; font-size: 80%;
+	text-align: left;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarEventMaple {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventMaple a:link {
+	color: #524af3;
+	}
+
+.CalendarEventMaple a:visited{
+	color: #7b7bf7;
+	}
+
+.CalendarEventMaple a:hover, .CalendarEventMaple a:active{
+	color: #b9001c;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thMaple { 
+	font-family: Verdana; font-size: 80%;
+	font-weight: bold;
+}
+
+
+
+/*ie6*/
+* html body .thMaple {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderMaple .thMaple { 
+	font-family: Verdana; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #f9f7f0;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+
+/*ie6*/
+* html body .HeaderMaple .thMaple {
+	font-family: Verdana; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.CaptionMaple .thMaple { 
+	font-family: Verdana; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	background-color: #e3d2af; color: #5e6a83;
+	white-space: nowrap;
+}
+
+
+
+/*ie6*/
+* html body .CaptionMaple .thMaple {
+	font-family: Verdana; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowMaple .thMaple { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #ccd1da; color: #3c4455;
+	white-space: nowrap;
+	color: #3c4455;
+}
+
+.AltRowMaple .thMaple { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #ccd1da; color: #3c4455;
+	white-space: nowrap;
+	color: #3c4455;
+}
+
+.ControlsMaple .thMaple { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #ccd1da; color: #3c4455;
+	white-space: nowrap;
+	color: #3c4455;
+}
+
+.GroupCaptionMaple .thMaple {
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f4f4eb; 
+	color: #3c4455;
+}
+
+
+
+/*ie6*/
+* html body .GroupCaptionMaple .thMaple {
+	font-family: Verdana; font-size: 100%;
+}
+
+* html body .RowMaple .thMaple, * html body .AltRowMaple .thMaple, * html body .ControlsMaple .thMaple {
+	font-family: Verdana; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuMaple td {
+	font-family: Verdana; font-size: 80%;
+}
+
+
+
+/*ie6*/
+* html body .simpleMenuMaple td {
+	font-family: Verdana; font-size: 100%;
+} 
+/*end*/

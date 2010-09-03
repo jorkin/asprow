@@ -1,0 +1,1224 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorUnobtrusive {
+	background-color: #c6d5d9;
+	}
+
+.FormTitleBgColorUnobtrusive {
+	background-color: #6c8a9b;
+	}
+
+.FormTitleFontColorUnobtrusive {
+	color: #f4f4f4;
+	}
+
+.CaptionBgColorUnobtrusive {
+	background-color: #aec2c9;
+	}
+
+.CaptionFontColorUnobtrusive {
+	color: #30494f;
+	}
+
+.DataBgColorUnobtrusive {
+	background-color: #dbe3e5;
+	}
+
+.AltDataBgColorUnobtrusive {
+	background-color: #c8d4d8;
+	}
+
+.DataFontColorUnobtrusive {
+	color: #2e4653;
+	}
+
+.LinkColorUnobtrusive {
+	color: #0000e0;
+	}
+
+.VisitedLinkColorUnobtrusive {
+	color: #2929e0;
+	}
+
+.HoverLinkColorUnobtrusive {
+	color: #a80019;
+	}
+
+.ColorBgButtonUnobtrusive {
+	background-color: #6c8a9b;
+}
+
+.ColorFontButtonUnobtrusive {
+	color: #f4f4f4;
+}
+
+.ColorBgButtonPassiveUnobtrusive {
+	background-color: #b1cad9;
+}
+
+.ColorFontButtonPassiveUnobtrusive {
+	color: #f4f4f4;
+}
+
+
+
+.HeaderUnobtrusive {
+	width: 100%;
+	}
+
+.HeaderUnobtrusive th { 
+	font-family: Arial; font-size: 110%; font-weight: bold; text-align: center !important;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #f4f4f4;
+	width: 100%;
+	white-space: nowrap;
+	
+	}
+
+
+html>body .HeaderUnobtrusive th {
+	font-family: Arial; font-size: 140%; font-weight: bold; text-align: center !important;
+}
+
+
+/*ie6*/
+* html body .HeaderUnobtrusive th {
+	font-family: Arial; font-size: 140%; font-weight: bold; text-align: center !important;
+}
+/*end*/
+
+.HeaderUnobtrusive a:link { 
+	color: #f4f4f4;
+	}
+
+.HeaderUnobtrusive a:visited { 
+	color: #f4f4f4;
+	}
+
+.HeaderUnobtrusive a:hover, .CaptionUnobtrusive a:active { 
+	color: #f4f4f4; text-decoration: none;
+	}
+
+.HeaderLeftUnobtrusive { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightUnobtrusive { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftUnobtrusive img{
+	width: 14px;
+	}
+
+.HeaderRightUnobtrusive img{
+	width: 1px;
+	}
+
+
+/* Grid Options */
+.GridUnobtrusive { 
+	border: solid 1px #6c8a9b; border-bottom: 0px;
+	width: 100%;
+	}
+
+.CaptionUnobtrusive th { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+	}
+
+.CaptionUnobtrusive td { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+	}
+
+
+html>body .CaptionUnobtrusive th, html>body .CaptionUnobtrusive td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionUnobtrusive th, * html body .CaptionUnobtrusive td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionUnobtrusive a:link { 
+	color: #2e4653;
+	}
+
+.CaptionUnobtrusive a:visited { 
+	color: #2e4653;
+	}
+
+.CaptionUnobtrusive a:hover, .CaptionUnobtrusive a:active { 
+	color: #a80019;
+	}
+
+.CaptionUnobtrusive img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionUnobtrusive input {
+	vertical-align: middle;
+	}
+
+.RowUnobtrusive th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+	color: #2e4653;
+	}
+
+.RowUnobtrusive td { 
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	vertical-align: top;
+	background-color: #dbe3e5; 
+	color: #2e4653;
+	}
+	
+
+html>body .RowUnobtrusive th, html>body .RowUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .RowUnobtrusive th, * html body .RowUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+caption.RowUnobtrusive { 
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border: solid 1px #6c8a9b; border-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #dbe3e5; 
+	color: #2e4653;
+	}
+
+
+html>body caption.RowUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body caption.RowUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.RowUnobtrusive a:link { 
+	color: #0000e0;
+	}
+
+.RowUnobtrusive a:visited { 
+	color: #2929e0;
+	}
+
+.RowUnobtrusive a:hover, .RowUnobtrusive a:active { 
+	color: #a80019;
+	}
+
+.SeparatorUnobtrusive{
+	color: #6c8a9b;
+	}
+
+.SeparatorUnobtrusive td{
+	height: 1px;
+	}
+
+
+.AltRowUnobtrusive th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+	color: #2e4653;
+	}
+
+.AltRowUnobtrusive td { 
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	vertical-align: top;
+	background-color: #c8d4d8; 
+	color: #2e4653;
+	}
+
+
+html>body .AltRowUnobtrusive th, html>body .AltRowUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .AltRowUnobtrusive th, * html body .AltRowUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.AltRowUnobtrusive a:link { 
+	color: #0000e0;
+	}
+
+.AltRowUnobtrusive a:visited { 
+	color: #2929e0;
+	}
+
+.AltRowUnobtrusive a:hover, .AltRowUnobtrusive a:active { 
+	color: #a80019;
+	}
+
+.NoRecordsUnobtrusive td { 
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	background-color: #dbe3e5; 
+	color: #2e4653;
+	vertical-align: top;
+	}
+
+.FooterUnobtrusive td { 
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #2e4653;
+	}
+
+
+html>body .NoRecordsUnobtrusive td, html>body .FooterUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .NoRecordsUnobtrusive td, * html body .FooterUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.FooterUnobtrusive a:link { 
+	color: #0000e0;
+	}
+
+.FooterUnobtrusive a:visited { 
+	color: #2929e0;
+	}
+
+.FooterUnobtrusive a:hover, .FooterUnobtrusive a:active { 
+	color: #a80019;
+	}
+
+.FooterUnobtrusive img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterUnobtrusive input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordUnobtrusive { 
+	border: solid 1px #6c8a9b; border-bottom: 0px;
+	width: 100%;
+	}
+
+.ErrorUnobtrusive td { 
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #dbe3e5; 
+	}
+
+
+* html>body .ErrorUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ErrorUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.ControlsUnobtrusive th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+	color: #2e4653;
+	}
+
+.ControlsUnobtrusive td { 
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	vertical-align: top;
+	background-color: #dbe3e5; 
+	color: #2e4653;
+	}
+	
+.BottomUnobtrusive td { 
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #2e4653;
+	}
+
+
+html>body .ControlsUnobtrusive th, html>body .ControlsUnobtrusive td, html>body .BottomUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ControlsUnobtrusive th, * html body .ControlsUnobtrusive td, * html body .BottomUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.BottomUnobtrusive a:link { 
+	color: #0000e0;
+	}
+
+.BottomUnobtrusive a:visited { 
+	color: #2929e0;
+	}
+
+.BottomUnobtrusive a:hover, .CaptionUnobtrusive a:active { 
+	color: #a80019;
+	}
+
+.BottomUnobtrusive img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomUnobtrusive input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionUnobtrusive th{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #c8d4d8; 
+	color: #2e4653;
+	}
+
+.GroupCaptionUnobtrusive td{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #dbe3e5; 
+	color: #2e4653;
+	}
+
+
+html>body .GroupCaptionUnobtrusive th, html>body .GroupCaptionUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionUnobtrusive th, * html body .GroupCaptionUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionUnobtrusive a:link {
+	color: #2e4653;
+	}
+
+.GroupCaptionUnobtrusive a:visited{
+	color: #2e4653;
+	}
+
+.GroupCaptionUnobtrusive a:hover, .GroupCaptionUnobtrusive a:active{
+	color: #a80019;
+	}
+
+.GroupFooterUnobtrusive td{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #aec2c9; 
+	color: #2e4653;
+	}
+
+
+html>body .GroupFooterUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupFooterUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.GroupFooterUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.GroupFooterUnobtrusive a:hover, .GroupFooterUnobtrusive a:active{
+	color: #a80019;
+	}
+
+.GroupFooterUnobtrusive img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterUnobtrusive input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalUnobtrusive td{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #c8d4d8; 
+	color: #2e4653;
+	border-bottom: 2px solid #6c8a9b;
+	}
+
+
+html>body .SubTotalUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .SubTotalUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.SubTotalUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.SubTotalUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.SubTotalUnobtrusive a:hover, .SubTotalUnobtrusive a:active{
+	color: #a80019;
+	}
+
+.TotalUnobtrusive td{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #c8d4d8; 
+	color: #2e4653;
+	}
+
+
+html>body .TotalUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .TotalUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.TotalUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.TotalUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.TotalUnobtrusive a:hover, .TotalUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Form Options */
+.ButtonUnobtrusive { 
+	background-color: #6c8a9b; color: #f4f4f4; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 11px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarUnobtrusive { 
+	border: solid 1px #6c8a9b;
+	width: 100%;
+	}
+
+.CalendarWeekdayNameUnobtrusive{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #c8d4d8; 
+	color: #2e4653;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekdayNameUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekdayNameUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNameUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.CalendarWeekdayNameUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.CalendarWeekdayNameUnobtrusive a:hover, .CalendarWeekdayNameUnobtrusive a:active{
+	color: #a80019;
+	}
+
+.CalendarWeekendNameUnobtrusive{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #c8d4d8;	
+	color: #2e4653;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekendNameUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendNameUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNameUnobtrusive a:link {
+	color: #2e4653;
+	}
+
+.CalendarWeekendNameUnobtrusive a:visited{
+	color: #2e4653;
+	}
+
+.CalendarWeekendNameUnobtrusive a:link, .CalendarWeekendNameUnobtrusive a:visited{
+	color: #a80019;
+	}
+
+/* Calendar Day */
+.CalendarDayUnobtrusive{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: center;
+	background-color: #dbe3e5;	
+	color: #2e4653;
+	}
+
+
+html>body .CalendarDayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarDayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.CalendarDayUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.CalendarDayUnobtrusive a:hover, .CalendarDayUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendUnobtrusive{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: center;
+	background-color: #c8d4d8;	
+	color: #2e4653;
+	}
+
+
+html>body .CalendarWeekendUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.CalendarWeekendUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.CalendarWeekendUnobtrusive a:hover, .CalendarWeekendUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Calendar Today */
+.CalendarTodayUnobtrusive {
+	font-family: Arial; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #6c8a9b; border-top: 1px solid #6c8a9b;
+	text-align: center;
+	background-color: #dbe3e5;	
+	color: #2e4653;
+	}
+
+
+html>body .CalendarTodayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarTodayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.CalendarTodayUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.CalendarTodayUnobtrusive a:hover, .CalendarTodayUnobtrusive a:active {
+	color: #a80019;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayUnobtrusive {
+	font-family: Arial; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #6c8a9b; border-top: 1px solid #6c8a9b;
+	text-align: center;
+	background-color: #c8d4d8;	
+	color: #2e4653;
+	}
+
+
+html>body .CalendarWeekendTodayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.CalendarWeekendTodayUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.CalendarWeekendTodayUnobtrusive a:hover, .CalendarWeekendTodayUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayUnobtrusive{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: center;
+	background-color: #dbe3e5;	
+	color: #6c8a9b;
+	}
+
+
+html>body .CalendarOtherMonthDayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayUnobtrusive a:link {
+	color: #6c8a9b;
+	}
+
+.CalendarOtherMonthDayUnobtrusive a:visited{
+	color: #6c8a9b;
+	}
+
+.CalendarOtherMonthDayUnobtrusive a:hover, .CalendarOtherMonthDayUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayUnobtrusive {
+	font-family: Arial; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #6c8a9b; border-top: 1px solid #6c8a9b;
+	text-align: center;
+	background-color: #dbe3e5;	
+	color: #6c8a9b;
+	}
+
+
+html>body .CalendarOtherMonthTodayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayUnobtrusive a:link {
+	color: #6c8a9b;
+	}
+
+.CalendarOtherMonthTodayUnobtrusive a:visited{
+	color: #6c8a9b;
+	}
+
+.CalendarOtherMonthTodayUnobtrusive a:hover, .CalendarOtherMonthTodayUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendUnobtrusive {
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: center;
+	background-color: #c8d4d8;	
+	color: #6c8a9b;
+	}
+
+
+html>body .CalendarOtherMonthWeekendUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendUnobtrusive a:link {
+	color: #6c8a9b;
+	}
+
+.CalendarOtherMonthWeekendUnobtrusive a:visited{
+	color: #6c8a9b;
+	}
+
+.CalendarOtherMonthWeekendUnobtrusive a:hover, .CalendarOtherMonthWeekendUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayUnobtrusive {
+	font-family: Arial; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #6c8a9b; border-top: 1px solid #6c8a9b;
+	text-align: center;
+	color: #6c8a9b;
+	background-color: #c8d4d8;	
+	}
+	
+
+html>body .CalendarOtherMonthWeekendTodayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayUnobtrusive a:link {
+	color: #6c8a9b;
+	}
+
+.CalendarOtherMonthWeekendTodayUnobtrusive a:visited{
+	color: #6c8a9b;
+	}
+
+.CalendarOtherMonthWeekendTodayUnobtrusive a:hover, .CalendarOtherMonthWeekendTodayUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayUnobtrusive{
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #aec2c9;
+	color: #30494f;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+html>body .CalendarSelectedDayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarSelectedDayUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayUnobtrusive a:link {
+	color: #2e4653;
+	}
+
+.CalendarSelectedDayUnobtrusive a:visited{
+	color: #2e4653;
+	}
+
+.CalendarSelectedDayUnobtrusive a:hover, .CalendarSelectedDayUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorUnobtrusive {
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	background-color: #dbe3e5; color: #2e4653;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #2e4653;
+	}
+
+
+html>body .CalendarNavigatorUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.CalendarNavigatorUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.CalendarNavigatorUnobtrusive a:hover, .CalendarNavigatorUnobtrusive a:active{
+	color: #a80019;
+	}
+
+.CalendarNavigatorUnobtrusive img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorUnobtrusive td {
+	font-family: Arial; font-size: 80%;
+	}
+
+.CalendarNavigatorUnobtrusive th {
+	font-family: Arial; font-size: 80%;
+	}
+
+
+html>body .CalendarNavigatorUnobtrusive th, html>body .CalendarNavigatorUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorUnobtrusive th, * html body .CalendarNavigatorUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventUnobtrusive{
+	font-family: Arial; font-size: 80%;
+	text-align: left;
+	}
+
+
+html>body .CalendarEventUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarEventUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventUnobtrusive a:link {
+	color: #0000e0;
+	}
+
+.CalendarEventUnobtrusive a:visited{
+	color: #2929e0;
+	}
+
+.CalendarEventUnobtrusive a:hover, .CalendarEventUnobtrusive a:active{
+	color: #a80019;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thUnobtrusive { 
+	font-family: Arial; font-size: 80%;
+	font-weight: bold;
+}
+
+
+html>body .thUnobtrusive {
+	font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .thUnobtrusive {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderUnobtrusive .thUnobtrusive { 
+	font-family: Arial; font-size: 110%; font-weight: bold; text-align: center !important;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #f4f4f4;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+html>body .HeaderUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 140%; font-weight: bold; text-align: center !important;
+}
+
+
+/*ie6*/
+* html body .HeaderUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 140%; font-weight: bold; text-align: center !important;
+}
+/*end*/
+
+.CaptionUnobtrusive .thUnobtrusive { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+}
+
+
+html>body .CaptionUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowUnobtrusive .thUnobtrusive { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+	color: #2e4653;
+}
+
+.AltRowUnobtrusive .thUnobtrusive { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+	color: #2e4653;
+}
+
+.ControlsUnobtrusive .thUnobtrusive { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	background-color: #dbe3e5; color: #2e4653;
+	white-space: nowrap;
+	color: #2e4653;
+}
+
+.GroupCaptionUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 80%;
+	padding: 4px;
+	border-bottom: solid 1px #6c8a9b;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #c8d4d8; 
+	color: #2e4653;
+}
+
+
+html>body .GroupCaptionUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+html>body .RowUnobtrusive .thUnobtrusive, html>body .AltRowUnobtrusive .thUnobtrusive, html>body .ControlsUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 100%;
+}
+
+* html body .RowUnobtrusive .thUnobtrusive, * html body .AltRowUnobtrusive .thUnobtrusive, * html body .ControlsUnobtrusive .thUnobtrusive {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuUnobtrusive td {
+	font-family: Arial; font-size: 80%;
+}
+
+
+html>body .simpleMenuUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+} 
+
+
+/*ie6*/
+* html body .simpleMenuUnobtrusive td {
+	font-family: Arial; font-size: 100%;
+} 
+/*end*/
