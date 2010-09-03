@@ -1,0 +1,746 @@
+/* htb - Horizontal Top to Bottom Menu */
+
+/* begin  hide/show blocks */
+	.Pretentious .menu_htb .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Pretentious .menu_htb a {
+	background-color: #a23134;
+	
+	height: auto;
+	width: auto;
+}
+
+.Pretentious .menu_htb a:hover, .Pretentious .menu_htb li:hover>a, .Pretentious ul.menu_htb .selected a {
+	background-color: #710a0d;
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_htb a:hover, .Pretentious .menu_htb .adxmhoverA, .Pretentious ul.menu_htb .selected a {		/* li:hover>a selector */
+	background-color: #710a0d;
+	
+}
+
+.Pretentious .menu_htb .text {
+	position: relative;
+	color: #d5d5d5;
+	margin-left: 1.5em; margin-right: 1.5em; 
+	padding-top: .4em; padding-bottom: .4em;
+	width: auto;
+	height: auto;
+	.display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+html:first-child .Pretentious .menu_htb .text { /* Opera */
+	display: block;
+	float: none;
+}
+
+.Pretentious .menu_htb a:hover .text, .Pretentious .menu_htb li:hover>a .text, .Pretentious ul.menu_htb .selected a .text {
+	color: #d5d5d5;
+}
+
+/* <= ie6 */
+.Pretentious .menu_htb a:hover .text, .Pretentious .menu_htb .adxmhoverA .text, .Pretentious ul.menu_htb .selected a .text {
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_htb a {
+	border: 0;
+}
+
+.Pretentious .menu_htb a:hover, .Pretentious .menu_htb li:hover>a, .Pretentious ul.menu_htb .selected a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_htb a:hover, .Pretentious .menu_htb .adxmhoverA, .Pretentious ul.menu_htb .selected a {
+	border: 0;
+}
+
+.Pretentious .menu_htb, .Pretentious .menu_htb ul li {
+	background: transparent;
+}
+
+.Pretentious .menu_htb li {
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Pretentious .menu_htb ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Pretentious .menu_htb ul .submenu .right2 {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 25%;
+	width: 10px;
+	height: 11px;
+	background-color: transparent;
+	background-image: url('Images/SubmenuArrow.gif');background-repeat: no-repeat;background-position: center left;
+}
+
+.Pretentious .menu_htb ul>li .submenu .right2 {
+	right: 0;
+	top: 0;
+	width: 10px;
+	height: 100%;
+}
+
+.Pretentious .menu_htb li li {	/* create borders around each item */
+	border: 0;
+}
+
+.Pretentious .menu_htb ul .text, .Pretentious ul.menu_htb .selected ul .text {
+	position: relative;
+	color: #d5d5d5;
+	height: auto;
+	margin-left: .3em; margin-right: .3em;
+	padding-top: .4em; padding-bottom: .4em;
+	.display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+html:first-child .Pretentious .menu_htb ul .text { /* Opera */
+	display: block;
+	float: none;
+}
+
+.Pretentious .menu_htb ul a:hover .text, .Pretentious .menu_htb ul li:hover>a .text, .Pretentious ul.menu_htb .selected ul a:hover .text, .Pretentious ul.menu_htb .selected ul li:hover>a .text {
+	color: #d5d5d5;
+}
+
+/* <= ie6 */
+.Pretentious .menu_htb ul a:hover .text, .Pretentious .menu_htb ul .adxmhoverA .text, .Pretentious ul.menu_htb .selected ul a:hover .text, .Pretentious ul.menu_htb .selected ul .adxmhoverA .text {
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_htb ul a, .Pretentious ul.menu_htb .selected ul a {
+	border: 0;
+}
+
+.Pretentious .menu_htb ul a:hover, .Pretentious .menu_htb ul li:hover>a, .Pretentious ul.menu_htb .selected ul a:hover, .Pretentious ul.menu_htb .selected ul li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_htb ul a:hover, .Pretentious .menu_htb ul .adxmhoverA, .Pretentious ul.menu_htb .selected ul a:hover, .Pretentious ul.menu_htb .selected ul .adxmhoverA {
+	border: 0;
+}
+
+.Pretentious ul.menu_htb ul li a, .Pretentious ul.menu_htb .selected ul li a { 
+	width: 100%;
+	height: auto;
+	background-color: #a23134;
+	
+}
+
+.Pretentious .menu_htb ul a:hover, .Pretentious .menu_htb ul li:hover>a, .Pretentious ul.menu_htb .selected ul a:hover, .Pretentious ul.menu_htb .selected ul li:hover>a {
+	background-color: #710a0d;
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_htb ul a:hover, .Pretentious .menu_htb ul .adxmhoverA, .Pretentious ul.menu_htb .selected ul a:hover, .Pretentious ul.menu_htb .selected ul .adxmhoverA {
+	background-color: #710a0d;
+	
+}
+
+
+/* position of items */
+.Pretentious .menu_htb ul {
+	width: 10em;
+}
+
+.Pretentious .menu_htb a {
+	width: auto;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	float: left; /* is needed for ie, because it puts items to the next line */
+}
+
+html:first-child .Pretentious .menu_htb a { /* Opera */
+	float: none;
+}
+
+.Pretentious ul.menu_htb ul li a { 
+	width: 10em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+	float: none;
+}
+
+.Pretentious .menu_htb li li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+.Pretentious .menu_htb .adxmhoverUL .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+
+/* hbt - Horizontal Bottom to Top */
+
+
+/* vlr - Vertical Left to Right */
+
+/* begin  hide/show blocks */
+	.Pretentious .menu_vlr .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Pretentious .menu_vlr a {
+	width: 100%;
+	height: auto;
+	background-color: #a23134;
+	
+}
+
+.Pretentious .menu_vlr a:hover, .Pretentious .menu_vlr li:hover>a, .Pretentious ul.menu_vlr .selected a {
+	background-color: #710a0d;
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr a:hover, .Pretentious .menu_vlr .adxmhoverA, .Pretentious ul.menu_vlr .selected a {		/* li:hover>a selector */
+	background-color: #710a0d;
+	
+}
+
+.Pretentious .menu_vlr .text {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: #d5d5d5;
+	padding-top: .4em; padding-bottom: .4em;
+}
+
+.Pretentious .menu_vlr a:hover .text, .Pretentious .menu_vlr li:hover>a .text, .Pretentious ul.menu_vlr .selected a .text {
+	color: #d5d5d5;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr a:hover .text, .Pretentious .menu_vlr .adxmhoverA .text, .Pretentious ul.menu_vlr .selected a .text {		/* li:hover>a selector */
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_vlr a {
+	border: 0;
+}
+
+.Pretentious .menu_vlr a:hover, .Pretentious .menu_vlr li:hover>a, .Pretentious ul.menu_vlr .selected a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr a:hover, .Pretentious .menu_vlr .adxmhoverA, .Pretentious ul.menu_vlr .selected a {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Pretentious .menu_vlr, .Pretentious .menu_vlr ul li {
+	background: transparent;
+}
+
+.Pretentious .menu_vlr li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Pretentious .menu_vlr ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Pretentious .menu_vlr ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Pretentious .menu_vlr ul .text, .Pretentious ul.menu_vlr .selected ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	color: #d5d5d5;
+	text-align: left;
+	margin-left: .3em; margin-right: .3em;
+	padding-top: .4em; padding-bottom: .4em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Pretentious .menu_vlr ul a:hover .text, .Pretentious .menu_vlr ul li:hover>a .text, .Pretentious ul.menu_vlr .selected ul a:hover .text, .Pretentious ul.menu_vlr .selected ul li:hover>a .text {
+	color: #d5d5d5;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr ul a:hover .text, .Pretentious .menu_vlr ul .adxmhoverA .text, .Pretentious ul.menu_vlr .selected ul a:hover .text, .Pretentious ul.menu_vlr .selected ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_vlr ul a, .Pretentious ul.menu_vlr .selected ul a {
+	border: 0;
+}
+
+.Pretentious .menu_vlr ul a:hover, .Pretentious .menu_vlr ul li:hover>a, .Pretentious ul.menu_vlr .selected ul a:hover, .Pretentious ul.menu_vlr .selected ul li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr ul a:hover, .Pretentious .menu_vlr ul .adxmhoverA, .Pretentious ul.menu_vlr .selected ul a:hover, .Pretentious ul.menu_vlr .selected ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Pretentious .menu_vlr ul a, .Pretentious ul.menu_vlr .selected ul a {
+	width: 100%;
+	height: auto;
+	background-color: #a23134;
+	
+}
+
+.Pretentious .menu_vlr ul a:hover, .Pretentious .menu_vlr ul li:hover>a, .Pretentious ul.menu_vlr .selected ul a:hover, .Pretentious ul.menu_vlr .selected ul li:hover>a {
+	background-color: #710a0d;
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr ul a:hover, .Pretentious .menu_vlr ul .adxmhoverA, .Pretentious ul.menu_vlr .selected ul a:hover, .Pretentious ul.menu_vlr .selected ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #710a0d;
+	
+}
+
+/* position of items */
+.Pretentious .menu_vlr, .Pretentious .menu_vlr ul {
+	width: 10em;
+}
+
+.Pretentious .menu_vlr li {
+	clear: both;
+}
+
+.Pretentious .menu_vlr a {
+	width: 10em;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Pretentious .menu_vlr ul a {
+	width: 10em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.Pretentious .menu_vlr li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+.Pretentious .menu_vlr .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+
+/* vrl - Vertical Right to Left */
+
+
+/* vlr_tree - Vertical Left to Right Tree */
+
+/* styles that are used with javascript */
+	.Pretentious .menu_vlr_tree .menu_vlr_tree_openedA .text {
+		font-weight: bold;
+	}
+
+	.Pretentious .menu_vlr_tree .menu_vlr_tree_openedUL {
+		display: block; 
+		visibility: visible;
+	}
+	
+	.Pretentious .menu_vlr_tree .menu_vlr_tree_closedUL {
+		display: none;
+		visibility: hidden;
+	}
+/* begin  hide/show blocks */
+	.Pretentious .menu_vlr_tree .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Pretentious .menu_vlr_tree a {
+	width: 100%;
+	height: auto;
+	background-color: #710a0d;
+	
+}
+
+.Pretentious .menu_vlr_tree ul a {
+	background-color: #a23134;
+	
+}
+
+.Pretentious .menu_vlr_tree a:hover, .Pretentious .menu_vlr_tree li:hover>a {
+	background-color: #710a0d;
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr_tree a:hover, .Pretentious .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	background-color: #710a0d;
+	
+}
+
+.Pretentious .menu_vlr_tree ul a:hover, .Pretentious .menu_vlr_tree ul li:hover>a {
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr_tree ul a:hover, .Pretentious .menu_vlr_tree ul .adxmhoverA {		/* li:hover>a selector */
+	
+}
+
+.Pretentious .menu_vlr_tree .menu_vlr_tree_openedA {
+	background-color: #710a0d;
+	
+}
+
+.Pretentious .menu_vlr_tree .text {
+	position: relative;
+	height: auto;
+	text-align: center;
+	color: #d5d5d5;
+	width: 100%;
+	padding-top: .4em; padding-bottom: .4em;
+}
+
+.Pretentious .menu_vlr_tree ul .text {
+	width: auto;
+	text-align: left;
+	margin-left: .3em; margin-right: .3em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Pretentious .menu_vlr_tree a:hover .text, .Pretentious .menu_vlr_tree li:hover>a .text {
+	color: #d5d5d5;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr_tree a:hover .text, .Pretentious .menu_vlr_tree .adxmhoverA .text {		/* li:hover>a selector */
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_vlr_tree .menu_vlr_tree_openedA .text {
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_vlr_tree a {
+	border: 0;
+}
+
+.Pretentious .menu_vlr_tree ul a {
+	border: 0;
+}
+
+.Pretentious .menu_vlr_tree a:hover, .Pretentious .menu_vlr_tree li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr_tree a:hover, .Pretentious .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Pretentious .menu_vlr_tree .menu_vlr_tree_openedA {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr_tree a:hover, .Pretentious .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	background-color: #710a0d;
+	
+}
+
+.Pretentious .menu_vlr_tree, .Pretentious .menu_vlr_tree ul li {
+	background: transparent;
+}
+
+.Pretentious .menu_vlr_tree li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Pretentious .menu_vlr_tree ul ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Pretentious .menu_vlr_tree ul ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Pretentious .menu_vlr_tree ul ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	text-align: left;
+	color: #d5d5d5;
+	margin-left: .3em; margin-right: .3em;
+	padding-top: .4em; padding-bottom: .4em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Pretentious .menu_vlr_tree ul ul a:hover .text, .Pretentious .menu_vlr_tree ul ul li:hover>a .text {
+	color: #d5d5d5;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr_tree ul ul a:hover .text, .Pretentious .menu_vlr_tree ul ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_vlr_tree ul ul a {
+	border: 0;
+}
+
+.Pretentious .menu_vlr_tree ul ul a:hover, .Pretentious .menu_vlr_tree ul ul li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr_tree ul ul a:hover, .Pretentious .menu_vlr_tree ul ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Pretentious .menu_vlr_tree ul ul a {
+	width: 100%;
+	height: auto;
+	background-color: #a23134;
+	
+}
+
+.Pretentious .menu_vlr_tree ul ul a:hover, .Pretentious .menu_vlr_tree ul ul li:hover>a {
+	background-color: #710a0d;
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_vlr_tree ul ul a:hover, .Pretentious .menu_vlr_tree ul ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #710a0d;
+	
+}
+
+/* position of items */
+.Pretentious .menu_vlr_tree, .Pretentious .menu_vlr_tree ul {
+	width: 10em;
+}
+
+.Pretentious .menu_vlr_tree ul {
+	float: left;
+}
+
+.Pretentious .menu_vlr_tree ul ul {
+	float: none;
+}
+
+.Pretentious .menu_vlr_tree a {
+	width: 10em;
+	height: auto;
+	padding: 0;
+	float: left;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Pretentious .menu_vlr_tree ul ul a {
+	width: 10em;
+	height: auto;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+
+.Pretentious .menu_vlr_tree li {
+	float: left;
+}
+
+/* vrl_tree - Vertical Right to Left Tree */
+
+
+/* vrl - Vertical Right to Left */
+
+/* begin  hide/show blocks */
+	.Pretentious .menu_vrl .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Pretentious .menu_vrl a {
+	width: 100%;
+	height: auto;
+	background-color: #a23134;
+	
+}
+
+.Pretentious .menu_vrl a:hover, .Pretentious .menu_vrl li:hover>a, .Pretentious ul.menu_vrl .selected a {
+	background-color: #710a0d;
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_vrl a:hover, .Pretentious .menu_vrl .adxmhoverA, .Pretentious ul.menu_vrl .selected a {		/* li:hover>a selector */
+	background-color: #710a0d;
+	
+}
+
+.Pretentious .menu_vrl .text {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: #d5d5d5;
+	padding-top: .4em; padding-bottom: .4em;
+}
+
+.Pretentious .menu_vrl a:hover .text, .Pretentious .menu_vrl li:hover>a .text, .Pretentious ul.menu_vrl .selected a .text {
+	color: #d5d5d5;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vrl a:hover .text, .Pretentious .menu_vrl .adxmhoverA .text, .Pretentious ul.menu_vrl .selected a .text {		/* li:hover>a selector */
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_vrl a {
+	border: 0;
+}
+
+.Pretentious .menu_vrl a:hover, .Pretentious .menu_vrl li:hover>a, .Pretentious ul.menu_vrl .selected a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vrl a:hover, .Pretentious .menu_vrl .adxmhoverA, .Pretentious ul.menu_vrl .selected a {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Pretentious .menu_vrl, .Pretentious .menu_vrl ul li {
+	background: transparent;
+}
+
+.Pretentious .menu_vrl li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Pretentious .menu_vrl ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Pretentious .menu_vrl ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Pretentious .menu_vrl ul .text, .Pretentious ul.menu_vrl .selected ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	color: #d5d5d5;
+	text-align: left;
+	margin-left: .3em; margin-right: .3em;
+	padding-top: .4em; padding-bottom: .4em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Pretentious .menu_vrl ul a:hover .text, .Pretentious .menu_vrl ul li:hover>a .text, .Pretentious ul.menu_vrl .selected ul a:hover .text, .Pretentious ul.menu_vrl .selected ul li:hover>a .text {
+	color: #d5d5d5;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vrl ul a:hover .text, .Pretentious .menu_vrl ul .adxmhoverA .text, .Pretentious ul.menu_vrl .selected ul a:hover .text, .Pretentious ul.menu_vrl .selected ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #d5d5d5;
+}
+
+.Pretentious .menu_vrl ul a, .Pretentious ul.menu_vrl .selected ul a {
+	border: 0;
+}
+
+.Pretentious .menu_vrl ul a:hover, .Pretentious .menu_vrl ul li:hover>a, .Pretentious ul.menu_vrl .selected ul a:hover, .Pretentious ul.menu_vrl .selected ul li:hover>a {
+	border: 0;
+}
+
+/* <= ie6 */
+.Pretentious .menu_vrl ul a:hover, .Pretentious .menu_vrl ul .adxmhoverA, .Pretentious ul.menu_vrl .selected ul a:hover, .Pretentious ul.menu_vrl .selected ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0;
+}
+
+.Pretentious .menu_vrl ul a, .Pretentious ul.menu_vrl .selected ul a {
+	width: 100%;
+	height: auto;
+	background-color: #a23134;
+	
+}
+
+.Pretentious .menu_vrl ul a:hover, .Pretentious .menu_vrl ul li:hover>a, .Pretentious ul.menu_vrl .selected ul a:hover, .Pretentious ul.menu_vrl .selected ul li:hover>a {
+	background-color: #710a0d;
+	
+}
+
+/* <= ie6 */
+.Pretentious .menu_vrl ul a:hover, .Pretentious .menu_vrl ul .adxmhoverA, .Pretentious ul.menu_vrl .selected ul a:hover, .Pretentious ul.menu_vrl .selected ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #710a0d;
+	
+}
+
+/* position of items */
+.Pretentious .menu_vrl, .Pretentious .menu_vrl ul {
+	width: 10em;
+}
+
+.Pretentious .menu_vrl li {
+	clear: both;
+}
+
+.Pretentious .menu_vrl a {
+	width: 10em;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Pretentious .menu_vrl ul a {
+	width: 10em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.Pretentious .menu_vrl li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	right: 100%;
+}
+
+.Pretentious .menu_vrl .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	right: 100%;
+}
+

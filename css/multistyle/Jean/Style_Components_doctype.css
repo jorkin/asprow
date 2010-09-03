@@ -1,0 +1,1224 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorJean {
+	background-color: #82a5c4;
+	}
+
+.FormTitleBgColorJean {
+	background-color: #5281b1;
+	}
+
+.FormTitleFontColorJean {
+	color: #fcfcfc;
+	}
+
+.CaptionBgColorJean {
+	background-color: #d9dff0;
+	}
+
+.CaptionFontColorJean {
+	color: #5582b0;
+	}
+
+.DataBgColorJean {
+	background-color: #f4f4f1;
+	}
+
+.AltDataBgColorJean {
+	background-color: #e7e7e0;
+	}
+
+.DataFontColorJean {
+	color: #3e6893;
+	}
+
+.LinkColorJean {
+	color: #0000f7;
+	}
+
+.VisitedLinkColorJean {
+	color: #698cdb;
+	}
+
+.HoverLinkColorJean {
+	color: #f7007b;
+	}
+
+.ColorBgButtonJean {
+	background-color: #5281b1;
+}
+
+.ColorFontButtonJean {
+	color: #fcfcfc;
+}
+
+.ColorBgButtonPassiveJean {
+	background-color: #a7cff7;
+}
+
+.ColorFontButtonPassiveJean {
+	color: #fcfcfc;
+}
+
+
+
+.HeaderJean {
+	width: 100%;
+	}
+
+.HeaderJean th { 
+	font-family: Verdana; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif');  color: #fcfcfc;
+	width: 100%;
+	white-space: nowrap;
+	
+	}
+
+
+html>body .HeaderJean th {
+	font-family: Verdana; font-size: 140%; font-weight: bold; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeaderJean th {
+	font-family: Verdana; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.HeaderJean a:link { 
+	color: #fcfcfc;
+	}
+
+.HeaderJean a:visited { 
+	color: #fcfcfc;
+	}
+
+.HeaderJean a:hover, .CaptionJean a:active { 
+	color: #fcfcfc; text-decoration: none;
+	}
+
+.HeaderLeftJean { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightJean { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftJean img{
+	width: 21px; height: 18px;
+	}
+
+.HeaderRightJean img{
+	width: 21px; height: 18px;
+	}
+
+
+/* Grid Options */
+.GridJean { 
+	border: 1px solid #5281b1;
+	width: 100%;
+	}
+
+.CaptionJean th { 
+	font-family: Verdana; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	background-color: #d9dff0; color: #5582b0;
+	white-space: nowrap;
+	}
+
+.CaptionJean td { 
+	font-family: Verdana; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	background-color: #d9dff0; color: #5582b0;
+	white-space: nowrap;
+	}
+
+
+html>body .CaptionJean th, html>body .CaptionJean td {
+	font-family: Verdana; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionJean th, * html body .CaptionJean td {
+	font-family: Verdana; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionJean a:link { 
+	color: #5582b0;
+	}
+
+.CaptionJean a:visited { 
+	color: #5582b0;
+	}
+
+.CaptionJean a:hover, .CaptionJean a:active { 
+	color: #f7007b;
+	}
+
+.CaptionJean img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionJean input {
+	vertical-align: middle;
+	}
+
+.RowJean th { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #f4f4f1; color: #3e6893;
+	white-space: nowrap;
+	color: #3e6893;
+	}
+
+.RowJean td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f1; 
+	color: #3e6893;
+	}
+	
+
+html>body .RowJean th, html>body .RowJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .RowJean th, * html body .RowJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+caption.RowJean { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border: 1px solid #5281b1; border-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f1; 
+	color: #3e6893;
+	}
+
+
+html>body caption.RowJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body caption.RowJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.RowJean a:link { 
+	color: #0000f7;
+	}
+
+.RowJean a:visited { 
+	color: #698cdb;
+	}
+
+.RowJean a:hover, .RowJean a:active { 
+	color: #f7007b;
+	}
+
+.SeparatorJean{
+	color: #5281b1;
+	}
+
+.SeparatorJean td{
+	height: 1px;
+	}
+
+
+.AltRowJean th { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #f4f4f1; color: #3e6893;
+	white-space: nowrap;
+	color: #3e6893;
+	}
+
+.AltRowJean td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #e7e7e0; 
+	color: #3e6893;
+	}
+
+
+html>body .AltRowJean th, html>body .AltRowJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .AltRowJean th, * html body .AltRowJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.AltRowJean a:link { 
+	color: #0000f7;
+	}
+
+.AltRowJean a:visited { 
+	color: #698cdb;
+	}
+
+.AltRowJean a:hover, .AltRowJean a:active { 
+	color: #f7007b;
+	}
+
+.NoRecordsJean td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	text-align: left;
+	background-color: #f4f4f1; 
+	color: #3e6893;
+	vertical-align: top;
+	}
+
+.FooterJean td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #FFFFFF;
+	background-color: #f4f4f1; color: #3e6893;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #3e6893;
+	}
+
+
+html>body .NoRecordsJean td, html>body .FooterJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .NoRecordsJean td, * html body .FooterJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.FooterJean a:link { 
+	color: #0000f7;
+	}
+
+.FooterJean a:visited { 
+	color: #698cdb;
+	}
+
+.FooterJean a:hover, .FooterJean a:active { 
+	color: #f7007b;
+	}
+
+.FooterJean img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterJean input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordJean { 
+	border: 1px solid #5281b1;
+	width: 100%;
+	}
+
+.ErrorJean td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #f4f4f1; 
+	}
+
+
+* html>body .ErrorJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ErrorJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.ControlsJean th { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #f4f4f1; color: #3e6893;
+	white-space: nowrap;
+	color: #3e6893;
+	}
+
+.ControlsJean td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f1; 
+	color: #3e6893;
+	}
+	
+.BottomJean td { 
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #FFFFFF;
+	background-color: #f4f4f1; color: #3e6893;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #3e6893;
+	}
+
+
+html>body .ControlsJean th, html>body .ControlsJean td, html>body .BottomJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ControlsJean th, * html body .ControlsJean td, * html body .BottomJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.BottomJean a:link { 
+	color: #0000f7;
+	}
+
+.BottomJean a:visited { 
+	color: #698cdb;
+	}
+
+.BottomJean a:hover, .CaptionJean a:active { 
+	color: #f7007b;
+	}
+
+.BottomJean img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomJean input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionJean th{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e7e7e0; 
+	color: #3e6893;
+	}
+
+.GroupCaptionJean td{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f4f4f1; 
+	color: #3e6893;
+	}
+
+
+html>body .GroupCaptionJean th, html>body .GroupCaptionJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionJean th, * html body .GroupCaptionJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionJean a:link {
+	color: #5582b0;
+	}
+
+.GroupCaptionJean a:visited{
+	color: #5582b0;
+	}
+
+.GroupCaptionJean a:hover, .GroupCaptionJean a:active{
+	color: #f7007b;
+	}
+
+.GroupFooterJean td{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-top: 1px solid #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #d9dff0; 
+	color: #3e6893;
+	}
+
+
+html>body .GroupFooterJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupFooterJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterJean a:link {
+	color: #0000f7;
+	}
+
+.GroupFooterJean a:visited{
+	color: #698cdb;
+	}
+
+.GroupFooterJean a:hover, .GroupFooterJean a:active{
+	color: #f7007b;
+	}
+
+.GroupFooterJean img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterJean input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalJean td{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e7e7e0; 
+	color: #3e6893;
+	border-bottom: 2px solid #5281b1;
+	}
+
+
+html>body .SubTotalJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .SubTotalJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.SubTotalJean a:link {
+	color: #0000f7;
+	}
+
+.SubTotalJean a:visited{
+	color: #698cdb;
+	}
+
+.SubTotalJean a:hover, .SubTotalJean a:active{
+	color: #f7007b;
+	}
+
+.TotalJean td{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #e7e7e0; 
+	color: #3e6893;
+	}
+
+
+html>body .TotalJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .TotalJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.TotalJean a:link {
+	color: #0000f7;
+	}
+
+.TotalJean a:visited{
+	color: #698cdb;
+	}
+
+.TotalJean a:hover, .TotalJean a:active{
+	color: #f7007b;
+	}
+
+/* Form Options */
+.ButtonJean { 
+	background-color: #5281b1; color: #fcfcfc; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 11px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarJean { 
+	border: 1px solid #5281b1;
+	width: 100%;
+	}
+
+.CalendarWeekdayNameJean{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #e7e7e0; 
+	color: #3e6893;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekdayNameJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekdayNameJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNameJean a:link {
+	color: #0000f7;
+	}
+
+.CalendarWeekdayNameJean a:visited{
+	color: #698cdb;
+	}
+
+.CalendarWeekdayNameJean a:hover, .CalendarWeekdayNameJean a:active{
+	color: #f7007b;
+	}
+
+.CalendarWeekendNameJean{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #e7e7e0;	
+	color: #3e6893;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekendNameJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendNameJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNameJean a:link {
+	color: #5582b0;
+	}
+
+.CalendarWeekendNameJean a:visited{
+	color: #5582b0;
+	}
+
+.CalendarWeekendNameJean a:link, .CalendarWeekendNameJean a:visited{
+	color: #f7007b;
+	}
+
+/* Calendar Day */
+.CalendarDayJean{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #f4f4f1;	
+	color: #3e6893;
+	}
+
+
+html>body .CalendarDayJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarDayJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayJean a:link {
+	color: #0000f7;
+	}
+
+.CalendarDayJean a:visited{
+	color: #698cdb;
+	}
+
+.CalendarDayJean a:hover, .CalendarDayJean a:active{
+	color: #f7007b;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendJean{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #e7e7e0;	
+	color: #3e6893;
+	}
+
+
+html>body .CalendarWeekendJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendJean a:link {
+	color: #0000f7;
+	}
+
+.CalendarWeekendJean a:visited{
+	color: #698cdb;
+	}
+
+.CalendarWeekendJean a:hover, .CalendarWeekendJean a:active{
+	color: #f7007b;
+	}
+
+/* Calendar Today */
+.CalendarTodayJean {
+	font-family: Verdana; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #5281b1;
+	text-align: center;
+	background-color: #f4f4f1;	
+	color: #3e6893;
+	}
+
+
+html>body .CalendarTodayJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarTodayJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayJean a:link {
+	color: #0000f7;
+	}
+
+.CalendarTodayJean a:visited{
+	color: #698cdb;
+	}
+
+.CalendarTodayJean a:hover, .CalendarTodayJean a:active {
+	color: #f7007b;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayJean {
+	font-family: Verdana; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #5281b1;
+	text-align: center;
+	background-color: #e7e7e0;	
+	color: #3e6893;
+	}
+
+
+html>body .CalendarWeekendTodayJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayJean a:link {
+	color: #0000f7;
+	}
+
+.CalendarWeekendTodayJean a:visited{
+	color: #698cdb;
+	}
+
+.CalendarWeekendTodayJean a:hover, .CalendarWeekendTodayJean a:active{
+	color: #f7007b;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayJean{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #f4f4f1;	
+	color: #5281b1;
+	}
+
+
+html>body .CalendarOtherMonthDayJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayJean a:link {
+	color: #5281b1;
+	}
+
+.CalendarOtherMonthDayJean a:visited{
+	color: #5281b1;
+	}
+
+.CalendarOtherMonthDayJean a:hover, .CalendarOtherMonthDayJean a:active{
+	color: #f7007b;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayJean {
+	font-family: Verdana; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #5281b1;
+	text-align: center;
+	background-color: #f4f4f1;	
+	color: #5281b1;
+	}
+
+
+html>body .CalendarOtherMonthTodayJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayJean a:link {
+	color: #5281b1;
+	}
+
+.CalendarOtherMonthTodayJean a:visited{
+	color: #5281b1;
+	}
+
+.CalendarOtherMonthTodayJean a:hover, .CalendarOtherMonthTodayJean a:active{
+	color: #f7007b;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendJean {
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #e7e7e0;	
+	color: #5281b1;
+	}
+
+
+html>body .CalendarOtherMonthWeekendJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendJean a:link {
+	color: #5281b1;
+	}
+
+.CalendarOtherMonthWeekendJean a:visited{
+	color: #5281b1;
+	}
+
+.CalendarOtherMonthWeekendJean a:hover, .CalendarOtherMonthWeekendJean a:active{
+	color: #f7007b;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayJean {
+	font-family: Verdana; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #5281b1;
+	text-align: center;
+	color: #5281b1;
+	background-color: #e7e7e0;	
+	}
+	
+
+html>body .CalendarOtherMonthWeekendTodayJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayJean a:link {
+	color: #5281b1;
+	}
+
+.CalendarOtherMonthWeekendTodayJean a:visited{
+	color: #5281b1;
+	}
+
+.CalendarOtherMonthWeekendTodayJean a:hover, .CalendarOtherMonthWeekendTodayJean a:active{
+	color: #f7007b;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayJean{
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #d9dff0;
+	color: #5582b0;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+html>body .CalendarSelectedDayJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarSelectedDayJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayJean a:link {
+	color: #5582b0;
+	}
+
+.CalendarSelectedDayJean a:visited{
+	color: #5582b0;
+	}
+
+.CalendarSelectedDayJean a:hover, .CalendarSelectedDayJean a:active{
+	color: #f7007b;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorJean {
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	background-color: #f4f4f1; color: #3e6893;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #3e6893;
+	}
+
+
+html>body .CalendarNavigatorJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorJean a:link {
+	color: #0000f7;
+	}
+
+.CalendarNavigatorJean a:visited{
+	color: #698cdb;
+	}
+
+.CalendarNavigatorJean a:hover, .CalendarNavigatorJean a:active{
+	color: #f7007b;
+	}
+
+.CalendarNavigatorJean img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorJean td {
+	font-family: Verdana; font-size: 80%;
+	}
+
+.CalendarNavigatorJean th {
+	font-family: Verdana; font-size: 80%;
+	}
+
+
+html>body .CalendarNavigatorJean th, html>body .CalendarNavigatorJean td {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorJean th, * html body .CalendarNavigatorJean td {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventJean{
+	font-family: Verdana; font-size: 80%;
+	text-align: left;
+	}
+
+
+html>body .CalendarEventJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarEventJean {
+	font-family: Verdana; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventJean a:link {
+	color: #0000f7;
+	}
+
+.CalendarEventJean a:visited{
+	color: #698cdb;
+	}
+
+.CalendarEventJean a:hover, .CalendarEventJean a:active{
+	color: #f7007b;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thJean { 
+	font-family: Verdana; font-size: 80%;
+	font-weight: bold;
+}
+
+
+html>body .thJean {
+	font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .thJean {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderJean .thJean { 
+	font-family: Verdana; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif');  color: #fcfcfc;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+html>body .HeaderJean .thJean {
+	font-family: Verdana; font-size: 140%; font-weight: bold; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeaderJean .thJean {
+	font-family: Verdana; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.CaptionJean .thJean { 
+	font-family: Verdana; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF;
+	background-color: #d9dff0; color: #5582b0;
+	white-space: nowrap;
+}
+
+
+html>body .CaptionJean .thJean {
+	font-family: Verdana; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionJean .thJean {
+	font-family: Verdana; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowJean .thJean { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #f4f4f1; color: #3e6893;
+	white-space: nowrap;
+	color: #3e6893;
+}
+
+.AltRowJean .thJean { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #f4f4f1; color: #3e6893;
+	white-space: nowrap;
+	color: #3e6893;
+}
+
+.ControlsJean .thJean { 
+	font-family: Verdana; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	background-color: #f4f4f1; color: #3e6893;
+	white-space: nowrap;
+	color: #3e6893;
+}
+
+.GroupCaptionJean .thJean {
+	font-family: Verdana; font-size: 80%;
+	padding: 4px;
+	border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e7e7e0; 
+	color: #3e6893;
+}
+
+
+html>body .GroupCaptionJean .thJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+html>body .RowJean .thJean, html>body .AltRowJean .thJean, html>body .ControlsJean .thJean {
+	font-family: Verdana; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionJean .thJean {
+	font-family: Verdana; font-size: 100%;
+}
+
+* html body .RowJean .thJean, * html body .AltRowJean .thJean, * html body .ControlsJean .thJean {
+	font-family: Verdana; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuJean td {
+	font-family: Verdana; font-size: 80%;
+}
+
+
+html>body .simpleMenuJean td {
+	font-family: Verdana; font-size: 100%;
+} 
+
+
+/*ie6*/
+* html body .simpleMenuJean td {
+	font-family: Verdana; font-size: 100%;
+} 
+/*end*/

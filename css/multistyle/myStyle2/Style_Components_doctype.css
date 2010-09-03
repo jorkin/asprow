@@ -1,0 +1,1224 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColormyStyle2 {
+	background-color: #dde1d1;
+	}
+
+.FormTitleBgColormyStyle2 {
+	background-color: #635e57;
+	}
+
+.FormTitleFontColormyStyle2 {
+	color: #fcfcfc;
+	}
+
+.CaptionBgColormyStyle2 {
+	background-color: #dae1c1;
+	}
+
+.CaptionFontColormyStyle2 {
+	color: #000000;
+	}
+
+.DataBgColormyStyle2 {
+	background-color: #f4f4f4;
+	}
+
+.AltDataBgColormyStyle2 {
+	background-color: #f1f4e8;
+	}
+
+.DataFontColormyStyle2 {
+	color: #000000;
+	}
+
+.LinkColormyStyle2 {
+	color: #3b5dc5;
+	}
+
+.VisitedLinkColormyStyle2 {
+	color: #802626;
+	}
+
+.HoverLinkColormyStyle2 {
+	color: #f74a4a;
+	}
+
+.ColorBgButtonmyStyle2 {
+	background-color: #635e57;
+}
+
+.ColorFontButtonmyStyle2 {
+	color: #fcfcfc;
+}
+
+.ColorBgButtonPassivemyStyle2 {
+	background-color: #9c9893;
+}
+
+.ColorFontButtonPassivemyStyle2 {
+	color: #fcfcfc;
+}
+
+
+
+.HeadermyStyle2 {
+	width: 100%;
+	}
+
+.HeadermyStyle2 th { 
+	font-family: Tahoma; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 2px;
+	background-image: url('Images/HeaderBg.gif'); color: #fcfcfc;
+	width: 100%;
+	white-space: nowrap;
+	
+	}
+
+
+html>body .HeadermyStyle2 th {
+	font-family: Tahoma; font-size: 140%; font-weight: bold; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeadermyStyle2 th {
+	font-family: Tahoma; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.HeadermyStyle2 a:link { 
+	color: #fcfcfc;
+	}
+
+.HeadermyStyle2 a:visited { 
+	color: #fcfcfc;
+	}
+
+.HeadermyStyle2 a:hover, .CaptionmyStyle2 a:active { 
+	color: #fcfcfc; text-decoration: none;
+	}
+
+.HeaderLeftmyStyle2 { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightmyStyle2 { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftmyStyle2 img{
+	width: 9px;
+	}
+
+.HeaderRightmyStyle2 img{
+	width: 9px;
+	}
+
+
+/* Grid Options */
+.GridmyStyle2 { 
+	border: solid 2px #dae1c1; border-bottom: 0px;
+	width: 100%;
+	}
+
+.CaptionmyStyle2 th { 
+	font-family: Tahoma; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #dae1c1; color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionmyStyle2 td { 
+	font-family: Tahoma; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #dae1c1; color: #000000;
+	white-space: nowrap;
+	}
+
+
+html>body .CaptionmyStyle2 th, html>body .CaptionmyStyle2 td {
+	font-family: Tahoma; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionmyStyle2 th, * html body .CaptionmyStyle2 td {
+	font-family: Tahoma; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionmyStyle2 a:link { 
+	color: #000000;
+	}
+
+.CaptionmyStyle2 a:visited { 
+	color: #000000;
+	}
+
+.CaptionmyStyle2 a:hover, .CaptionmyStyle2 a:active { 
+	color: #f74a4a;
+	}
+
+.CaptionmyStyle2 img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionmyStyle2 input {
+	vertical-align: middle;
+	}
+
+.RowmyStyle2 th { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.RowmyStyle2 td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f4; 
+	color: #000000;
+	}
+	
+
+html>body .RowmyStyle2 th, html>body .RowmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .RowmyStyle2 th, * html body .RowmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+caption.RowmyStyle2 { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border: solid 2px #dae1c1; border-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f4; 
+	color: #000000;
+	}
+
+
+html>body caption.RowmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body caption.RowmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.RowmyStyle2 a:link { 
+	color: #3b5dc5;
+	}
+
+.RowmyStyle2 a:visited { 
+	color: #802626;
+	}
+
+.RowmyStyle2 a:hover, .RowmyStyle2 a:active { 
+	color: #f74a4a;
+	}
+
+.SeparatormyStyle2{
+	color: #635e57;
+	}
+
+.SeparatormyStyle2 td{
+	height: 1px;
+	}
+
+
+.AltRowmyStyle2 th { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.AltRowmyStyle2 td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f1f4e8; 
+	color: #000000;
+	}
+
+
+html>body .AltRowmyStyle2 th, html>body .AltRowmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .AltRowmyStyle2 th, * html body .AltRowmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.AltRowmyStyle2 a:link { 
+	color: #3b5dc5;
+	}
+
+.AltRowmyStyle2 a:visited { 
+	color: #802626;
+	}
+
+.AltRowmyStyle2 a:hover, .AltRowmyStyle2 a:active { 
+	color: #f74a4a;
+	}
+
+.NoRecordsmyStyle2 td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	background-color: #f4f4f4; 
+	color: #000000;
+	vertical-align: top;
+	}
+
+.FootermyStyle2 td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #dae1c1; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .NoRecordsmyStyle2 td, html>body .FootermyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .NoRecordsmyStyle2 td, * html body .FootermyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.FootermyStyle2 a:link { 
+	color: #3b5dc5;
+	}
+
+.FootermyStyle2 a:visited { 
+	color: #802626;
+	}
+
+.FootermyStyle2 a:hover, .FootermyStyle2 a:active { 
+	color: #f74a4a;
+	}
+
+.FootermyStyle2 img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FootermyStyle2 input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordmyStyle2 { 
+	border: solid 2px #dae1c1; border-bottom: 0px;
+	width: 100%;
+	}
+
+.ErrormyStyle2 td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #f4f4f4; 
+	}
+
+
+* html>body .ErrormyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ErrormyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.ControlsmyStyle2 th { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.ControlsmyStyle2 td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f4; 
+	color: #000000;
+	}
+	
+.BottommyStyle2 td { 
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #dae1c1; color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .ControlsmyStyle2 th, html>body .ControlsmyStyle2 td, html>body .BottommyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ControlsmyStyle2 th, * html body .ControlsmyStyle2 td, * html body .BottommyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.BottommyStyle2 a:link { 
+	color: #3b5dc5;
+	}
+
+.BottommyStyle2 a:visited { 
+	color: #802626;
+	}
+
+.BottommyStyle2 a:hover, .CaptionmyStyle2 a:active { 
+	color: #f74a4a;
+	}
+
+.BottommyStyle2 img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottommyStyle2 input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionmyStyle2 th{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f1f4e8; 
+	color: #000000;
+	}
+
+.GroupCaptionmyStyle2 td{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f4f4f4; 
+	color: #000000;
+	}
+
+
+html>body .GroupCaptionmyStyle2 th, html>body .GroupCaptionmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionmyStyle2 th, * html body .GroupCaptionmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionmyStyle2 a:link {
+	color: #000000;
+	}
+
+.GroupCaptionmyStyle2 a:visited{
+	color: #000000;
+	}
+
+.GroupCaptionmyStyle2 a:hover, .GroupCaptionmyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+.GroupFootermyStyle2 td{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #dae1c1; 
+	color: #000000;
+	}
+
+
+html>body .GroupFootermyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupFootermyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.GroupFootermyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.GroupFootermyStyle2 a:visited{
+	color: #802626;
+	}
+
+.GroupFootermyStyle2 a:hover, .GroupFootermyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+.GroupFootermyStyle2 img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFootermyStyle2 input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalmyStyle2 td{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f1f4e8; 
+	color: #000000;
+	border-bottom: 2px solid #635e57;
+	}
+
+
+html>body .SubTotalmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .SubTotalmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.SubTotalmyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.SubTotalmyStyle2 a:visited{
+	color: #802626;
+	}
+
+.SubTotalmyStyle2 a:hover, .SubTotalmyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+.TotalmyStyle2 td{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #f1f4e8; 
+	color: #000000;
+	}
+
+
+html>body .TotalmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .TotalmyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.TotalmyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.TotalmyStyle2 a:visited{
+	color: #802626;
+	}
+
+.TotalmyStyle2 a:hover, .TotalmyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Form Options */
+.ButtonmyStyle2 { 
+	background-color: #f1f4e8; color: #000000; border: solid 1px #635e57; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 11px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarmyStyle2 { 
+	border: solid 2px #dae1c1;
+	width: 100%;
+	}
+
+.CalendarWeekdayNamemyStyle2{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #f1f4e8; 
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekdayNamemyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekdayNamemyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNamemyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.CalendarWeekdayNamemyStyle2 a:visited{
+	color: #802626;
+	}
+
+.CalendarWeekdayNamemyStyle2 a:hover, .CalendarWeekdayNamemyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+.CalendarWeekendNamemyStyle2{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #f1f4e8;	
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekendNamemyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendNamemyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNamemyStyle2 a:link {
+	color: #000000;
+	}
+
+.CalendarWeekendNamemyStyle2 a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendNamemyStyle2 a:link, .CalendarWeekendNamemyStyle2 a:visited{
+	color: #f74a4a;
+	}
+
+/* Calendar Day */
+.CalendarDaymyStyle2{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: center;
+	background-color: #f4f4f4;	
+	color: #000000;
+	}
+
+
+html>body .CalendarDaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarDaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarDaymyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.CalendarDaymyStyle2 a:visited{
+	color: #802626;
+	}
+
+.CalendarDaymyStyle2 a:hover, .CalendarDaymyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendmyStyle2{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: center;
+	background-color: #f1f4e8;	
+	color: #000000;
+	}
+
+
+html>body .CalendarWeekendmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendmyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.CalendarWeekendmyStyle2 a:visited{
+	color: #802626;
+	}
+
+.CalendarWeekendmyStyle2 a:hover, .CalendarWeekendmyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Calendar Today */
+.CalendarTodaymyStyle2 {
+	font-family: Tahoma; font-size: 80%;
+	padding: 0px;
+	border: 3px solid #dae1c1; border-top: 1px solid #dae1c1;
+	text-align: center;
+	background-color: #f4f4f4;	
+	color: #000000;
+	}
+
+
+html>body .CalendarTodaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarTodaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodaymyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.CalendarTodaymyStyle2 a:visited{
+	color: #802626;
+	}
+
+.CalendarTodaymyStyle2 a:hover, .CalendarTodaymyStyle2 a:active {
+	color: #f74a4a;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodaymyStyle2 {
+	font-family: Tahoma; font-size: 80%;
+	padding: 0px;
+	border: 3px solid #dae1c1; border-top: 1px solid #dae1c1;
+	text-align: center;
+	background-color: #f1f4e8;	
+	color: #000000;
+	}
+
+
+html>body .CalendarWeekendTodaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTodaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodaymyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.CalendarWeekendTodaymyStyle2 a:visited{
+	color: #802626;
+	}
+
+.CalendarWeekendTodaymyStyle2 a:hover, .CalendarWeekendTodaymyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDaymyStyle2{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: center;
+	background-color: #f4f4f4;	
+	color: #635e57;
+	}
+
+
+html>body .CalendarOtherMonthDaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDaymyStyle2 a:link {
+	color: #635e57;
+	}
+
+.CalendarOtherMonthDaymyStyle2 a:visited{
+	color: #635e57;
+	}
+
+.CalendarOtherMonthDaymyStyle2 a:hover, .CalendarOtherMonthDaymyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodaymyStyle2 {
+	font-family: Tahoma; font-size: 80%;
+	padding: 0px;
+	border: 3px solid #dae1c1; border-top: 1px solid #dae1c1;
+	text-align: center;
+	background-color: #f4f4f4;	
+	color: #635e57;
+	}
+
+
+html>body .CalendarOtherMonthTodaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodaymyStyle2 a:link {
+	color: #635e57;
+	}
+
+.CalendarOtherMonthTodaymyStyle2 a:visited{
+	color: #635e57;
+	}
+
+.CalendarOtherMonthTodaymyStyle2 a:hover, .CalendarOtherMonthTodaymyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendmyStyle2 {
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: center;
+	background-color: #f1f4e8;	
+	color: #635e57;
+	}
+
+
+html>body .CalendarOtherMonthWeekendmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendmyStyle2 a:link {
+	color: #635e57;
+	}
+
+.CalendarOtherMonthWeekendmyStyle2 a:visited{
+	color: #635e57;
+	}
+
+.CalendarOtherMonthWeekendmyStyle2 a:hover, .CalendarOtherMonthWeekendmyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodaymyStyle2 {
+	font-family: Tahoma; font-size: 80%;
+	padding: 0px;
+	border: 3px solid #dae1c1; border-top: 1px solid #dae1c1;
+	text-align: center;
+	color: #635e57;
+	background-color: #f1f4e8;	
+	}
+	
+
+html>body .CalendarOtherMonthWeekendTodaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodaymyStyle2 a:link {
+	color: #635e57;
+	}
+
+.CalendarOtherMonthWeekendTodaymyStyle2 a:visited{
+	color: #635e57;
+	}
+
+.CalendarOtherMonthWeekendTodaymyStyle2 a:hover, .CalendarOtherMonthWeekendTodaymyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDaymyStyle2{
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #dae1c1;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+html>body .CalendarSelectedDaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarSelectedDaymyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDaymyStyle2 a:link {
+	color: #000000;
+	}
+
+.CalendarSelectedDaymyStyle2 a:visited{
+	color: #000000;
+	}
+
+.CalendarSelectedDaymyStyle2 a:hover, .CalendarSelectedDaymyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatormyStyle2 {
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	background-color: #dae1c1; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .CalendarNavigatormyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatormyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatormyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.CalendarNavigatormyStyle2 a:visited{
+	color: #802626;
+	}
+
+.CalendarNavigatormyStyle2 a:hover, .CalendarNavigatormyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+.CalendarNavigatormyStyle2 img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatormyStyle2 td {
+	font-family: Tahoma; font-size: 80%;
+	}
+
+.CalendarNavigatormyStyle2 th {
+	font-family: Tahoma; font-size: 80%;
+	}
+
+
+html>body .CalendarNavigatormyStyle2 th, html>body .CalendarNavigatormyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatormyStyle2 th, * html body .CalendarNavigatormyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventmyStyle2{
+	font-family: Tahoma; font-size: 80%;
+	text-align: left;
+	}
+
+
+html>body .CalendarEventmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarEventmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventmyStyle2 a:link {
+	color: #3b5dc5;
+	}
+
+.CalendarEventmyStyle2 a:visited{
+	color: #802626;
+	}
+
+.CalendarEventmyStyle2 a:hover, .CalendarEventmyStyle2 a:active{
+	color: #f74a4a;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thmyStyle2 { 
+	font-family: Tahoma; font-size: 80%;
+	font-weight: bold;
+}
+
+
+html>body .thmyStyle2 {
+	font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .thmyStyle2 {
+	font-size: 100%;
+}
+/*end*/
+
+.HeadermyStyle2 .thmyStyle2 { 
+	font-family: Tahoma; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 2px;
+	background-image: url('Images/HeaderBg.gif'); color: #fcfcfc;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+html>body .HeadermyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 140%; font-weight: bold; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeadermyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.CaptionmyStyle2 .thmyStyle2 { 
+	font-family: Tahoma; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #dae1c1; color: #000000;
+	white-space: nowrap;
+}
+
+
+html>body .CaptionmyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionmyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowmyStyle2 .thmyStyle2 { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.AltRowmyStyle2 .thmyStyle2 { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.ControlsmyStyle2 .thmyStyle2 { 
+	font-family: Tahoma; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.GroupCaptionmyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 80%;
+	padding: 2px;
+	border-bottom: solid 2px #dae1c1;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f1f4e8; 
+	color: #000000;
+}
+
+
+html>body .GroupCaptionmyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+html>body .RowmyStyle2 .thmyStyle2, html>body .AltRowmyStyle2 .thmyStyle2, html>body .ControlsmyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionmyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 100%;
+}
+
+* html body .RowmyStyle2 .thmyStyle2, * html body .AltRowmyStyle2 .thmyStyle2, * html body .ControlsmyStyle2 .thmyStyle2 {
+	font-family: Tahoma; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenumyStyle2 td {
+	font-family: Tahoma; font-size: 80%;
+}
+
+
+html>body .simpleMenumyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+} 
+
+
+/*ie6*/
+* html body .simpleMenumyStyle2 td {
+	font-family: Tahoma; font-size: 100%;
+} 
+/*end*/

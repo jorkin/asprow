@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Theme Name="None" Version="3.0" ReadOnly="True">
+	<Library FormTitle="1" Padding="3" Border="3" Font="Arial" Section="14" Filling="2" Background="1" ButtonShape="1" ButtonEffect="1" Color="Gray DeLuxe" Brightness="0" Saturation="0" ButtonArrow="1"/>
+	<Items>
+	</Items>
+	<Files>
+	</Files>
+</Theme>

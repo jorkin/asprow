@@ -1,0 +1,1224 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorTile {
+	background-color: #e1d7cd;
+	}
+
+.FormTitleBgColorTile {
+	background-color: #ca7139;
+	}
+
+.FormTitleFontColorTile {
+	color: #fcfcfc;
+	}
+
+.CaptionBgColorTile {
+	background-color: #ead1b7;
+	}
+
+.CaptionFontColorTile {
+	color: #000000;
+	}
+
+.DataBgColorTile {
+	background-color: #f4f4f4;
+	}
+
+.AltDataBgColorTile {
+	background-color: #f9ecdf;
+	}
+
+.DataFontColorTile {
+	color: #000000;
+	}
+
+.LinkColorTile {
+	color: #1d47c5;
+	}
+
+.VisitedLinkColorTile {
+	color: #801313;
+	}
+
+.HoverLinkColorTile {
+	color: #f72525;
+	}
+
+.ColorBgButtonTile {
+	background-color: #ca7139;
+}
+
+.ColorFontButtonTile {
+	color: #fcfcfc;
+}
+
+.ColorBgButtonPassiveTile {
+	background-color: #f7b58c;
+}
+
+.ColorFontButtonPassiveTile {
+	color: #fcfcfc;
+}
+
+
+
+.HeaderTile {
+	width: 100%;
+	}
+
+.HeaderTile th { 
+	font-family: Arial; font-size: 90%; font-weight: bold; text-align: center !important;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #fcfcfc;
+	width: 100%;
+	white-space: nowrap;
+	
+	}
+
+
+html>body .HeaderTile th {
+	font-family: Arial; font-size: 130%; font-weight: bold; text-align: center !important;
+}
+
+
+/*ie6*/
+* html body .HeaderTile th {
+	font-family: Arial; font-size: 130%; font-weight: bold; text-align: center !important;
+}
+/*end*/
+
+.HeaderTile a:link { 
+	color: #fcfcfc;
+	}
+
+.HeaderTile a:visited { 
+	color: #fcfcfc;
+	}
+
+.HeaderTile a:hover, .CaptionTile a:active { 
+	color: #fcfcfc; text-decoration: none;
+	}
+
+.HeaderLeftTile { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightTile { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftTile img{
+	width: 9px;
+	}
+
+.HeaderRightTile img{
+	width: 9px;
+	}
+
+
+/* Grid Options */
+.GridTile { 
+	
+	width: 100%;
+	}
+
+.CaptionTile th { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionTile td { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+
+html>body .CaptionTile th, html>body .CaptionTile td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionTile th, * html body .CaptionTile td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionTile a:link { 
+	color: #000000;
+	}
+
+.CaptionTile a:visited { 
+	color: #000000;
+	}
+
+.CaptionTile a:hover, .CaptionTile a:active { 
+	color: #f72525;
+	}
+
+.CaptionTile img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionTile input {
+	vertical-align: middle;
+	}
+
+.RowTile th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.RowTile td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f4; 
+	color: #000000;
+	}
+	
+
+html>body .RowTile th, html>body .RowTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .RowTile th, * html body .RowTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+caption.RowTile { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f4; 
+	color: #000000;
+	}
+
+
+html>body caption.RowTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body caption.RowTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.RowTile a:link { 
+	color: #1d47c5;
+	}
+
+.RowTile a:visited { 
+	color: #801313;
+	}
+
+.RowTile a:hover, .RowTile a:active { 
+	color: #f72525;
+	}
+
+.SeparatorTile{
+	color: #ca7139;
+	}
+
+.SeparatorTile td{
+	height: 1px;
+	}
+
+
+.AltRowTile th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.AltRowTile td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f9ecdf; 
+	color: #000000;
+	}
+
+
+html>body .AltRowTile th, html>body .AltRowTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .AltRowTile th, * html body .AltRowTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.AltRowTile a:link { 
+	color: #1d47c5;
+	}
+
+.AltRowTile a:visited { 
+	color: #801313;
+	}
+
+.AltRowTile a:hover, .AltRowTile a:active { 
+	color: #f72525;
+	}
+
+.NoRecordsTile td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	background-color: #f4f4f4; 
+	color: #000000;
+	vertical-align: top;
+	}
+
+.FooterTile td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #ead1b7; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .NoRecordsTile td, html>body .FooterTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .NoRecordsTile td, * html body .FooterTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.FooterTile a:link { 
+	color: #1d47c5;
+	}
+
+.FooterTile a:visited { 
+	color: #801313;
+	}
+
+.FooterTile a:hover, .FooterTile a:active { 
+	color: #f72525;
+	}
+
+.FooterTile img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterTile input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordTile { 
+	
+	width: 100%;
+	}
+
+.ErrorTile td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #f4f4f4; 
+	}
+
+
+* html>body .ErrorTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ErrorTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.ControlsTile th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.ControlsTile td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f4f4f4; 
+	color: #000000;
+	}
+	
+.BottomTile td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #ead1b7; color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .ControlsTile th, html>body .ControlsTile td, html>body .BottomTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ControlsTile th, * html body .ControlsTile td, * html body .BottomTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.BottomTile a:link { 
+	color: #1d47c5;
+	}
+
+.BottomTile a:visited { 
+	color: #801313;
+	}
+
+.BottomTile a:hover, .CaptionTile a:active { 
+	color: #f72525;
+	}
+
+.BottomTile img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomTile input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionTile th{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f9ecdf; 
+	color: #000000;
+	}
+
+.GroupCaptionTile td{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f4f4f4; 
+	color: #000000;
+	}
+
+
+html>body .GroupCaptionTile th, html>body .GroupCaptionTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionTile th, * html body .GroupCaptionTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionTile a:link {
+	color: #000000;
+	}
+
+.GroupCaptionTile a:visited{
+	color: #000000;
+	}
+
+.GroupCaptionTile a:hover, .GroupCaptionTile a:active{
+	color: #f72525;
+	}
+
+.GroupFooterTile td{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #ead1b7; 
+	color: #000000;
+	}
+
+
+html>body .GroupFooterTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupFooterTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterTile a:link {
+	color: #1d47c5;
+	}
+
+.GroupFooterTile a:visited{
+	color: #801313;
+	}
+
+.GroupFooterTile a:hover, .GroupFooterTile a:active{
+	color: #f72525;
+	}
+
+.GroupFooterTile img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterTile input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalTile td{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f9ecdf; 
+	color: #000000;
+	border-bottom: 2px solid #ca7139;
+	}
+
+
+html>body .SubTotalTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .SubTotalTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.SubTotalTile a:link {
+	color: #1d47c5;
+	}
+
+.SubTotalTile a:visited{
+	color: #801313;
+	}
+
+.SubTotalTile a:hover, .SubTotalTile a:active{
+	color: #f72525;
+	}
+
+.TotalTile td{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #f9ecdf; 
+	color: #000000;
+	}
+
+
+html>body .TotalTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .TotalTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.TotalTile a:link {
+	color: #1d47c5;
+	}
+
+.TotalTile a:visited{
+	color: #801313;
+	}
+
+.TotalTile a:hover, .TotalTile a:active{
+	color: #f72525;
+	}
+
+/* Form Options */
+.ButtonTile { 
+	background-color: #ca7139; color: #fcfcfc; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 10px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarTile { 
+	
+	width: 100%;
+	}
+
+.CalendarWeekdayNameTile{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #f9ecdf; 
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekdayNameTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekdayNameTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNameTile a:link {
+	color: #1d47c5;
+	}
+
+.CalendarWeekdayNameTile a:visited{
+	color: #801313;
+	}
+
+.CalendarWeekdayNameTile a:hover, .CalendarWeekdayNameTile a:active{
+	color: #f72525;
+	}
+
+.CalendarWeekendNameTile{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #f9ecdf;	
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekendNameTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendNameTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNameTile a:link {
+	color: #000000;
+	}
+
+.CalendarWeekendNameTile a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendNameTile a:link, .CalendarWeekendNameTile a:visited{
+	color: #f72525;
+	}
+
+/* Calendar Day */
+.CalendarDayTile{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	background-color: #f4f4f4;	
+	color: #000000;
+	}
+
+
+html>body .CalendarDayTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarDayTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayTile a:link {
+	color: #1d47c5;
+	}
+
+.CalendarDayTile a:visited{
+	color: #801313;
+	}
+
+.CalendarDayTile a:hover, .CalendarDayTile a:active{
+	color: #f72525;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendTile{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	background-color: #f9ecdf;	
+	color: #000000;
+	}
+
+
+html>body .CalendarWeekendTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTile a:link {
+	color: #1d47c5;
+	}
+
+.CalendarWeekendTile a:visited{
+	color: #801313;
+	}
+
+.CalendarWeekendTile a:hover, .CalendarWeekendTile a:active{
+	color: #f72525;
+	}
+
+/* Calendar Today */
+.CalendarTodayTile {
+	font-family: Arial; font-size: 70%;
+	padding: 2px;
+	border: 2px solid #ca7139;
+	text-align: center;
+	background-color: #f4f4f4;	
+	color: #000000;
+	}
+
+
+html>body .CalendarTodayTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarTodayTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayTile a:link {
+	color: #1d47c5;
+	}
+
+.CalendarTodayTile a:visited{
+	color: #801313;
+	}
+
+.CalendarTodayTile a:hover, .CalendarTodayTile a:active {
+	color: #f72525;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayTile {
+	font-family: Arial; font-size: 70%;
+	padding: 2px;
+	border: 2px solid #ca7139;
+	text-align: center;
+	background-color: #f9ecdf;	
+	color: #000000;
+	}
+
+
+html>body .CalendarWeekendTodayTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayTile a:link {
+	color: #1d47c5;
+	}
+
+.CalendarWeekendTodayTile a:visited{
+	color: #801313;
+	}
+
+.CalendarWeekendTodayTile a:hover, .CalendarWeekendTodayTile a:active{
+	color: #f72525;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayTile{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	background-color: #f4f4f4;	
+	color: #ca7139;
+	}
+
+
+html>body .CalendarOtherMonthDayTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayTile a:link {
+	color: #ca7139;
+	}
+
+.CalendarOtherMonthDayTile a:visited{
+	color: #ca7139;
+	}
+
+.CalendarOtherMonthDayTile a:hover, .CalendarOtherMonthDayTile a:active{
+	color: #f72525;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayTile {
+	font-family: Arial; font-size: 70%;
+	padding: 2px;
+	border: 2px solid #ca7139;
+	text-align: center;
+	background-color: #f4f4f4;	
+	color: #ca7139;
+	}
+
+
+html>body .CalendarOtherMonthTodayTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayTile a:link {
+	color: #ca7139;
+	}
+
+.CalendarOtherMonthTodayTile a:visited{
+	color: #ca7139;
+	}
+
+.CalendarOtherMonthTodayTile a:hover, .CalendarOtherMonthTodayTile a:active{
+	color: #f72525;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendTile {
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	background-color: #f9ecdf;	
+	color: #ca7139;
+	}
+
+
+html>body .CalendarOtherMonthWeekendTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTile a:link {
+	color: #ca7139;
+	}
+
+.CalendarOtherMonthWeekendTile a:visited{
+	color: #ca7139;
+	}
+
+.CalendarOtherMonthWeekendTile a:hover, .CalendarOtherMonthWeekendTile a:active{
+	color: #f72525;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayTile {
+	font-family: Arial; font-size: 70%;
+	padding: 2px;
+	border: 2px solid #ca7139;
+	text-align: center;
+	color: #ca7139;
+	background-color: #f9ecdf;	
+	}
+	
+
+html>body .CalendarOtherMonthWeekendTodayTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayTile a:link {
+	color: #ca7139;
+	}
+
+.CalendarOtherMonthWeekendTodayTile a:visited{
+	color: #ca7139;
+	}
+
+.CalendarOtherMonthWeekendTodayTile a:hover, .CalendarOtherMonthWeekendTodayTile a:active{
+	color: #f72525;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayTile{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #ead1b7;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+html>body .CalendarSelectedDayTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarSelectedDayTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayTile a:link {
+	color: #000000;
+	}
+
+.CalendarSelectedDayTile a:visited{
+	color: #000000;
+	}
+
+.CalendarSelectedDayTile a:hover, .CalendarSelectedDayTile a:active{
+	color: #f72525;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorTile {
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	background-color: #ead1b7; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .CalendarNavigatorTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorTile a:link {
+	color: #1d47c5;
+	}
+
+.CalendarNavigatorTile a:visited{
+	color: #801313;
+	}
+
+.CalendarNavigatorTile a:hover, .CalendarNavigatorTile a:active{
+	color: #f72525;
+	}
+
+.CalendarNavigatorTile img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorTile td {
+	font-family: Arial; font-size: 70%;
+	}
+
+.CalendarNavigatorTile th {
+	font-family: Arial; font-size: 70%;
+	}
+
+
+html>body .CalendarNavigatorTile th, html>body .CalendarNavigatorTile td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorTile th, * html body .CalendarNavigatorTile td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventTile{
+	font-family: Arial; font-size: 70%;
+	text-align: left;
+	}
+
+
+html>body .CalendarEventTile {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarEventTile {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventTile a:link {
+	color: #1d47c5;
+	}
+
+.CalendarEventTile a:visited{
+	color: #801313;
+	}
+
+.CalendarEventTile a:hover, .CalendarEventTile a:active{
+	color: #f72525;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thTile { 
+	font-family: Arial; font-size: 70%;
+	font-weight: bold;
+}
+
+
+html>body .thTile {
+	font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .thTile {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderTile .thTile { 
+	font-family: Arial; font-size: 90%; font-weight: bold; text-align: center !important;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #fcfcfc;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+html>body .HeaderTile .thTile {
+	font-family: Arial; font-size: 130%; font-weight: bold; text-align: center !important;
+}
+
+
+/*ie6*/
+* html body .HeaderTile .thTile {
+	font-family: Arial; font-size: 130%; font-weight: bold; text-align: center !important;
+}
+/*end*/
+
+.CaptionTile .thTile { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+}
+
+
+html>body .CaptionTile .thTile {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionTile .thTile {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowTile .thTile { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.AltRowTile .thTile { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.ControlsTile .thTile { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f4f4f4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.GroupCaptionTile .thTile {
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f9ecdf; 
+	color: #000000;
+}
+
+
+html>body .GroupCaptionTile .thTile {
+	font-family: Arial; font-size: 100%;
+}
+
+html>body .RowTile .thTile, html>body .AltRowTile .thTile, html>body .ControlsTile .thTile {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionTile .thTile {
+	font-family: Arial; font-size: 100%;
+}
+
+* html body .RowTile .thTile, * html body .AltRowTile .thTile, * html body .ControlsTile .thTile {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuTile td {
+	font-family: Arial; font-size: 70%;
+}
+
+
+html>body .simpleMenuTile td {
+	font-family: Arial; font-size: 100%;
+} 
+
+
+/*ie6*/
+* html body .simpleMenuTile td {
+	font-family: Arial; font-size: 100%;
+} 
+/*end*/

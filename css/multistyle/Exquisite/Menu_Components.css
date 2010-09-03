@@ -1,0 +1,746 @@
+/* htb - Horizontal Top to Bottom Menu */
+
+/* begin  hide/show blocks */
+	.Exquisite .menu_htb .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Exquisite .menu_htb a {
+	background-color: #dbd8d8;
+	
+	height: auto;
+	width: auto;
+}
+
+.Exquisite .menu_htb a:hover, .Exquisite .menu_htb li:hover>a, .Exquisite ul.menu_htb .selected a {
+	background-color: #dbd8d8;
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_htb a:hover, .Exquisite .menu_htb .adxmhoverA, .Exquisite ul.menu_htb .selected a {		/* li:hover>a selector */
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_htb .text {
+	position: relative;
+	color: #cc0005;
+	margin-left: .5em; margin-right: .5em; 
+	padding-top: .1em; padding-bottom: .1em;
+	width: auto;
+	height: auto;
+	.display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+html:first-child .Exquisite .menu_htb .text { /* Opera */
+	display: block;
+	float: none;
+}
+
+.Exquisite .menu_htb a:hover .text, .Exquisite .menu_htb li:hover>a .text, .Exquisite ul.menu_htb .selected a .text {
+	color: #cc0005;
+}
+
+/* <= ie6 */
+.Exquisite .menu_htb a:hover .text, .Exquisite .menu_htb .adxmhoverA .text, .Exquisite ul.menu_htb .selected a .text {
+	color: #cc0005;
+}
+
+.Exquisite .menu_htb a {
+	border: 0; border-bottom: 5px solid #dbd8d8;
+}
+
+.Exquisite .menu_htb a:hover, .Exquisite .menu_htb li:hover>a, .Exquisite ul.menu_htb .selected a {
+	border: 0; border-bottom: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_htb a:hover, .Exquisite .menu_htb .adxmhoverA, .Exquisite ul.menu_htb .selected a {
+	border: 0; border-bottom: 5px solid #999696;
+}
+
+.Exquisite .menu_htb, .Exquisite .menu_htb ul li {
+	background: transparent;
+}
+
+.Exquisite .menu_htb li {
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Exquisite .menu_htb ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Exquisite .menu_htb ul .submenu .right2 {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 25%;
+	width: 10px;
+	height: 11px;
+	background-color: transparent;
+	background-image: url('Images/SubmenuArrow.gif');background-repeat: no-repeat;background-position: center left;
+}
+
+.Exquisite .menu_htb ul>li .submenu .right2 {
+	right: 0;
+	top: 0;
+	width: 10px;
+	height: 100%;
+}
+
+.Exquisite .menu_htb li li {	/* create borders around each item */
+	border: 0;
+}
+
+.Exquisite .menu_htb ul .text, .Exquisite ul.menu_htb .selected ul .text {
+	position: relative;
+	color: #cc0005;
+	height: auto;
+	margin-left: .5em; margin-right: .5em;
+	padding-top: .1em; padding-bottom: .1em;
+	.display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+html:first-child .Exquisite .menu_htb ul .text { /* Opera */
+	display: block;
+	float: none;
+}
+
+.Exquisite .menu_htb ul a:hover .text, .Exquisite .menu_htb ul li:hover>a .text, .Exquisite ul.menu_htb .selected ul a:hover .text, .Exquisite ul.menu_htb .selected ul li:hover>a .text {
+	color: #cc0005;
+}
+
+/* <= ie6 */
+.Exquisite .menu_htb ul a:hover .text, .Exquisite .menu_htb ul .adxmhoverA .text, .Exquisite ul.menu_htb .selected ul a:hover .text, .Exquisite ul.menu_htb .selected ul .adxmhoverA .text {
+	color: #cc0005;
+}
+
+.Exquisite .menu_htb ul a, .Exquisite ul.menu_htb .selected ul a {
+	border: 0; border-left: 5px solid #dbd8d8;
+}
+
+.Exquisite .menu_htb ul a:hover, .Exquisite .menu_htb ul li:hover>a, .Exquisite ul.menu_htb .selected ul a:hover, .Exquisite ul.menu_htb .selected ul li:hover>a {
+	border: 0; border-left: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_htb ul a:hover, .Exquisite .menu_htb ul .adxmhoverA, .Exquisite ul.menu_htb .selected ul a:hover, .Exquisite ul.menu_htb .selected ul .adxmhoverA {
+	border: 0; border-left: 5px solid #999696;
+}
+
+.Exquisite ul.menu_htb ul li a, .Exquisite ul.menu_htb .selected ul li a { 
+	width: 100%;
+	height: auto;
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_htb ul a:hover, .Exquisite .menu_htb ul li:hover>a, .Exquisite ul.menu_htb .selected ul a:hover, .Exquisite ul.menu_htb .selected ul li:hover>a {
+	background-color: #dbd8d8;
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_htb ul a:hover, .Exquisite .menu_htb ul .adxmhoverA, .Exquisite ul.menu_htb .selected ul a:hover, .Exquisite ul.menu_htb .selected ul .adxmhoverA {
+	background-color: #dbd8d8;
+	
+}
+
+
+/* position of items */
+.Exquisite .menu_htb ul {
+	width: 20em;
+}
+
+.Exquisite .menu_htb a {
+	width: auto;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	float: left; /* is needed for ie, because it puts items to the next line */
+}
+
+html:first-child .Exquisite .menu_htb a { /* Opera */
+	float: none;
+}
+
+.Exquisite ul.menu_htb ul li a { 
+	width: 20em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+	float: none;
+}
+
+.Exquisite .menu_htb li li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+.Exquisite .menu_htb .adxmhoverUL .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+
+/* hbt - Horizontal Bottom to Top */
+
+
+/* vlr - Vertical Left to Right */
+
+/* begin  hide/show blocks */
+	.Exquisite .menu_vlr .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Exquisite .menu_vlr a {
+	width: 100%;
+	height: auto;
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr a:hover, .Exquisite .menu_vlr li:hover>a, .Exquisite ul.menu_vlr .selected a {
+	background-color: #dbd8d8;
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr a:hover, .Exquisite .menu_vlr .adxmhoverA, .Exquisite ul.menu_vlr .selected a {		/* li:hover>a selector */
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr .text {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: #cc0005;
+	padding-top: .1em; padding-bottom: .1em;
+}
+
+.Exquisite .menu_vlr a:hover .text, .Exquisite .menu_vlr li:hover>a .text, .Exquisite ul.menu_vlr .selected a .text {
+	color: #cc0005;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr a:hover .text, .Exquisite .menu_vlr .adxmhoverA .text, .Exquisite ul.menu_vlr .selected a .text {		/* li:hover>a selector */
+	color: #cc0005;
+}
+
+.Exquisite .menu_vlr a {
+	border: 0; border-left: 5px solid #dbd8d8;
+}
+
+.Exquisite .menu_vlr a:hover, .Exquisite .menu_vlr li:hover>a, .Exquisite ul.menu_vlr .selected a {
+	border: 0; border-left: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr a:hover, .Exquisite .menu_vlr .adxmhoverA, .Exquisite ul.menu_vlr .selected a {		/* li:hover>a selector */
+	border: 0; border-left: 5px solid #999696;
+}
+
+.Exquisite .menu_vlr, .Exquisite .menu_vlr ul li {
+	background: transparent;
+}
+
+.Exquisite .menu_vlr li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Exquisite .menu_vlr ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Exquisite .menu_vlr ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Exquisite .menu_vlr ul .text, .Exquisite ul.menu_vlr .selected ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	color: #cc0005;
+	text-align: left;
+	margin-left: .5em; margin-right: .5em;
+	padding-top: .1em; padding-bottom: .1em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Exquisite .menu_vlr ul a:hover .text, .Exquisite .menu_vlr ul li:hover>a .text, .Exquisite ul.menu_vlr .selected ul a:hover .text, .Exquisite ul.menu_vlr .selected ul li:hover>a .text {
+	color: #cc0005;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr ul a:hover .text, .Exquisite .menu_vlr ul .adxmhoverA .text, .Exquisite ul.menu_vlr .selected ul a:hover .text, .Exquisite ul.menu_vlr .selected ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #cc0005;
+}
+
+.Exquisite .menu_vlr ul a, .Exquisite ul.menu_vlr .selected ul a {
+	border: 0; border-left: 5px solid #dbd8d8;
+}
+
+.Exquisite .menu_vlr ul a:hover, .Exquisite .menu_vlr ul li:hover>a, .Exquisite ul.menu_vlr .selected ul a:hover, .Exquisite ul.menu_vlr .selected ul li:hover>a {
+	border: 0; border-left: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr ul a:hover, .Exquisite .menu_vlr ul .adxmhoverA, .Exquisite ul.menu_vlr .selected ul a:hover, .Exquisite ul.menu_vlr .selected ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0; border-left: 5px solid #999696;
+}
+
+.Exquisite .menu_vlr ul a, .Exquisite ul.menu_vlr .selected ul a {
+	width: 100%;
+	height: auto;
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr ul a:hover, .Exquisite .menu_vlr ul li:hover>a, .Exquisite ul.menu_vlr .selected ul a:hover, .Exquisite ul.menu_vlr .selected ul li:hover>a {
+	background-color: #dbd8d8;
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr ul a:hover, .Exquisite .menu_vlr ul .adxmhoverA, .Exquisite ul.menu_vlr .selected ul a:hover, .Exquisite ul.menu_vlr .selected ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #dbd8d8;
+	
+}
+
+/* position of items */
+.Exquisite .menu_vlr, .Exquisite .menu_vlr ul {
+	width: 20em;
+}
+
+.Exquisite .menu_vlr li {
+	clear: both;
+}
+
+.Exquisite .menu_vlr a {
+	width: 20em;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Exquisite .menu_vlr ul a {
+	width: 20em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.Exquisite .menu_vlr li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+.Exquisite .menu_vlr .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+
+/* vrl - Vertical Right to Left */
+
+
+/* vlr_tree - Vertical Left to Right Tree */
+
+/* styles that are used with javascript */
+	.Exquisite .menu_vlr_tree .menu_vlr_tree_openedA .text {
+		font-weight: bold;
+	}
+
+	.Exquisite .menu_vlr_tree .menu_vlr_tree_openedUL {
+		display: block; 
+		visibility: visible;
+	}
+	
+	.Exquisite .menu_vlr_tree .menu_vlr_tree_closedUL {
+		display: none;
+		visibility: hidden;
+	}
+/* begin  hide/show blocks */
+	.Exquisite .menu_vlr_tree .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Exquisite .menu_vlr_tree a {
+	width: 100%;
+	height: auto;
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr_tree ul a {
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr_tree a:hover, .Exquisite .menu_vlr_tree li:hover>a {
+	background-color: #dbd8d8;
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr_tree a:hover, .Exquisite .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr_tree ul a:hover, .Exquisite .menu_vlr_tree ul li:hover>a {
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr_tree ul a:hover, .Exquisite .menu_vlr_tree ul .adxmhoverA {		/* li:hover>a selector */
+	
+}
+
+.Exquisite .menu_vlr_tree .menu_vlr_tree_openedA {
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr_tree .text {
+	position: relative;
+	height: auto;
+	text-align: center;
+	color: #cc0005;
+	width: 100%;
+	padding-top: .1em; padding-bottom: .1em;
+}
+
+.Exquisite .menu_vlr_tree ul .text {
+	width: auto;
+	text-align: left;
+	margin-left: .5em; margin-right: .5em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Exquisite .menu_vlr_tree a:hover .text, .Exquisite .menu_vlr_tree li:hover>a .text {
+	color: #cc0005;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr_tree a:hover .text, .Exquisite .menu_vlr_tree .adxmhoverA .text {		/* li:hover>a selector */
+	color: #cc0005;
+}
+
+.Exquisite .menu_vlr_tree .menu_vlr_tree_openedA .text {
+	color: #cc0005;
+}
+
+.Exquisite .menu_vlr_tree a {
+	border: 0; border-left: 5px solid #999696;
+}
+
+.Exquisite .menu_vlr_tree ul a {
+	border: 0; border-left: 5px solid #dbd8d8;
+}
+
+.Exquisite .menu_vlr_tree a:hover, .Exquisite .menu_vlr_tree li:hover>a {
+	border: 0; border-left: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr_tree a:hover, .Exquisite .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	border: 0; border-left: 5px solid #999696;
+}
+
+.Exquisite .menu_vlr_tree .menu_vlr_tree_openedA {
+	border: 0; border-left: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr_tree a:hover, .Exquisite .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr_tree, .Exquisite .menu_vlr_tree ul li {
+	background: transparent;
+}
+
+.Exquisite .menu_vlr_tree li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Exquisite .menu_vlr_tree ul ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Exquisite .menu_vlr_tree ul ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Exquisite .menu_vlr_tree ul ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	text-align: left;
+	color: #cc0005;
+	margin-left: .5em; margin-right: .5em;
+	padding-top: .1em; padding-bottom: .1em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Exquisite .menu_vlr_tree ul ul a:hover .text, .Exquisite .menu_vlr_tree ul ul li:hover>a .text {
+	color: #cc0005;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr_tree ul ul a:hover .text, .Exquisite .menu_vlr_tree ul ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #cc0005;
+}
+
+.Exquisite .menu_vlr_tree ul ul a {
+	border: 0; border-left: 5px solid #dbd8d8;
+}
+
+.Exquisite .menu_vlr_tree ul ul a:hover, .Exquisite .menu_vlr_tree ul ul li:hover>a {
+	border: 0; border-left: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr_tree ul ul a:hover, .Exquisite .menu_vlr_tree ul ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0; border-left: 5px solid #999696;
+}
+
+.Exquisite .menu_vlr_tree ul ul a {
+	width: 100%;
+	height: auto;
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vlr_tree ul ul a:hover, .Exquisite .menu_vlr_tree ul ul li:hover>a {
+	background-color: #dbd8d8;
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_vlr_tree ul ul a:hover, .Exquisite .menu_vlr_tree ul ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #dbd8d8;
+	
+}
+
+/* position of items */
+.Exquisite .menu_vlr_tree, .Exquisite .menu_vlr_tree ul {
+	width: 20em;
+}
+
+.Exquisite .menu_vlr_tree ul {
+	float: left;
+}
+
+.Exquisite .menu_vlr_tree ul ul {
+	float: none;
+}
+
+.Exquisite .menu_vlr_tree a {
+	width: 20em;
+	height: auto;
+	padding: 0;
+	float: left;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Exquisite .menu_vlr_tree ul ul a {
+	width: 20em;
+	height: auto;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+
+.Exquisite .menu_vlr_tree li {
+	float: left;
+}
+
+/* vrl_tree - Vertical Right to Left Tree */
+
+
+/* vrl - Vertical Right to Left */
+
+/* begin  hide/show blocks */
+	.Exquisite .menu_vrl .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Exquisite .menu_vrl a {
+	width: 100%;
+	height: auto;
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vrl a:hover, .Exquisite .menu_vrl li:hover>a, .Exquisite ul.menu_vrl .selected a {
+	background-color: #dbd8d8;
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_vrl a:hover, .Exquisite .menu_vrl .adxmhoverA, .Exquisite ul.menu_vrl .selected a {		/* li:hover>a selector */
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vrl .text {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: #cc0005;
+	padding-top: .1em; padding-bottom: .1em;
+}
+
+.Exquisite .menu_vrl a:hover .text, .Exquisite .menu_vrl li:hover>a .text, .Exquisite ul.menu_vrl .selected a .text {
+	color: #cc0005;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vrl a:hover .text, .Exquisite .menu_vrl .adxmhoverA .text, .Exquisite ul.menu_vrl .selected a .text {		/* li:hover>a selector */
+	color: #cc0005;
+}
+
+.Exquisite .menu_vrl a {
+	border: 0; border-left: 5px solid #dbd8d8;
+}
+
+.Exquisite .menu_vrl a:hover, .Exquisite .menu_vrl li:hover>a, .Exquisite ul.menu_vrl .selected a {
+	border: 0; border-left: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vrl a:hover, .Exquisite .menu_vrl .adxmhoverA, .Exquisite ul.menu_vrl .selected a {		/* li:hover>a selector */
+	border: 0; border-left: 5px solid #999696;
+}
+
+.Exquisite .menu_vrl, .Exquisite .menu_vrl ul li {
+	background: transparent;
+}
+
+.Exquisite .menu_vrl li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.Exquisite .menu_vrl ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.Exquisite .menu_vrl ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.Exquisite .menu_vrl ul .text, .Exquisite ul.menu_vrl .selected ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	color: #cc0005;
+	text-align: left;
+	margin-left: .5em; margin-right: .5em;
+	padding-top: .1em; padding-bottom: .1em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.Exquisite .menu_vrl ul a:hover .text, .Exquisite .menu_vrl ul li:hover>a .text, .Exquisite ul.menu_vrl .selected ul a:hover .text, .Exquisite ul.menu_vrl .selected ul li:hover>a .text {
+	color: #cc0005;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vrl ul a:hover .text, .Exquisite .menu_vrl ul .adxmhoverA .text, .Exquisite ul.menu_vrl .selected ul a:hover .text, .Exquisite ul.menu_vrl .selected ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #cc0005;
+}
+
+.Exquisite .menu_vrl ul a, .Exquisite ul.menu_vrl .selected ul a {
+	border: 0; border-left: 5px solid #dbd8d8;
+}
+
+.Exquisite .menu_vrl ul a:hover, .Exquisite .menu_vrl ul li:hover>a, .Exquisite ul.menu_vrl .selected ul a:hover, .Exquisite ul.menu_vrl .selected ul li:hover>a {
+	border: 0; border-left: 5px solid #999696;
+}
+
+/* <= ie6 */
+.Exquisite .menu_vrl ul a:hover, .Exquisite .menu_vrl ul .adxmhoverA, .Exquisite ul.menu_vrl .selected ul a:hover, .Exquisite ul.menu_vrl .selected ul .adxmhoverA {		/* li:hover>a selector */
+	border: 0; border-left: 5px solid #999696;
+}
+
+.Exquisite .menu_vrl ul a, .Exquisite ul.menu_vrl .selected ul a {
+	width: 100%;
+	height: auto;
+	background-color: #dbd8d8;
+	
+}
+
+.Exquisite .menu_vrl ul a:hover, .Exquisite .menu_vrl ul li:hover>a, .Exquisite ul.menu_vrl .selected ul a:hover, .Exquisite ul.menu_vrl .selected ul li:hover>a {
+	background-color: #dbd8d8;
+	
+}
+
+/* <= ie6 */
+.Exquisite .menu_vrl ul a:hover, .Exquisite .menu_vrl ul .adxmhoverA, .Exquisite ul.menu_vrl .selected ul a:hover, .Exquisite ul.menu_vrl .selected ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #dbd8d8;
+	
+}
+
+/* position of items */
+.Exquisite .menu_vrl, .Exquisite .menu_vrl ul {
+	width: 20em;
+}
+
+.Exquisite .menu_vrl li {
+	clear: both;
+}
+
+.Exquisite .menu_vrl a {
+	width: 20em;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.Exquisite .menu_vrl ul a {
+	width: 20em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.Exquisite .menu_vrl li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	right: 100%;
+}
+
+.Exquisite .menu_vrl .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	right: 100%;
+}
+

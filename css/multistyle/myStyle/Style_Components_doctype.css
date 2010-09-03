@@ -1,0 +1,1224 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColormyStyle {
+	background-color: #d3cabf;
+	}
+
+.FormTitleBgColormyStyle {
+	background-color: #df1414;
+	}
+
+.FormTitleFontColormyStyle {
+	color: #fcfcfc;
+	}
+
+.CaptionBgColormyStyle {
+	background-color: #dbc59f;
+	}
+
+.CaptionFontColormyStyle {
+	color: #000000;
+	}
+
+.DataBgColormyStyle {
+	background-color: #f2ebe5;
+	}
+
+.AltDataBgColormyStyle {
+	background-color: #e0dac8;
+	}
+
+.DataFontColormyStyle {
+	color: #000000;
+	}
+
+.LinkColormyStyle {
+	color: #0031c5;
+	}
+
+.VisitedLinkColormyStyle {
+	color: #800000;
+	}
+
+.HoverLinkColormyStyle {
+	color: #f70000;
+	}
+
+.ColorBgButtonmyStyle {
+	background-color: #df1414;
+}
+
+.ColorFontButtonmyStyle {
+	color: #fcfcfc;
+}
+
+.ColorBgButtonPassivemyStyle {
+	background-color: #f76f6f;
+}
+
+.ColorFontButtonPassivemyStyle {
+	color: #fcfcfc;
+}
+
+
+
+.HeadermyStyle {
+	width: 100%;
+	}
+
+.HeadermyStyle th { 
+	font-family: Times New Roman; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #fcfcfc;
+	width: 100%;
+	white-space: nowrap;
+	background-position: right top; padding-left: 8px;
+	}
+
+
+html>body .HeadermyStyle th {
+	font-family: Times New Roman; font-size: 140%; font-weight: bold; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeadermyStyle th {
+	font-family: Times New Roman; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.HeadermyStyle a:link { 
+	color: #fcfcfc;
+	}
+
+.HeadermyStyle a:visited { 
+	color: #fcfcfc;
+	}
+
+.HeadermyStyle a:hover, .CaptionmyStyle a:active { 
+	color: #fcfcfc; text-decoration: none;
+	}
+
+.HeaderLeftmyStyle { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightmyStyle { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftmyStyle img{
+	width: 1px;
+	}
+
+.HeaderRightmyStyle img{
+	width: 14px;
+	}
+
+
+/* Grid Options */
+.GridmyStyle { 
+	
+	width: 100%;
+	}
+
+.CaptionmyStyle th { 
+	font-family: Times New Roman; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionmyStyle td { 
+	font-family: Times New Roman; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+
+html>body .CaptionmyStyle th, html>body .CaptionmyStyle td {
+	font-family: Times New Roman; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionmyStyle th, * html body .CaptionmyStyle td {
+	font-family: Times New Roman; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionmyStyle a:link { 
+	color: #000000;
+	}
+
+.CaptionmyStyle a:visited { 
+	color: #000000;
+	}
+
+.CaptionmyStyle a:hover, .CaptionmyStyle a:active { 
+	color: #f70000;
+	}
+
+.CaptionmyStyle img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionmyStyle input {
+	vertical-align: middle;
+	}
+
+.RowmyStyle th { 
+	font-family: Times New Roman; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f2ebe5; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.RowmyStyle td { 
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f2ebe5; 
+	color: #000000;
+	}
+	
+
+html>body .RowmyStyle th, html>body .RowmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .RowmyStyle th, * html body .RowmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+caption.RowmyStyle { 
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f2ebe5; 
+	color: #000000;
+	}
+
+
+html>body caption.RowmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body caption.RowmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.RowmyStyle a:link { 
+	color: #0031c5;
+	}
+
+.RowmyStyle a:visited { 
+	color: #800000;
+	}
+
+.RowmyStyle a:hover, .RowmyStyle a:active { 
+	color: #f70000;
+	}
+
+.SeparatormyStyle{
+	color: #df1414;
+	}
+
+.SeparatormyStyle td{
+	height: 1px;
+	}
+
+
+.AltRowmyStyle th { 
+	font-family: Times New Roman; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f2ebe5; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.AltRowmyStyle td { 
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	background-color: #e0dac8; 
+	color: #000000;
+	}
+
+
+html>body .AltRowmyStyle th, html>body .AltRowmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .AltRowmyStyle th, * html body .AltRowmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.AltRowmyStyle a:link { 
+	color: #0031c5;
+	}
+
+.AltRowmyStyle a:visited { 
+	color: #800000;
+	}
+
+.AltRowmyStyle a:hover, .AltRowmyStyle a:active { 
+	color: #f70000;
+	}
+
+.NoRecordsmyStyle td { 
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	background-color: #f2ebe5; 
+	color: #000000;
+	vertical-align: top;
+	}
+
+.FootermyStyle td { 
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .NoRecordsmyStyle td, html>body .FootermyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .NoRecordsmyStyle td, * html body .FootermyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.FootermyStyle a:link { 
+	color: #0031c5;
+	}
+
+.FootermyStyle a:visited { 
+	color: #800000;
+	}
+
+.FootermyStyle a:hover, .FootermyStyle a:active { 
+	color: #f70000;
+	}
+
+.FootermyStyle img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FootermyStyle input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordmyStyle { 
+	
+	width: 100%;
+	}
+
+.ErrormyStyle td { 
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #f2ebe5; 
+	}
+
+
+* html>body .ErrormyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ErrormyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.ControlsmyStyle th { 
+	font-family: Times New Roman; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f2ebe5; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.ControlsmyStyle td { 
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f2ebe5; 
+	color: #000000;
+	}
+	
+.BottommyStyle td { 
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .ControlsmyStyle th, html>body .ControlsmyStyle td, html>body .BottommyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ControlsmyStyle th, * html body .ControlsmyStyle td, * html body .BottommyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.BottommyStyle a:link { 
+	color: #0031c5;
+	}
+
+.BottommyStyle a:visited { 
+	color: #800000;
+	}
+
+.BottommyStyle a:hover, .CaptionmyStyle a:active { 
+	color: #f70000;
+	}
+
+.BottommyStyle img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottommyStyle input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionmyStyle th{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e0dac8; 
+	color: #000000;
+	}
+
+.GroupCaptionmyStyle td{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f2ebe5; 
+	color: #000000;
+	}
+
+
+html>body .GroupCaptionmyStyle th, html>body .GroupCaptionmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionmyStyle th, * html body .GroupCaptionmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionmyStyle a:link {
+	color: #000000;
+	}
+
+.GroupCaptionmyStyle a:visited{
+	color: #000000;
+	}
+
+.GroupCaptionmyStyle a:hover, .GroupCaptionmyStyle a:active{
+	color: #f70000;
+	}
+
+.GroupFootermyStyle td{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #dbc59f; 
+	color: #000000;
+	}
+
+
+html>body .GroupFootermyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupFootermyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.GroupFootermyStyle a:link {
+	color: #0031c5;
+	}
+
+.GroupFootermyStyle a:visited{
+	color: #800000;
+	}
+
+.GroupFootermyStyle a:hover, .GroupFootermyStyle a:active{
+	color: #f70000;
+	}
+
+.GroupFootermyStyle img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFootermyStyle input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalmyStyle td{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e0dac8; 
+	color: #000000;
+	border-bottom: 2px solid #df1414;
+	}
+
+
+html>body .SubTotalmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .SubTotalmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.SubTotalmyStyle a:link {
+	color: #0031c5;
+	}
+
+.SubTotalmyStyle a:visited{
+	color: #800000;
+	}
+
+.SubTotalmyStyle a:hover, .SubTotalmyStyle a:active{
+	color: #f70000;
+	}
+
+.TotalmyStyle td{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #e0dac8; 
+	color: #000000;
+	}
+
+
+html>body .TotalmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .TotalmyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.TotalmyStyle a:link {
+	color: #0031c5;
+	}
+
+.TotalmyStyle a:visited{
+	color: #800000;
+	}
+
+.TotalmyStyle a:hover, .TotalmyStyle a:active{
+	color: #f70000;
+	}
+
+/* Form Options */
+.ButtonmyStyle { 
+	background-color: #df1414; color: #fcfcfc; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 11px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarmyStyle { 
+	
+	width: 100%;
+	}
+
+.CalendarWeekdayNamemyStyle{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #e0dac8; 
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekdayNamemyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekdayNamemyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNamemyStyle a:link {
+	color: #0031c5;
+	}
+
+.CalendarWeekdayNamemyStyle a:visited{
+	color: #800000;
+	}
+
+.CalendarWeekdayNamemyStyle a:hover, .CalendarWeekdayNamemyStyle a:active{
+	color: #f70000;
+	}
+
+.CalendarWeekendNamemyStyle{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #e0dac8;	
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekendNamemyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendNamemyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNamemyStyle a:link {
+	color: #000000;
+	}
+
+.CalendarWeekendNamemyStyle a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendNamemyStyle a:link, .CalendarWeekendNamemyStyle a:visited{
+	color: #f70000;
+	}
+
+/* Calendar Day */
+.CalendarDaymyStyle{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	background-color: #f2ebe5;	
+	color: #000000;
+	}
+
+
+html>body .CalendarDaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarDaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarDaymyStyle a:link {
+	color: #0031c5;
+	}
+
+.CalendarDaymyStyle a:visited{
+	color: #800000;
+	}
+
+.CalendarDaymyStyle a:hover, .CalendarDaymyStyle a:active{
+	color: #f70000;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendmyStyle{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	background-color: #e0dac8;	
+	color: #000000;
+	}
+
+
+html>body .CalendarWeekendmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendmyStyle a:link {
+	color: #0031c5;
+	}
+
+.CalendarWeekendmyStyle a:visited{
+	color: #800000;
+	}
+
+.CalendarWeekendmyStyle a:hover, .CalendarWeekendmyStyle a:active{
+	color: #f70000;
+	}
+
+/* Calendar Today */
+.CalendarTodaymyStyle {
+	font-family: Times New Roman; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #df1414;
+	text-align: center;
+	background-color: #f2ebe5;	
+	color: #000000;
+	}
+
+
+html>body .CalendarTodaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarTodaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodaymyStyle a:link {
+	color: #0031c5;
+	}
+
+.CalendarTodaymyStyle a:visited{
+	color: #800000;
+	}
+
+.CalendarTodaymyStyle a:hover, .CalendarTodaymyStyle a:active {
+	color: #f70000;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodaymyStyle {
+	font-family: Times New Roman; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #df1414;
+	text-align: center;
+	background-color: #e0dac8;	
+	color: #000000;
+	}
+
+
+html>body .CalendarWeekendTodaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTodaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodaymyStyle a:link {
+	color: #0031c5;
+	}
+
+.CalendarWeekendTodaymyStyle a:visited{
+	color: #800000;
+	}
+
+.CalendarWeekendTodaymyStyle a:hover, .CalendarWeekendTodaymyStyle a:active{
+	color: #f70000;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDaymyStyle{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	background-color: #f2ebe5;	
+	color: #df1414;
+	}
+
+
+html>body .CalendarOtherMonthDaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDaymyStyle a:link {
+	color: #df1414;
+	}
+
+.CalendarOtherMonthDaymyStyle a:visited{
+	color: #df1414;
+	}
+
+.CalendarOtherMonthDaymyStyle a:hover, .CalendarOtherMonthDaymyStyle a:active{
+	color: #f70000;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodaymyStyle {
+	font-family: Times New Roman; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #df1414;
+	text-align: center;
+	background-color: #f2ebe5;	
+	color: #df1414;
+	}
+
+
+html>body .CalendarOtherMonthTodaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodaymyStyle a:link {
+	color: #df1414;
+	}
+
+.CalendarOtherMonthTodaymyStyle a:visited{
+	color: #df1414;
+	}
+
+.CalendarOtherMonthTodaymyStyle a:hover, .CalendarOtherMonthTodaymyStyle a:active{
+	color: #f70000;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendmyStyle {
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: center;
+	background-color: #e0dac8;	
+	color: #df1414;
+	}
+
+
+html>body .CalendarOtherMonthWeekendmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendmyStyle a:link {
+	color: #df1414;
+	}
+
+.CalendarOtherMonthWeekendmyStyle a:visited{
+	color: #df1414;
+	}
+
+.CalendarOtherMonthWeekendmyStyle a:hover, .CalendarOtherMonthWeekendmyStyle a:active{
+	color: #f70000;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodaymyStyle {
+	font-family: Times New Roman; font-size: 80%;
+	padding: 2px;
+	border: 2px solid #df1414;
+	text-align: center;
+	color: #df1414;
+	background-color: #e0dac8;	
+	}
+	
+
+html>body .CalendarOtherMonthWeekendTodaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodaymyStyle a:link {
+	color: #df1414;
+	}
+
+.CalendarOtherMonthWeekendTodaymyStyle a:visited{
+	color: #df1414;
+	}
+
+.CalendarOtherMonthWeekendTodaymyStyle a:hover, .CalendarOtherMonthWeekendTodaymyStyle a:active{
+	color: #f70000;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDaymyStyle{
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #dbc59f;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+html>body .CalendarSelectedDaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarSelectedDaymyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDaymyStyle a:link {
+	color: #000000;
+	}
+
+.CalendarSelectedDaymyStyle a:visited{
+	color: #000000;
+	}
+
+.CalendarSelectedDaymyStyle a:hover, .CalendarSelectedDaymyStyle a:active{
+	color: #f70000;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatormyStyle {
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+html>body .CalendarNavigatormyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatormyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatormyStyle a:link {
+	color: #0031c5;
+	}
+
+.CalendarNavigatormyStyle a:visited{
+	color: #800000;
+	}
+
+.CalendarNavigatormyStyle a:hover, .CalendarNavigatormyStyle a:active{
+	color: #f70000;
+	}
+
+.CalendarNavigatormyStyle img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatormyStyle td {
+	font-family: Times New Roman; font-size: 80%;
+	}
+
+.CalendarNavigatormyStyle th {
+	font-family: Times New Roman; font-size: 80%;
+	}
+
+
+html>body .CalendarNavigatormyStyle th, html>body .CalendarNavigatormyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatormyStyle th, * html body .CalendarNavigatormyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventmyStyle{
+	font-family: Times New Roman; font-size: 80%;
+	text-align: left;
+	}
+
+
+html>body .CalendarEventmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarEventmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventmyStyle a:link {
+	color: #0031c5;
+	}
+
+.CalendarEventmyStyle a:visited{
+	color: #800000;
+	}
+
+.CalendarEventmyStyle a:hover, .CalendarEventmyStyle a:active{
+	color: #f70000;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thmyStyle { 
+	font-family: Times New Roman; font-size: 80%;
+	font-weight: bold;
+}
+
+
+html>body .thmyStyle {
+	font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .thmyStyle {
+	font-size: 100%;
+}
+/*end*/
+
+.HeadermyStyle .thmyStyle { 
+	font-family: Times New Roman; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #fcfcfc;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+html>body .HeadermyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 140%; font-weight: bold; text-align: left;
+}
+
+
+/*ie6*/
+* html body .HeadermyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.CaptionmyStyle .thmyStyle { 
+	font-family: Times New Roman; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+}
+
+
+html>body .CaptionmyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionmyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowmyStyle .thmyStyle { 
+	font-family: Times New Roman; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f2ebe5; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.AltRowmyStyle .thmyStyle { 
+	font-family: Times New Roman; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f2ebe5; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.ControlsmyStyle .thmyStyle { 
+	font-family: Times New Roman; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	background-color: #f2ebe5; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.GroupCaptionmyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 80%;
+	padding: 4px;
+	border-left: solid 1px #FFFFFF; border-top: solid 1px #FFFFFF; border-right: solid 1px #848284; border-bottom: solid 1px #848284;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e0dac8; 
+	color: #000000;
+}
+
+
+html>body .GroupCaptionmyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+html>body .RowmyStyle .thmyStyle, html>body .AltRowmyStyle .thmyStyle, html>body .ControlsmyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionmyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 100%;
+}
+
+* html body .RowmyStyle .thmyStyle, * html body .AltRowmyStyle .thmyStyle, * html body .ControlsmyStyle .thmyStyle {
+	font-family: Times New Roman; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenumyStyle td {
+	font-family: Times New Roman; font-size: 80%;
+}
+
+
+html>body .simpleMenumyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+} 
+
+
+/*ie6*/
+* html body .simpleMenumyStyle td {
+	font-family: Times New Roman; font-size: 100%;
+} 
+/*end*/

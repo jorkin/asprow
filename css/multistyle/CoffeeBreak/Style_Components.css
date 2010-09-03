@@ -1,0 +1,1096 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorCoffeeBreak {
+	background-color: #d3cdc2;
+	}
+
+.FormTitleBgColorCoffeeBreak {
+	background-color: #876954;
+	}
+
+.FormTitleFontColorCoffeeBreak {
+	color: #ffffff;
+	}
+
+.CaptionBgColorCoffeeBreak {
+	background-color: #c9b9b1;
+	}
+
+.CaptionFontColorCoffeeBreak {
+	color: #000000;
+	}
+
+.DataBgColorCoffeeBreak {
+	background-color: #edebe4;
+	}
+
+.AltDataBgColorCoffeeBreak {
+	background-color: #e3dfd1;
+	}
+
+.DataFontColorCoffeeBreak {
+	color: #000000;
+	}
+
+.LinkColorCoffeeBreak {
+	color: #0033cc;
+	}
+
+.VisitedLinkColorCoffeeBreak {
+	color: #830000;
+	}
+
+.HoverLinkColorCoffeeBreak {
+	color: #ff0000;
+	}
+
+.ColorBgButtonCoffeeBreak {
+	background-color: #876954;
+}
+
+.ColorFontButtonCoffeeBreak {
+	color: #ffffff;
+}
+
+.ColorBgButtonPassiveCoffeeBreak {
+	background-color: #bda493;
+}
+
+.ColorFontButtonPassiveCoffeeBreak {
+	color: #ffffff;
+}
+
+
+
+.HeaderCoffeeBreak {
+	width: 100%;
+	}
+
+.HeaderCoffeeBreak th { 
+	font-family: Arial; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 3px;
+	background-image: url('Images/HeaderBg.gif'); color: #ffffff;
+	width: 100%;
+	white-space: nowrap;
+	
+	}
+
+
+
+/*ie6*/
+* html body .HeaderCoffeeBreak th {
+	font-family: Arial; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.HeaderCoffeeBreak a:link { 
+	color: #ffffff;
+	}
+
+.HeaderCoffeeBreak a:visited { 
+	color: #ffffff;
+	}
+
+.HeaderCoffeeBreak a:hover, .CaptionCoffeeBreak a:active { 
+	color: #ffffff; text-decoration: none;
+	}
+
+.HeaderLeftCoffeeBreak { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightCoffeeBreak { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftCoffeeBreak img{
+	width: 9px;
+	}
+
+.HeaderRightCoffeeBreak img{
+	width: 9px;
+	}
+
+
+/* Grid Options */
+.GridCoffeeBreak { 
+	border-left: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	width: 100%;
+	}
+
+.CaptionCoffeeBreak th { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionCoffeeBreak td { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+
+
+/*ie6*/
+* html body .CaptionCoffeeBreak th, * html body .CaptionCoffeeBreak td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionCoffeeBreak a:link { 
+	color: #000000;
+	}
+
+.CaptionCoffeeBreak a:visited { 
+	color: #000000;
+	}
+
+.CaptionCoffeeBreak a:hover, .CaptionCoffeeBreak a:active { 
+	color: #ff0000;
+	}
+
+.CaptionCoffeeBreak img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionCoffeeBreak input {
+	vertical-align: middle;
+	}
+
+.RowCoffeeBreak th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #edebe4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.RowCoffeeBreak td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #edebe4; 
+	color: #000000;
+	}
+	
+
+
+/*ie6*/
+* html body .RowCoffeeBreak th, * html body .RowCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+caption.RowCoffeeBreak { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #FFFFFF; border-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #edebe4; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body caption.RowCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.RowCoffeeBreak a:link { 
+	color: #0033cc;
+	}
+
+.RowCoffeeBreak a:visited { 
+	color: #830000;
+	}
+
+.RowCoffeeBreak a:hover, .RowCoffeeBreak a:active { 
+	color: #ff0000;
+	}
+
+.SeparatorCoffeeBreak{
+	color: #876954;
+	}
+
+.SeparatorCoffeeBreak td{
+	height: 1px;
+	}
+
+
+.AltRowCoffeeBreak th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #edebe4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.AltRowCoffeeBreak td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #e3dfd1; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .AltRowCoffeeBreak th, * html body .AltRowCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.AltRowCoffeeBreak a:link { 
+	color: #0033cc;
+	}
+
+.AltRowCoffeeBreak a:visited { 
+	color: #830000;
+	}
+
+.AltRowCoffeeBreak a:hover, .AltRowCoffeeBreak a:active { 
+	color: #ff0000;
+	}
+
+.NoRecordsCoffeeBreak td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	background-color: #edebe4; 
+	color: #000000;
+	vertical-align: top;
+	}
+
+.FooterCoffeeBreak td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #edebe4; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .NoRecordsCoffeeBreak td, * html body .FooterCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.FooterCoffeeBreak a:link { 
+	color: #0033cc;
+	}
+
+.FooterCoffeeBreak a:visited { 
+	color: #830000;
+	}
+
+.FooterCoffeeBreak a:hover, .FooterCoffeeBreak a:active { 
+	color: #ff0000;
+	}
+
+.FooterCoffeeBreak img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterCoffeeBreak input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordCoffeeBreak { 
+	border-left: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF;
+	width: 100%;
+	}
+
+.ErrorCoffeeBreak td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #edebe4; 
+	}
+
+
+
+/*ie6*/
+* html body .ErrorCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.ControlsCoffeeBreak th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #edebe4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.ControlsCoffeeBreak td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	background-color: #edebe4; 
+	color: #000000;
+	}
+	
+.BottomCoffeeBreak td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #edebe4; color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .ControlsCoffeeBreak th, * html body .ControlsCoffeeBreak td, * html body .BottomCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.BottomCoffeeBreak a:link { 
+	color: #0033cc;
+	}
+
+.BottomCoffeeBreak a:visited { 
+	color: #830000;
+	}
+
+.BottomCoffeeBreak a:hover, .CaptionCoffeeBreak a:active { 
+	color: #ff0000;
+	}
+
+.BottomCoffeeBreak img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomCoffeeBreak input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionCoffeeBreak th{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e3dfd1; 
+	color: #000000;
+	}
+
+.GroupCaptionCoffeeBreak td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #edebe4; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .GroupCaptionCoffeeBreak th, * html body .GroupCaptionCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionCoffeeBreak a:link {
+	color: #000000;
+	}
+
+.GroupCaptionCoffeeBreak a:visited{
+	color: #000000;
+	}
+
+.GroupCaptionCoffeeBreak a:hover, .GroupCaptionCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+.GroupFooterCoffeeBreak td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #c9b9b1; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .GroupFooterCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.GroupFooterCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.GroupFooterCoffeeBreak a:hover, .GroupFooterCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+.GroupFooterCoffeeBreak img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterCoffeeBreak input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalCoffeeBreak td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e3dfd1; 
+	color: #000000;
+	border-bottom: 2px solid #876954;
+	}
+
+
+
+/*ie6*/
+* html body .SubTotalCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.SubTotalCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.SubTotalCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.SubTotalCoffeeBreak a:hover, .SubTotalCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+.TotalCoffeeBreak td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #e3dfd1; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .TotalCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.TotalCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.TotalCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.TotalCoffeeBreak a:hover, .TotalCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Form Options */
+.ButtonCoffeeBreak { 
+	background-color: #e3dfd1; color: #000000; border: solid 1px #876954; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 11px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarCoffeeBreak { 
+	
+	width: 100%;
+	}
+
+.CalendarWeekdayNameCoffeeBreak{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #e3dfd1; 
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekdayNameCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNameCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekdayNameCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.CalendarWeekdayNameCoffeeBreak a:hover, .CalendarWeekdayNameCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+.CalendarWeekendNameCoffeeBreak{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #e3dfd1;	
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendNameCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNameCoffeeBreak a:link {
+	color: #000000;
+	}
+
+.CalendarWeekendNameCoffeeBreak a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendNameCoffeeBreak a:link, .CalendarWeekendNameCoffeeBreak a:visited{
+	color: #ff0000;
+	}
+
+/* Calendar Day */
+.CalendarDayCoffeeBreak{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #edebe4;	
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarDayCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.CalendarDayCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.CalendarDayCoffeeBreak a:hover, .CalendarDayCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendCoffeeBreak{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #e3dfd1;	
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekendCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.CalendarWeekendCoffeeBreak a:hover, .CalendarWeekendCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Today */
+.CalendarTodayCoffeeBreak {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border: 2px solid #876954;
+	text-align: center;
+	background-color: #edebe4;	
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarTodayCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.CalendarTodayCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.CalendarTodayCoffeeBreak a:hover, .CalendarTodayCoffeeBreak a:active {
+	color: #ff0000;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayCoffeeBreak {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border: 2px solid #876954;
+	text-align: center;
+	background-color: #e3dfd1;	
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekendTodayCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.CalendarWeekendTodayCoffeeBreak a:hover, .CalendarWeekendTodayCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayCoffeeBreak{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #edebe4;	
+	color: #876954;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayCoffeeBreak a:link {
+	color: #876954;
+	}
+
+.CalendarOtherMonthDayCoffeeBreak a:visited{
+	color: #876954;
+	}
+
+.CalendarOtherMonthDayCoffeeBreak a:hover, .CalendarOtherMonthDayCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayCoffeeBreak {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border: 2px solid #876954;
+	text-align: center;
+	background-color: #edebe4;	
+	color: #876954;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayCoffeeBreak a:link {
+	color: #876954;
+	}
+
+.CalendarOtherMonthTodayCoffeeBreak a:visited{
+	color: #876954;
+	}
+
+.CalendarOtherMonthTodayCoffeeBreak a:hover, .CalendarOtherMonthTodayCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendCoffeeBreak {
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: center;
+	background-color: #e3dfd1;	
+	color: #876954;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendCoffeeBreak a:link {
+	color: #876954;
+	}
+
+.CalendarOtherMonthWeekendCoffeeBreak a:visited{
+	color: #876954;
+	}
+
+.CalendarOtherMonthWeekendCoffeeBreak a:hover, .CalendarOtherMonthWeekendCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayCoffeeBreak {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border: 2px solid #876954;
+	text-align: center;
+	color: #876954;
+	background-color: #e3dfd1;	
+	}
+	
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayCoffeeBreak a:link {
+	color: #876954;
+	}
+
+.CalendarOtherMonthWeekendTodayCoffeeBreak a:visited{
+	color: #876954;
+	}
+
+.CalendarOtherMonthWeekendTodayCoffeeBreak a:hover, .CalendarOtherMonthWeekendTodayCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayCoffeeBreak{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #c9b9b1;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+
+/*ie6*/
+* html body .CalendarSelectedDayCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayCoffeeBreak a:link {
+	color: #000000;
+	}
+
+.CalendarSelectedDayCoffeeBreak a:visited{
+	color: #000000;
+	}
+
+.CalendarSelectedDayCoffeeBreak a:hover, .CalendarSelectedDayCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorCoffeeBreak {
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	background-color: #edebe4; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarNavigatorCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.CalendarNavigatorCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.CalendarNavigatorCoffeeBreak a:hover, .CalendarNavigatorCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+.CalendarNavigatorCoffeeBreak img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorCoffeeBreak td {
+	font-family: Arial; font-size: 80%;
+	}
+
+.CalendarNavigatorCoffeeBreak th {
+	font-family: Arial; font-size: 80%;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarNavigatorCoffeeBreak th, * html body .CalendarNavigatorCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventCoffeeBreak{
+	font-family: Arial; font-size: 80%;
+	text-align: left;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarEventCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventCoffeeBreak a:link {
+	color: #0033cc;
+	}
+
+.CalendarEventCoffeeBreak a:visited{
+	color: #830000;
+	}
+
+.CalendarEventCoffeeBreak a:hover, .CalendarEventCoffeeBreak a:active{
+	color: #ff0000;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thCoffeeBreak { 
+	font-family: Arial; font-size: 80%;
+	font-weight: bold;
+}
+
+
+
+/*ie6*/
+* html body .thCoffeeBreak {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderCoffeeBreak .thCoffeeBreak { 
+	font-family: Arial; font-size: 110%; font-weight: bold; text-align: left;
+	padding: 3px;
+	background-image: url('Images/HeaderBg.gif'); color: #ffffff;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+
+/*ie6*/
+* html body .HeaderCoffeeBreak .thCoffeeBreak {
+	font-family: Arial; font-size: 140%; font-weight: bold; text-align: left;
+}
+/*end*/
+
+.CaptionCoffeeBreak .thCoffeeBreak { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+}
+
+
+
+/*ie6*/
+* html body .CaptionCoffeeBreak .thCoffeeBreak {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowCoffeeBreak .thCoffeeBreak { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #edebe4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.AltRowCoffeeBreak .thCoffeeBreak { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #edebe4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.ControlsCoffeeBreak .thCoffeeBreak { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	background-color: #edebe4; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.GroupCaptionCoffeeBreak .thCoffeeBreak {
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e3dfd1; 
+	color: #000000;
+}
+
+
+
+/*ie6*/
+* html body .GroupCaptionCoffeeBreak .thCoffeeBreak {
+	font-family: Arial; font-size: 100%;
+}
+
+* html body .RowCoffeeBreak .thCoffeeBreak, * html body .AltRowCoffeeBreak .thCoffeeBreak, * html body .ControlsCoffeeBreak .thCoffeeBreak {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuCoffeeBreak td {
+	font-family: Arial; font-size: 80%;
+}
+
+
+
+/*ie6*/
+* html body .simpleMenuCoffeeBreak td {
+	font-family: Arial; font-size: 100%;
+} 
+/*end*/

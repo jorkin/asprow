@@ -1,0 +1,746 @@
+/* htb - Horizontal Top to Bottom Menu */
+
+/* begin  hide/show blocks */
+	.myStyle2 .menu_htb .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.myStyle2 .menu_htb a {
+	background-color: #635e57;
+	
+	height: auto;
+	width: auto;
+}
+
+.myStyle2 .menu_htb a:hover, .myStyle2 .menu_htb li:hover>a, .myStyle2 ul.menu_htb .selected a {
+	background-color: #45403a;
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_htb a:hover, .myStyle2 .menu_htb .adxmhoverA, .myStyle2 ul.menu_htb .selected a {		/* li:hover>a selector */
+	background-color: #45403a;
+	
+}
+
+.myStyle2 .menu_htb .text {
+	position: relative;
+	color: #fcfcfc;
+	margin-left: 1em; margin-right: 1em; 
+	padding-top: .2em; padding-bottom: .2em;
+	width: auto;
+	height: auto;
+	.display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+html:first-child .myStyle2 .menu_htb .text { /* Opera */
+	display: block;
+	float: none;
+}
+
+.myStyle2 .menu_htb a:hover .text, .myStyle2 .menu_htb li:hover>a .text, .myStyle2 ul.menu_htb .selected a .text {
+	color: #fcfcfc;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_htb a:hover .text, .myStyle2 .menu_htb .adxmhoverA .text, .myStyle2 ul.menu_htb .selected a .text {
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_htb a {
+	border: 0; border-bottom: 5px solid #9c9893;
+}
+
+.myStyle2 .menu_htb a:hover, .myStyle2 .menu_htb li:hover>a, .myStyle2 ul.menu_htb .selected a {
+	border: 0; border-bottom: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_htb a:hover, .myStyle2 .menu_htb .adxmhoverA, .myStyle2 ul.menu_htb .selected a {
+	border: 0; border-bottom: 5px solid #635e57;
+}
+
+.myStyle2 .menu_htb, .myStyle2 .menu_htb ul li {
+	background: transparent;
+}
+
+.myStyle2 .menu_htb li {
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.myStyle2 .menu_htb ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.myStyle2 .menu_htb ul .submenu .right2 {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 25%;
+	width: 10px;
+	height: 11px;
+	background-color: transparent;
+	background-image: url('Images/SubmenuArrow.gif');background-repeat: no-repeat;background-position: center left;
+}
+
+.myStyle2 .menu_htb ul>li .submenu .right2 {
+	right: 0;
+	top: 0;
+	width: 10px;
+	height: 100%;
+}
+
+.myStyle2 .menu_htb li li {	/* create borders around each item */
+	border: 0;
+}
+
+.myStyle2 .menu_htb ul .text, .myStyle2 ul.menu_htb .selected ul .text {
+	position: relative;
+	color: #fcfcfc;
+	height: auto;
+	margin-left: .3em; margin-right: .3em;
+	padding-top: .2em; padding-bottom: .2em;
+	.display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+html:first-child .myStyle2 .menu_htb ul .text { /* Opera */
+	display: block;
+	float: none;
+}
+
+.myStyle2 .menu_htb ul a:hover .text, .myStyle2 .menu_htb ul li:hover>a .text, .myStyle2 ul.menu_htb .selected ul a:hover .text, .myStyle2 ul.menu_htb .selected ul li:hover>a .text {
+	color: #fcfcfc;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_htb ul a:hover .text, .myStyle2 .menu_htb ul .adxmhoverA .text, .myStyle2 ul.menu_htb .selected ul a:hover .text, .myStyle2 ul.menu_htb .selected ul .adxmhoverA .text {
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_htb ul a, .myStyle2 ul.menu_htb .selected ul a {
+	border: 1px solid #9c9893; border-left: 5px solid #9c9893;
+}
+
+.myStyle2 .menu_htb ul a:hover, .myStyle2 .menu_htb ul li:hover>a, .myStyle2 ul.menu_htb .selected ul a:hover, .myStyle2 ul.menu_htb .selected ul li:hover>a {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_htb ul a:hover, .myStyle2 .menu_htb ul .adxmhoverA, .myStyle2 ul.menu_htb .selected ul a:hover, .myStyle2 ul.menu_htb .selected ul .adxmhoverA {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+.myStyle2 ul.menu_htb ul li a, .myStyle2 ul.menu_htb .selected ul li a { 
+	width: 100%;
+	height: auto;
+	background-color: #635e57;
+	
+}
+
+.myStyle2 .menu_htb ul a:hover, .myStyle2 .menu_htb ul li:hover>a, .myStyle2 ul.menu_htb .selected ul a:hover, .myStyle2 ul.menu_htb .selected ul li:hover>a {
+	background-color: #45403a;
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_htb ul a:hover, .myStyle2 .menu_htb ul .adxmhoverA, .myStyle2 ul.menu_htb .selected ul a:hover, .myStyle2 ul.menu_htb .selected ul .adxmhoverA {
+	background-color: #45403a;
+	
+}
+
+
+/* position of items */
+.myStyle2 .menu_htb ul {
+	width: 12.5em;
+}
+
+.myStyle2 .menu_htb a {
+	width: auto;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	float: left; /* is needed for ie, because it puts items to the next line */
+}
+
+html:first-child .myStyle2 .menu_htb a { /* Opera */
+	float: none;
+}
+
+.myStyle2 ul.menu_htb ul li a { 
+	width: 12.5em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+	float: none;
+}
+
+.myStyle2 .menu_htb li li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+.myStyle2 .menu_htb .adxmhoverUL .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+
+/* hbt - Horizontal Bottom to Top */
+
+
+/* vlr - Vertical Left to Right */
+
+/* begin  hide/show blocks */
+	.myStyle2 .menu_vlr .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.myStyle2 .menu_vlr a {
+	width: 100%;
+	height: auto;
+	background-color: #635e57;
+	
+}
+
+.myStyle2 .menu_vlr a:hover, .myStyle2 .menu_vlr li:hover>a, .myStyle2 ul.menu_vlr .selected a {
+	background-color: #45403a;
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr a:hover, .myStyle2 .menu_vlr .adxmhoverA, .myStyle2 ul.menu_vlr .selected a {		/* li:hover>a selector */
+	background-color: #45403a;
+	
+}
+
+.myStyle2 .menu_vlr .text {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: #fcfcfc;
+	padding-top: .2em; padding-bottom: .2em;
+}
+
+.myStyle2 .menu_vlr a:hover .text, .myStyle2 .menu_vlr li:hover>a .text, .myStyle2 ul.menu_vlr .selected a .text {
+	color: #fcfcfc;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr a:hover .text, .myStyle2 .menu_vlr .adxmhoverA .text, .myStyle2 ul.menu_vlr .selected a .text {		/* li:hover>a selector */
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_vlr a {
+	border: 1px solid #9c9893; border-left: 5px solid #9c9893;
+}
+
+.myStyle2 .menu_vlr a:hover, .myStyle2 .menu_vlr li:hover>a, .myStyle2 ul.menu_vlr .selected a {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr a:hover, .myStyle2 .menu_vlr .adxmhoverA, .myStyle2 ul.menu_vlr .selected a {		/* li:hover>a selector */
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+.myStyle2 .menu_vlr, .myStyle2 .menu_vlr ul li {
+	background: transparent;
+}
+
+.myStyle2 .menu_vlr li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.myStyle2 .menu_vlr ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.myStyle2 .menu_vlr ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.myStyle2 .menu_vlr ul .text, .myStyle2 ul.menu_vlr .selected ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	color: #fcfcfc;
+	text-align: left;
+	margin-left: .3em; margin-right: .3em;
+	padding-top: .2em; padding-bottom: .2em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.myStyle2 .menu_vlr ul a:hover .text, .myStyle2 .menu_vlr ul li:hover>a .text, .myStyle2 ul.menu_vlr .selected ul a:hover .text, .myStyle2 ul.menu_vlr .selected ul li:hover>a .text {
+	color: #fcfcfc;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr ul a:hover .text, .myStyle2 .menu_vlr ul .adxmhoverA .text, .myStyle2 ul.menu_vlr .selected ul a:hover .text, .myStyle2 ul.menu_vlr .selected ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_vlr ul a, .myStyle2 ul.menu_vlr .selected ul a {
+	border: 1px solid #9c9893; border-left: 5px solid #9c9893;
+}
+
+.myStyle2 .menu_vlr ul a:hover, .myStyle2 .menu_vlr ul li:hover>a, .myStyle2 ul.menu_vlr .selected ul a:hover, .myStyle2 ul.menu_vlr .selected ul li:hover>a {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr ul a:hover, .myStyle2 .menu_vlr ul .adxmhoverA, .myStyle2 ul.menu_vlr .selected ul a:hover, .myStyle2 ul.menu_vlr .selected ul .adxmhoverA {		/* li:hover>a selector */
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+.myStyle2 .menu_vlr ul a, .myStyle2 ul.menu_vlr .selected ul a {
+	width: 100%;
+	height: auto;
+	background-color: #635e57;
+	
+}
+
+.myStyle2 .menu_vlr ul a:hover, .myStyle2 .menu_vlr ul li:hover>a, .myStyle2 ul.menu_vlr .selected ul a:hover, .myStyle2 ul.menu_vlr .selected ul li:hover>a {
+	background-color: #45403a;
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr ul a:hover, .myStyle2 .menu_vlr ul .adxmhoverA, .myStyle2 ul.menu_vlr .selected ul a:hover, .myStyle2 ul.menu_vlr .selected ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #45403a;
+	
+}
+
+/* position of items */
+.myStyle2 .menu_vlr, .myStyle2 .menu_vlr ul {
+	width: 12.5em;
+}
+
+.myStyle2 .menu_vlr li {
+	clear: both;
+}
+
+.myStyle2 .menu_vlr a {
+	width: 12.5em;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.myStyle2 .menu_vlr ul a {
+	width: 12.5em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.myStyle2 .menu_vlr li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+.myStyle2 .menu_vlr .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 100%;
+}
+
+
+/* vrl - Vertical Right to Left */
+
+
+/* vlr_tree - Vertical Left to Right Tree */
+
+/* styles that are used with javascript */
+	.myStyle2 .menu_vlr_tree .menu_vlr_tree_openedA .text {
+		font-weight: bold;
+	}
+
+	.myStyle2 .menu_vlr_tree .menu_vlr_tree_openedUL {
+		display: block; 
+		visibility: visible;
+	}
+	
+	.myStyle2 .menu_vlr_tree .menu_vlr_tree_closedUL {
+		display: none;
+		visibility: hidden;
+	}
+/* begin  hide/show blocks */
+	.myStyle2 .menu_vlr_tree .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.myStyle2 .menu_vlr_tree a {
+	width: 100%;
+	height: auto;
+	background-color: #45403a;
+	
+}
+
+.myStyle2 .menu_vlr_tree ul a {
+	background-color: #635e57;
+	
+}
+
+.myStyle2 .menu_vlr_tree a:hover, .myStyle2 .menu_vlr_tree li:hover>a {
+	background-color: #45403a;
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr_tree a:hover, .myStyle2 .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	background-color: #45403a;
+	
+}
+
+.myStyle2 .menu_vlr_tree ul a:hover, .myStyle2 .menu_vlr_tree ul li:hover>a {
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr_tree ul a:hover, .myStyle2 .menu_vlr_tree ul .adxmhoverA {		/* li:hover>a selector */
+	
+}
+
+.myStyle2 .menu_vlr_tree .menu_vlr_tree_openedA {
+	background-color: #45403a;
+	
+}
+
+.myStyle2 .menu_vlr_tree .text {
+	position: relative;
+	height: auto;
+	text-align: center;
+	color: #fcfcfc;
+	width: 100%;
+	padding-top: .2em; padding-bottom: .2em;
+}
+
+.myStyle2 .menu_vlr_tree ul .text {
+	width: auto;
+	text-align: left;
+	margin-left: .3em; margin-right: .3em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.myStyle2 .menu_vlr_tree a:hover .text, .myStyle2 .menu_vlr_tree li:hover>a .text {
+	color: #fcfcfc;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr_tree a:hover .text, .myStyle2 .menu_vlr_tree .adxmhoverA .text {		/* li:hover>a selector */
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_vlr_tree .menu_vlr_tree_openedA .text {
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_vlr_tree a {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+.myStyle2 .menu_vlr_tree ul a {
+	border: 1px solid #9c9893; border-left: 5px solid #9c9893;
+}
+
+.myStyle2 .menu_vlr_tree a:hover, .myStyle2 .menu_vlr_tree li:hover>a {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr_tree a:hover, .myStyle2 .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+.myStyle2 .menu_vlr_tree .menu_vlr_tree_openedA {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr_tree a:hover, .myStyle2 .menu_vlr_tree .adxmhoverA {		/* li:hover>a selector */
+	background-color: #45403a;
+	
+}
+
+.myStyle2 .menu_vlr_tree, .myStyle2 .menu_vlr_tree ul li {
+	background: transparent;
+}
+
+.myStyle2 .menu_vlr_tree li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.myStyle2 .menu_vlr_tree ul ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.myStyle2 .menu_vlr_tree ul ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.myStyle2 .menu_vlr_tree ul ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	text-align: left;
+	color: #fcfcfc;
+	margin-left: .3em; margin-right: .3em;
+	padding-top: .2em; padding-bottom: .2em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.myStyle2 .menu_vlr_tree ul ul a:hover .text, .myStyle2 .menu_vlr_tree ul ul li:hover>a .text {
+	color: #fcfcfc;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr_tree ul ul a:hover .text, .myStyle2 .menu_vlr_tree ul ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_vlr_tree ul ul a {
+	border: 1px solid #9c9893; border-left: 5px solid #9c9893;
+}
+
+.myStyle2 .menu_vlr_tree ul ul a:hover, .myStyle2 .menu_vlr_tree ul ul li:hover>a {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr_tree ul ul a:hover, .myStyle2 .menu_vlr_tree ul ul .adxmhoverA {		/* li:hover>a selector */
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+.myStyle2 .menu_vlr_tree ul ul a {
+	width: 100%;
+	height: auto;
+	background-color: #635e57;
+	
+}
+
+.myStyle2 .menu_vlr_tree ul ul a:hover, .myStyle2 .menu_vlr_tree ul ul li:hover>a {
+	background-color: #45403a;
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vlr_tree ul ul a:hover, .myStyle2 .menu_vlr_tree ul ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #45403a;
+	
+}
+
+/* position of items */
+.myStyle2 .menu_vlr_tree, .myStyle2 .menu_vlr_tree ul {
+	width: 12.5em;
+}
+
+.myStyle2 .menu_vlr_tree ul {
+	float: left;
+}
+
+.myStyle2 .menu_vlr_tree ul ul {
+	float: none;
+}
+
+.myStyle2 .menu_vlr_tree a {
+	width: 12.5em;
+	height: auto;
+	padding: 0;
+	float: left;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.myStyle2 .menu_vlr_tree ul ul a {
+	width: 12.5em;
+	height: auto;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+
+.myStyle2 .menu_vlr_tree li {
+	float: left;
+}
+
+/* vrl_tree - Vertical Right to Left Tree */
+
+
+/* vrl - Vertical Right to Left */
+
+/* begin  hide/show blocks */
+	.myStyle2 .menu_vrl .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.myStyle2 .menu_vrl a {
+	width: 100%;
+	height: auto;
+	background-color: #635e57;
+	
+}
+
+.myStyle2 .menu_vrl a:hover, .myStyle2 .menu_vrl li:hover>a, .myStyle2 ul.menu_vrl .selected a {
+	background-color: #45403a;
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vrl a:hover, .myStyle2 .menu_vrl .adxmhoverA, .myStyle2 ul.menu_vrl .selected a {		/* li:hover>a selector */
+	background-color: #45403a;
+	
+}
+
+.myStyle2 .menu_vrl .text {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: #fcfcfc;
+	padding-top: .2em; padding-bottom: .2em;
+}
+
+.myStyle2 .menu_vrl a:hover .text, .myStyle2 .menu_vrl li:hover>a .text, .myStyle2 ul.menu_vrl .selected a .text {
+	color: #fcfcfc;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vrl a:hover .text, .myStyle2 .menu_vrl .adxmhoverA .text, .myStyle2 ul.menu_vrl .selected a .text {		/* li:hover>a selector */
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_vrl a {
+	border: 1px solid #9c9893; border-left: 5px solid #9c9893;
+}
+
+.myStyle2 .menu_vrl a:hover, .myStyle2 .menu_vrl li:hover>a, .myStyle2 ul.menu_vrl .selected a {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vrl a:hover, .myStyle2 .menu_vrl .adxmhoverA, .myStyle2 ul.menu_vrl .selected a {		/* li:hover>a selector */
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+.myStyle2 .menu_vrl, .myStyle2 .menu_vrl ul li {
+	background: transparent;
+}
+
+.myStyle2 .menu_vrl li {	/* create borders around each item */
+	border: 0;
+}
+
+/* second level */
+
+/* begin  hide/show blocks */
+	.myStyle2 .menu_vrl ul .right2 {
+		display: none;
+	}
+/* end hide/show blocks */
+
+.myStyle2 .menu_vrl ul li {	/* create borders around each item */
+	border: 0;
+}
+
+.myStyle2 .menu_vrl ul .text, .myStyle2 ul.menu_vrl .selected ul .text {
+	position: relative;
+	height: auto;
+	width: auto;
+	color: #fcfcfc;
+	text-align: left;
+	margin-left: .3em; margin-right: .3em;
+	padding-top: .2em; padding-bottom: .2em;
+	display: inline; /* The IE Doubled Float-Margin Bug Fix */
+}
+
+.myStyle2 .menu_vrl ul a:hover .text, .myStyle2 .menu_vrl ul li:hover>a .text, .myStyle2 ul.menu_vrl .selected ul a:hover .text, .myStyle2 ul.menu_vrl .selected ul li:hover>a .text {
+	color: #fcfcfc;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vrl ul a:hover .text, .myStyle2 .menu_vrl ul .adxmhoverA .text, .myStyle2 ul.menu_vrl .selected ul a:hover .text, .myStyle2 ul.menu_vrl .selected ul .adxmhoverA .text {		/* li:hover>a selector */
+	color: #fcfcfc;
+}
+
+.myStyle2 .menu_vrl ul a, .myStyle2 ul.menu_vrl .selected ul a {
+	border: 1px solid #9c9893; border-left: 5px solid #9c9893;
+}
+
+.myStyle2 .menu_vrl ul a:hover, .myStyle2 .menu_vrl ul li:hover>a, .myStyle2 ul.menu_vrl .selected ul a:hover, .myStyle2 ul.menu_vrl .selected ul li:hover>a {
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vrl ul a:hover, .myStyle2 .menu_vrl ul .adxmhoverA, .myStyle2 ul.menu_vrl .selected ul a:hover, .myStyle2 ul.menu_vrl .selected ul .adxmhoverA {		/* li:hover>a selector */
+	border: 1px solid #9c9893; border-left: 5px solid #635e57;
+}
+
+.myStyle2 .menu_vrl ul a, .myStyle2 ul.menu_vrl .selected ul a {
+	width: 100%;
+	height: auto;
+	background-color: #635e57;
+	
+}
+
+.myStyle2 .menu_vrl ul a:hover, .myStyle2 .menu_vrl ul li:hover>a, .myStyle2 ul.menu_vrl .selected ul a:hover, .myStyle2 ul.menu_vrl .selected ul li:hover>a {
+	background-color: #45403a;
+	
+}
+
+/* <= ie6 */
+.myStyle2 .menu_vrl ul a:hover, .myStyle2 .menu_vrl ul .adxmhoverA, .myStyle2 ul.menu_vrl .selected ul a:hover, .myStyle2 ul.menu_vrl .selected ul .adxmhoverA {		/* li:hover>a selector */
+	background-color: #45403a;
+	
+}
+
+/* position of items */
+.myStyle2 .menu_vrl, .myStyle2 .menu_vrl ul {
+	width: 12.5em;
+}
+
+.myStyle2 .menu_vrl li {
+	clear: both;
+}
+
+.myStyle2 .menu_vrl a {
+	width: 12.5em;
+	height: auto;
+	padding: 0;
+	cursor: hand;
+	overflow: hidden;
+}
+
+.myStyle2 .menu_vrl ul a {
+	width: 12.5em;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.myStyle2 .menu_vrl li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	right: 100%;
+}
+
+.myStyle2 .menu_vrl .adxmhoverUL {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	right: 100%;
+}
+

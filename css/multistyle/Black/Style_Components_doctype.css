@@ -1,0 +1,1224 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorBlack {
+	background-color: #000000;
+	}
+
+.FormTitleBgColorBlack {
+	background-color: #454545;
+	}
+
+.FormTitleFontColorBlack {
+	color: #bebebe;
+	}
+
+.CaptionBgColorBlack {
+	background-color: #000000;
+	}
+
+.CaptionFontColorBlack {
+	color: #b4b4b4;
+	}
+
+.DataBgColorBlack {
+	background-color: #000000;
+	}
+
+.AltDataBgColorBlack {
+	background-color: #4c4c4c;
+	}
+
+.DataFontColorBlack {
+	color: #bdbdbd;
+	}
+
+.LinkColorBlack {
+	color: #b1b11a;
+	}
+
+.VisitedLinkColorBlack {
+	color: #a49773;
+	}
+
+.HoverLinkColorBlack {
+	color: #a6932a;
+	}
+
+.ColorBgButtonBlack {
+	background-color: #454545;
+}
+
+.ColorFontButtonBlack {
+	color: #bebebe;
+}
+
+.ColorBgButtonPassiveBlack {
+	background-color: #6a6a6a;
+}
+
+.ColorFontButtonPassiveBlack {
+	color: #fcfcfc;
+}
+
+
+
+.HeaderBlack {
+	width: 100%;
+	}
+
+.HeaderBlack th { 
+	font-family: Arial; font-size: 90%; font-weight: bold; text-align: center !important;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #bebebe;
+	width: 100%;
+	white-space: nowrap;
+	background-position: right top; padding-left: 8px;
+	}
+
+
+html>body .HeaderBlack th {
+	font-family: Arial; font-size: 130%; font-weight: bold; text-align: center !important;
+}
+
+
+/*ie6*/
+* html body .HeaderBlack th {
+	font-family: Arial; font-size: 130%; font-weight: bold; text-align: center !important;
+}
+/*end*/
+
+.HeaderBlack a:link { 
+	color: #bebebe;
+	}
+
+.HeaderBlack a:visited { 
+	color: #bebebe;
+	}
+
+.HeaderBlack a:hover, .CaptionBlack a:active { 
+	color: #bebebe; text-decoration: none;
+	}
+
+.HeaderLeftBlack { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightBlack { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftBlack img{
+	width: 1px;
+	}
+
+.HeaderRightBlack img{
+	width: 14px;
+	}
+
+
+/* Grid Options */
+.GridBlack { 
+	border: solid 1px #454545; border-bottom: 0px;
+	width: 100%;
+	}
+
+.CaptionBlack th { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-image: url('Images/CaptionBg.gif'); color: #b4b4b4;
+	white-space: nowrap;
+	}
+
+.CaptionBlack td { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-image: url('Images/CaptionBg.gif'); color: #b4b4b4;
+	white-space: nowrap;
+	}
+
+
+html>body .CaptionBlack th, html>body .CaptionBlack td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionBlack th, * html body .CaptionBlack td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionBlack a:link { 
+	color: #b4b4b4;
+	}
+
+.CaptionBlack a:visited { 
+	color: #b4b4b4;
+	}
+
+.CaptionBlack a:hover, .CaptionBlack a:active { 
+	color: #a6932a;
+	}
+
+.CaptionBlack img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionBlack input {
+	vertical-align: middle;
+	}
+
+.RowBlack th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000; color: #bdbdbd;
+	white-space: nowrap;
+	color: #bdbdbd;
+	}
+
+.RowBlack td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	vertical-align: top;
+	background-color: #000000; 
+	color: #bdbdbd;
+	}
+	
+
+html>body .RowBlack th, html>body .RowBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .RowBlack th, * html body .RowBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+caption.RowBlack { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border: solid 1px #454545; border-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #000000; 
+	color: #bdbdbd;
+	}
+
+
+html>body caption.RowBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body caption.RowBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.RowBlack a:link { 
+	color: #b1b11a;
+	}
+
+.RowBlack a:visited { 
+	color: #a49773;
+	}
+
+.RowBlack a:hover, .RowBlack a:active { 
+	color: #a6932a;
+	}
+
+.SeparatorBlack{
+	color: #454545;
+	}
+
+.SeparatorBlack td{
+	height: 1px;
+	}
+
+
+.AltRowBlack th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000; color: #bdbdbd;
+	white-space: nowrap;
+	color: #bdbdbd;
+	}
+
+.AltRowBlack td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	vertical-align: top;
+	background-color: #4c4c4c; 
+	color: #bdbdbd;
+	}
+
+
+html>body .AltRowBlack th, html>body .AltRowBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .AltRowBlack th, * html body .AltRowBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.AltRowBlack a:link { 
+	color: #b1b11a;
+	}
+
+.AltRowBlack a:visited { 
+	color: #a49773;
+	}
+
+.AltRowBlack a:hover, .AltRowBlack a:active { 
+	color: #a6932a;
+	}
+
+.NoRecordsBlack td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	background-color: #000000; 
+	color: #bdbdbd;
+	vertical-align: top;
+	}
+
+.FooterBlack td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000; color: #bdbdbd;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #bdbdbd;
+	}
+
+
+html>body .NoRecordsBlack td, html>body .FooterBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .NoRecordsBlack td, * html body .FooterBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.FooterBlack a:link { 
+	color: #b1b11a;
+	}
+
+.FooterBlack a:visited { 
+	color: #a49773;
+	}
+
+.FooterBlack a:hover, .FooterBlack a:active { 
+	color: #a6932a;
+	}
+
+.FooterBlack img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterBlack input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordBlack { 
+	border: solid 1px #454545; border-bottom: 0px;
+	width: 100%;
+	}
+
+.ErrorBlack td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #000000; 
+	}
+
+
+* html>body .ErrorBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ErrorBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.ControlsBlack th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000; color: #bdbdbd;
+	white-space: nowrap;
+	color: #bdbdbd;
+	}
+
+.ControlsBlack td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	vertical-align: top;
+	background-color: #000000; 
+	color: #bdbdbd;
+	}
+	
+.BottomBlack td { 
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000; color: #bdbdbd;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #bdbdbd;
+	}
+
+
+html>body .ControlsBlack th, html>body .ControlsBlack td, html>body .BottomBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .ControlsBlack th, * html body .ControlsBlack td, * html body .BottomBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.BottomBlack a:link { 
+	color: #b1b11a;
+	}
+
+.BottomBlack a:visited { 
+	color: #a49773;
+	}
+
+.BottomBlack a:hover, .CaptionBlack a:active { 
+	color: #a6932a;
+	}
+
+.BottomBlack img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomBlack input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionBlack th{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #4c4c4c; 
+	color: #bdbdbd;
+	}
+
+.GroupCaptionBlack td{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #000000; 
+	color: #bdbdbd;
+	}
+
+
+html>body .GroupCaptionBlack th, html>body .GroupCaptionBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionBlack th, * html body .GroupCaptionBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionBlack a:link {
+	color: #b4b4b4;
+	}
+
+.GroupCaptionBlack a:visited{
+	color: #b4b4b4;
+	}
+
+.GroupCaptionBlack a:hover, .GroupCaptionBlack a:active{
+	color: #a6932a;
+	}
+
+.GroupFooterBlack td{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #000000; 
+	color: #bdbdbd;
+	}
+
+
+html>body .GroupFooterBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .GroupFooterBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterBlack a:link {
+	color: #b1b11a;
+	}
+
+.GroupFooterBlack a:visited{
+	color: #a49773;
+	}
+
+.GroupFooterBlack a:hover, .GroupFooterBlack a:active{
+	color: #a6932a;
+	}
+
+.GroupFooterBlack img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterBlack input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalBlack td{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #4c4c4c; 
+	color: #bdbdbd;
+	border-bottom: 2px solid #454545;
+	}
+
+
+html>body .SubTotalBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .SubTotalBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.SubTotalBlack a:link {
+	color: #b1b11a;
+	}
+
+.SubTotalBlack a:visited{
+	color: #a49773;
+	}
+
+.SubTotalBlack a:hover, .SubTotalBlack a:active{
+	color: #a6932a;
+	}
+
+.TotalBlack td{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #4c4c4c; 
+	color: #bdbdbd;
+	}
+
+
+html>body .TotalBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .TotalBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.TotalBlack a:link {
+	color: #b1b11a;
+	}
+
+.TotalBlack a:visited{
+	color: #a49773;
+	}
+
+.TotalBlack a:hover, .TotalBlack a:active{
+	color: #a6932a;
+	}
+
+/* Form Options */
+.ButtonBlack { 
+	background-color: #454545; color: #bebebe; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 10px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarBlack { 
+	border: solid 1px #454545;
+	width: 100%;
+	}
+
+.CalendarWeekdayNameBlack{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #4c4c4c; 
+	color: #bdbdbd;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekdayNameBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekdayNameBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNameBlack a:link {
+	color: #b1b11a;
+	}
+
+.CalendarWeekdayNameBlack a:visited{
+	color: #a49773;
+	}
+
+.CalendarWeekdayNameBlack a:hover, .CalendarWeekdayNameBlack a:active{
+	color: #a6932a;
+	}
+
+.CalendarWeekendNameBlack{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #4c4c4c;	
+	color: #bdbdbd;
+	font-weight: normal;
+	}
+
+
+html>body .CalendarWeekendNameBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendNameBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNameBlack a:link {
+	color: #b4b4b4;
+	}
+
+.CalendarWeekendNameBlack a:visited{
+	color: #b4b4b4;
+	}
+
+.CalendarWeekendNameBlack a:link, .CalendarWeekendNameBlack a:visited{
+	color: #a6932a;
+	}
+
+/* Calendar Day */
+.CalendarDayBlack{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: center;
+	background-color: #000000;	
+	color: #bdbdbd;
+	}
+
+
+html>body .CalendarDayBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarDayBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayBlack a:link {
+	color: #b1b11a;
+	}
+
+.CalendarDayBlack a:visited{
+	color: #a49773;
+	}
+
+.CalendarDayBlack a:hover, .CalendarDayBlack a:active{
+	color: #a6932a;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendBlack{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: center;
+	background-color: #4c4c4c;	
+	color: #bdbdbd;
+	}
+
+
+html>body .CalendarWeekendBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendBlack a:link {
+	color: #b1b11a;
+	}
+
+.CalendarWeekendBlack a:visited{
+	color: #a49773;
+	}
+
+.CalendarWeekendBlack a:hover, .CalendarWeekendBlack a:active{
+	color: #a6932a;
+	}
+
+/* Calendar Today */
+.CalendarTodayBlack {
+	font-family: Arial; font-size: 70%;
+	padding: 2px;
+	border: 2px solid #454545; border-top: 1px solid #454545;
+	text-align: center;
+	background-color: #000000;	
+	color: #bdbdbd;
+	}
+
+
+html>body .CalendarTodayBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarTodayBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayBlack a:link {
+	color: #b1b11a;
+	}
+
+.CalendarTodayBlack a:visited{
+	color: #a49773;
+	}
+
+.CalendarTodayBlack a:hover, .CalendarTodayBlack a:active {
+	color: #a6932a;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayBlack {
+	font-family: Arial; font-size: 70%;
+	padding: 2px;
+	border: 2px solid #454545; border-top: 1px solid #454545;
+	text-align: center;
+	background-color: #4c4c4c;	
+	color: #bdbdbd;
+	}
+
+
+html>body .CalendarWeekendTodayBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayBlack a:link {
+	color: #b1b11a;
+	}
+
+.CalendarWeekendTodayBlack a:visited{
+	color: #a49773;
+	}
+
+.CalendarWeekendTodayBlack a:hover, .CalendarWeekendTodayBlack a:active{
+	color: #a6932a;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayBlack{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: center;
+	background-color: #000000;	
+	color: #454545;
+	}
+
+
+html>body .CalendarOtherMonthDayBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayBlack a:link {
+	color: #454545;
+	}
+
+.CalendarOtherMonthDayBlack a:visited{
+	color: #454545;
+	}
+
+.CalendarOtherMonthDayBlack a:hover, .CalendarOtherMonthDayBlack a:active{
+	color: #a6932a;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayBlack {
+	font-family: Arial; font-size: 70%;
+	padding: 2px;
+	border: 2px solid #454545; border-top: 1px solid #454545;
+	text-align: center;
+	background-color: #000000;	
+	color: #454545;
+	}
+
+
+html>body .CalendarOtherMonthTodayBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayBlack a:link {
+	color: #454545;
+	}
+
+.CalendarOtherMonthTodayBlack a:visited{
+	color: #454545;
+	}
+
+.CalendarOtherMonthTodayBlack a:hover, .CalendarOtherMonthTodayBlack a:active{
+	color: #a6932a;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendBlack {
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: center;
+	background-color: #4c4c4c;	
+	color: #454545;
+	}
+
+
+html>body .CalendarOtherMonthWeekendBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendBlack a:link {
+	color: #454545;
+	}
+
+.CalendarOtherMonthWeekendBlack a:visited{
+	color: #454545;
+	}
+
+.CalendarOtherMonthWeekendBlack a:hover, .CalendarOtherMonthWeekendBlack a:active{
+	color: #a6932a;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayBlack {
+	font-family: Arial; font-size: 70%;
+	padding: 2px;
+	border: 2px solid #454545; border-top: 1px solid #454545;
+	text-align: center;
+	color: #454545;
+	background-color: #4c4c4c;	
+	}
+	
+
+html>body .CalendarOtherMonthWeekendTodayBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayBlack a:link {
+	color: #454545;
+	}
+
+.CalendarOtherMonthWeekendTodayBlack a:visited{
+	color: #454545;
+	}
+
+.CalendarOtherMonthWeekendTodayBlack a:hover, .CalendarOtherMonthWeekendTodayBlack a:active{
+	color: #a6932a;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayBlack{
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000;
+	color: #b4b4b4;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+html>body .CalendarSelectedDayBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarSelectedDayBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayBlack a:link {
+	color: #b4b4b4;
+	}
+
+.CalendarSelectedDayBlack a:visited{
+	color: #b4b4b4;
+	}
+
+.CalendarSelectedDayBlack a:hover, .CalendarSelectedDayBlack a:active{
+	color: #a6932a;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorBlack {
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	background-color: #000000; color: #bdbdbd;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #bdbdbd;
+	}
+
+
+html>body .CalendarNavigatorBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorBlack a:link {
+	color: #b1b11a;
+	}
+
+.CalendarNavigatorBlack a:visited{
+	color: #a49773;
+	}
+
+.CalendarNavigatorBlack a:hover, .CalendarNavigatorBlack a:active{
+	color: #a6932a;
+	}
+
+.CalendarNavigatorBlack img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorBlack td {
+	font-family: Arial; font-size: 70%;
+	}
+
+.CalendarNavigatorBlack th {
+	font-family: Arial; font-size: 70%;
+	}
+
+
+html>body .CalendarNavigatorBlack th, html>body .CalendarNavigatorBlack td {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarNavigatorBlack th, * html body .CalendarNavigatorBlack td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventBlack{
+	font-family: Arial; font-size: 70%;
+	text-align: left;
+	}
+
+
+html>body .CalendarEventBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .CalendarEventBlack {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventBlack a:link {
+	color: #b1b11a;
+	}
+
+.CalendarEventBlack a:visited{
+	color: #a49773;
+	}
+
+.CalendarEventBlack a:hover, .CalendarEventBlack a:active{
+	color: #a6932a;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thBlack { 
+	font-family: Arial; font-size: 70%;
+	font-weight: bold;
+}
+
+
+html>body .thBlack {
+	font-size: 100%;
+}
+
+
+/*ie6*/
+* html body .thBlack {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderBlack .thBlack { 
+	font-family: Arial; font-size: 90%; font-weight: bold; text-align: center !important;
+	padding: 4px;
+	background-image: url('Images/HeaderBg.gif'); color: #bebebe;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+html>body .HeaderBlack .thBlack {
+	font-family: Arial; font-size: 130%; font-weight: bold; text-align: center !important;
+}
+
+
+/*ie6*/
+* html body .HeaderBlack .thBlack {
+	font-family: Arial; font-size: 130%; font-weight: bold; text-align: center !important;
+}
+/*end*/
+
+.CaptionBlack .thBlack { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-image: url('Images/CaptionBg.gif'); color: #b4b4b4;
+	white-space: nowrap;
+}
+
+
+html>body .CaptionBlack .thBlack {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .CaptionBlack .thBlack {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowBlack .thBlack { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000; color: #bdbdbd;
+	white-space: nowrap;
+	color: #bdbdbd;
+}
+
+.AltRowBlack .thBlack { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000; color: #bdbdbd;
+	white-space: nowrap;
+	color: #bdbdbd;
+}
+
+.ControlsBlack .thBlack { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	background-color: #000000; color: #bdbdbd;
+	white-space: nowrap;
+	color: #bdbdbd;
+}
+
+.GroupCaptionBlack .thBlack {
+	font-family: Arial; font-size: 70%;
+	padding: 4px;
+	border-bottom: solid 1px #454545;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #4c4c4c; 
+	color: #bdbdbd;
+}
+
+
+html>body .GroupCaptionBlack .thBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+html>body .RowBlack .thBlack, html>body .AltRowBlack .thBlack, html>body .ControlsBlack .thBlack {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+
+
+/*ie6*/
+* html body .GroupCaptionBlack .thBlack {
+	font-family: Arial; font-size: 100%;
+}
+
+* html body .RowBlack .thBlack, * html body .AltRowBlack .thBlack, * html body .ControlsBlack .thBlack {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuBlack td {
+	font-family: Arial; font-size: 70%;
+}
+
+
+html>body .simpleMenuBlack td {
+	font-family: Arial; font-size: 100%;
+} 
+
+
+/*ie6*/
+* html body .simpleMenuBlack td {
+	font-family: Arial; font-size: 100%;
+} 
+/*end*/
