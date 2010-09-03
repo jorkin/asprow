@@ -1,4 +1,38 @@
 ﻿<%
+if SHOW_ONLYPAGE="" then SHOW_ONLYPAGE = request.querystring("SHOW_ONLYPAGE") end if
+if SHOW_HEADER="" then SHOW_HEADER = request.querystring("SHOW_HEADER") end if
+if SHOW_FOOTER="" then SHOW_FOOTER = request.querystring("SHOW_FOOTER") end if
+if SHOW_TITLE="" then SHOW_TITLE = request.querystring("SHOW_TITLE") end if
+if SHOW_PAGER="" then SHOW_PAGER = request.querystring("SHOW_PAGER") end if
+if SHOW_PAGE_SIZER="" then SHOW_PAGE_SIZER = request.querystring("SHOW_PAGE_SIZER") end if
+if SHOW_ALL_ICONS="" then SHOW_ALL_ICONS = request.querystring("SHOW_ALL_ICONS") end if
+if SHOW_CAPTIONS="" then SHOW_CAPTIONS = request.querystring("SHOW_CAPTIONS") end if
+if SHOW_FILTERS="" then SHOW_FILTERS = request.querystring("SHOW_FILTERS") end if
+if SHOW_STYLER="" then SHOW_STYLER = request.querystring("SHOW_STYLER") end if
+if SHOW_TABLE_INFO="" then SHOW_TABLE_INFO = request.querystring("SHOW_TABLE_INFO") end if
+if SHOW_WIDTH="" then SHOW_WIDTH = request.querystring("SHOW_WIDTH") end if
+if SHOW_TITLE="" then SHOW_TITLE = true end if
+if SHOW_PAGER="" then SHOW_PAGER = true end if
+if SHOW_PAGE_SIZER="" then SHOW_PAGE_SIZER = true end if
+if SHOW_ALL_ICONS="" then SHOW_ALL_ICONS = true end if
+if SHOW_CAPTIONS="" then SHOW_CAPTIONS = true end if
+if SHOW_FILTERS="" then SHOW_FILTERS = true end if
+if SHOW_STYLER="" then SHOW_STYLER = true end if
+if SHOW_TABLE_INFO="" then SHOW_TABLE_INFO = true end if
+if SHOW_HEADER="" then SHOW_HEADER = true end if
+if SHOW_FOOTER="" then SHOW_FOOTER = true end if
+if SHOW_ONLYPAGE="" then SHOW_ONLYPAGE = false end if
+if SHOW_WIDTH="" then 
+	SHOW_WIDTH = "80%" 
+else
+	SHOW_WIDTH = SHOW_WIDTH&"%" 
+end if
+
+
+
+
+
+
 if LINKED_COLUMN="" then LINKED_COLUMN = getID(TABLENAME) end if
 THIS_PAGE = getFileName()
 call setStyle()
@@ -22,6 +56,9 @@ if Instr(LINK_FORMAT,"www.")>0 and Left(LINK_FORMAT,7)<>"http://" then
 end if
 PAGE_COUNT = getPageCount	
 call user("after_definations")
+if SHOW_ONLYPAGE then
+	response.clear()
+end if
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -108,9 +145,11 @@ if err<>0 then
 end if
 sayac=1+((getPage-1)*PAGE_COUNT)
 %>
-		<table width="80%" align="center" cellspacing="0" cellpadding="0">
+
+		<table width="<%=SHOW_WIDTH%>%" align="center" cellspacing="0" cellpadding="0">
 			<tr>
 				<td valign="top">
+					<% if SHOW_TITLE and SHOW_HEADER then%>
 					<table cellspacing="0" cellpadding="0" border="0" class="Header" width="100%">
 					  <tr>
 						<td class="HeaderLeft"> </td> 
@@ -118,13 +157,16 @@ sayac=1+((getPage-1)*PAGE_COUNT)
 						<td class="HeaderRight"> </td> 
 					  </tr>
 					</table>
+					<% end if %>
 			<table class="Grid" cellspacing="0" cellpadding="0">
+				<% if SHOW_HEADER then %>
 				<tr class="Footer">
 					<td colspan="<%=(COLUMN_COUNT+1)%>" align="center">
 						<table align="center" cellpadding="0" width="100%">
 							<tr>
-								<th align="left"><% call createPager(RECORD_COUNT,PAGE_COUNT) %></th>
+								<th align="left"><% if SHOW_PAGER then%><% call createPager(RECORD_COUNT,PAGE_COUNT) %><% end if %></th>
 								<th>
+									<% if SHOW_ALL_ICONS then%>
 									<table align="center" border="0" width="50%">
 										<tr>
 											<td class="c2">
@@ -141,66 +183,73 @@ sayac=1+((getPage-1)*PAGE_COUNT)
 											</td>
 										</tr>
 									</table>
+									<% end if%>
 								</th>
-								<th align="right"><% call createPageCounter%></th>
+								<th align="right"><% if SHOW_PAGE_SIZER then%><% call createPageCounter%><%end if%></th>
 							</tr>
 						</table>
 					</td>
 				</tr>
+			<% end if %>
 			<%
-			'Filtreleme Inputlari + Siralama Linklerini Yazdir
-			response.write "<form action='"&THIS_PAGE&"' method='get' id='f_form'><tr class=""Caption""><th scope=""col"">"
-			if GENERICPAGE=1 then
-				response.write "<input type='hidden' name='gnrTABLENAME' value='"&trim(request.querystring("gnrTABLENAME"))&"'>"
-			end if
-			response.write "<input type='hidden' name='order' value='"&REQUEST_ORDER&"'><input type='hidden' name='orderby' value='"&REQUEST_ORDERBY&"'></th>"
-			taborder=1
-			for each x in rs.Fields
-				if not (EXTRA_COLUMN<>"" and LCASE(x.name)=LCASE(LINKED_COLUMN)) then ' Secilmeyen IDnin yazilmasi sevimsiz olur
-					response.write "<th scope=""col"" align=""center"">"
-					'Bu tarz fieldlarda order by kullanilamaz
-					if not (x.type=201 or x.type=203 or x.type=205) then
-						response.write "<a href='"&replace(THIS_PAGE&"?order="&x.name &"&orderby="&orderby&getURL&"&page_counter="&getPageCount,"&","&amp;")
-						if GENERICPAGE=1 then response.write "&amp;gnrTABLENAME="&trim(request.querystring("gnrTABLENAME")) end if
-						response.write "'>"
-					end if
-					response.write PrintTitle(x)
-					if REQUEST_ORDER=x.name and REQUEST_ORDERBY="asc" then
-						response.write "<img border=""0"" src=""css/multistyle/"&PAGE_STYLE&"/Images/Asc.gif"" alt='Artan'>"
-					elseif REQUEST_ORDER=x.name and REQUEST_ORDERBY="desc" then
-						response.write "<img border=""0"" src=""css/multistyle/"&PAGE_STYLE&"/Images/Desc.gif"" alt='Azalan'>"
-					end if
-				
-					if not (x.type=201 or x.type=203 or x.type=205) then
-						response.write "</a></th>"
-					end if
-					
-				end if
-			next
-			response.write "</tr>"&chr(13)
-			response.write "<tr width='100%'><th scope=""col"" class=""Caption"">#<input type='hidden' name='page_counter' value='"&getPageCount()&"'></th>"&chr(13)
-			'Filtreleme Inputlari
-			for each x in rs.Fields
-				if not (EXTRA_COLUMN<>"" and LCASE(x.name)=LCASE(LINKED_COLUMN)) then ' Secilmeyen IDnin yazilmasi sevimsiz olur
-					response.write "<th>"
-					'Gelismis aramalar icin combobox veya ajax
-					got_field = getFieldFor(x,taborder)
-					if got_field="" then 
-						if x.type = 7 or x.type = 133 or x.type = 135 then 'Tarih
-							response.write "<input type='text' tabindex="&taborder&" class='c5' name='q_"&x.name&"_1' id='q_"&x.name&"_1_id' value='"&request.querystring("q_"&x.name&"_1")&"' onkeypress='{if (event.keyCode==13)f_form.submit()}'>"
-							response.write "<input type='text' tabindex="&(taborder+1)&" class='c5' name='q_"&x.name&"_2' id='q_"&x.name&"_2_id' value='"&request.querystring("q_"&x.name&"_2")&"' onkeypress='{if (event.keyCode==13)f_form.submit()}'></th>"&chr(13)
-							taborder=taborder+1
-							TARIHKUTULARI = TARIHKUTULARI & " q_"&x.name&"_1_id q_"&x.name&"_2_id"
-						else
-							response.write "<input type='text' tabindex="&taborder&" class='c3' name='q_"&x.name&"' value='"&request.querystring("q_"&x.name)&"' onkeypress='{if (event.keyCode==13)f_form.submit()}'></th>"&chr(13)
+			if SHOW_CAPTIONS then
+				'Filtreleme Inputlari + Siralama Linklerini Yazdir
+				response.write "<tr class=""Caption""><th scope=""col"">#</th>"
+				taborder=1
+				for each x in rs.Fields
+					if not (EXTRA_COLUMN<>"" and LCASE(x.name)=LCASE(LINKED_COLUMN)) then ' Secilmeyen IDnin yazilmasi sevimsiz olur
+						response.write "<th scope=""col"" align=""center"">"
+						'Bu tarz fieldlarda order by kullanilamaz
+						if not (x.type=201 or x.type=203 or x.type=205) then
+							response.write "<a href='"&replace(THIS_PAGE&"?order="&x.name &"&orderby="&orderby&getURL&"&page_counter="&getPageCount,"&","&amp;")
+							if GENERICPAGE=1 then response.write "&amp;gnrTABLENAME="&trim(request.querystring("gnrTABLENAME")) end if
+							response.write "'>"
 						end if
-					else
-						response.write got_field&"</th>"&chr(13)
+						response.write PrintTitle(x)
+						if REQUEST_ORDER=x.name and REQUEST_ORDERBY="asc" then
+							response.write "<img border=""0"" src=""css/multistyle/"&PAGE_STYLE&"/Images/Asc.gif"" alt='Artan'>"
+						elseif REQUEST_ORDER=x.name and REQUEST_ORDERBY="desc" then
+							response.write "<img border=""0"" src=""css/multistyle/"&PAGE_STYLE&"/Images/Desc.gif"" alt='Azalan'>"
+						end if
+					
+						if not (x.type=201 or x.type=203 or x.type=205) then
+							response.write "</a></th>"
+						end if
+						
 					end if
-					taborder=taborder+1
+				next
+				response.write "</tr>"&chr(13)
+			end if
+			if SHOW_FILTERS then
+				response.write "<form action='"&THIS_PAGE&"' method='get' id='f_form'><tr width='100%'><td bgcolor=""white"" align=""left"">"
+				if GENERICPAGE=1 then
+					response.write "<input type='hidden' name='gnrTABLENAME' value='"&trim(request.querystring("gnrTABLENAME"))&"'>"
 				end if
-			next
-			response.write "</tr></form>"&chr(13)
+				response.write "<input type='hidden' name='order' value='"&REQUEST_ORDER&"'><input type='hidden' name='orderby' value='"&REQUEST_ORDERBY&"'>"
+				response.write " <input type='hidden' name='page_counter' value='"&getPageCount()&"'></th>"&chr(13)
+				'Filtreleme Inputlari
+				for each x in rs.Fields
+					if not (EXTRA_COLUMN<>"" and LCASE(x.name)=LCASE(LINKED_COLUMN)) then ' Secilmeyen IDnin yazilmasi sevimsiz olur
+						response.write "<th>"
+						'Gelismis aramalar icin combobox veya ajax
+						got_field = getFieldFor(x,taborder)
+						if got_field="" then 
+							if x.type = 7 or x.type = 133 or x.type = 135 then 'Tarih
+								response.write "<input type='text' tabindex="&taborder&" class='c5' name='q_"&x.name&"_1' id='q_"&x.name&"_1_id' value='"&request.querystring("q_"&x.name&"_1")&"' onkeypress='{if (event.keyCode==13)f_form.submit()}'>"
+								response.write "<input type='text' tabindex="&(taborder+1)&" class='c5' name='q_"&x.name&"_2' id='q_"&x.name&"_2_id' value='"&request.querystring("q_"&x.name&"_2")&"' onkeypress='{if (event.keyCode==13)f_form.submit()}'></th>"&chr(13)
+								taborder=taborder+1
+								TARIHKUTULARI = TARIHKUTULARI & " q_"&x.name&"_1_id q_"&x.name&"_2_id"
+							else
+								response.write "<input type='text' tabindex="&taborder&" class='c3' name='q_"&x.name&"' value='"&request.querystring("q_"&x.name)&"' onkeypress='{if (event.keyCode==13)f_form.submit()}'></th>"&chr(13)
+							end if
+						else
+							response.write got_field&"</th>"&chr(13)
+						end if
+						taborder=taborder+1
+					end if
+				next
+				response.write "</tr></form>"&chr(13)
+			end if
 			if EDITABLE=1 then 	response.write "<form action="""&THIS_PAGE&""" method=""post"">" end if
 			'Kayitlari Yazdir
 			rec_Ids = ""
@@ -266,7 +315,10 @@ sayac=1+((getPage-1)*PAGE_COUNT)
 				response.write "</form>" 
 			end if
 			%>
-				<tr class="Footer"><td colspan="<%=(COLUMN_COUNT+1)%>" align="center"><b><%=tableInf%></b></td></tr>
+			
+			<%if SHOW_FOOTER then%>
+				<tr class="Footer"><td style="max-width:20px;"><%if SHOW_STYLER then%><%=createStyleSelector%><%end if%></td><td colspan="<%=(COLUMN_COUNT)%>" align="center"><b><%if SHOW_TABLE_INFO then%><%=tableInf%></b><%end if%></td></tr>
+			<%end if%>
 			</table>
 		</table>
 <script type="text/javascript">
@@ -347,6 +399,10 @@ if REQUEST_EXPORT_STYLE<>"" then
 	loop
 	response.write "<tr align='center'><td bgcolor='#CEE6A3' colspan='"&(COLUMN_COUNT+1)&"'><b>"&tableInf&"</b></td></tr>"
 	response.write "</table>"
+	response.end
+end if
+
+if SHOW_ONLYPAGE then
 	response.end
 end if
 %>

@@ -1,4 +1,4 @@
-﻿<%
+<%
 '    This file is part of ASPROW.
 
 '    ASPROW is free software: you can redistribute it and/or modify
@@ -13,7 +13,9 @@
 
 '    You should have received a copy of the GNU General Public License
 '    along with ASPROW.  If not, see <http://www.gnu.org/licenses/>.
+
 %>
+
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
@@ -82,14 +84,14 @@
 	
 if request("delete_columns")=1 then
 	Response.Cookies(page_name&"_column_order") = ""
-	response.write "Sütun ayarlari kaldirildi!<br>"
+	response.write "Column ayarlari kaldirildi!<br>"
 end if
 if request("edit_column")<>"" then
 	if request("sonuc")<>"" then
 	
 		Response.Cookies(page_name&"_column_order") = request("sonuc")
 		Response.Cookies(page_name&"_column_order").Expires = date+365
-		response.write "Sutunlar asagidaki sekilde ayarlandi!:<br>Select<br>"&request("sonuc")&"<br> FROM <BR>"&table&"<br><br><a href='../"&page_name&"'>Göster</a>"
+		response.write "Columns are settled !:<br>Select<br>"&request("sonuc")&"<br> FROM <BR>"&table&"<br><br><a href='../"&page_name&"'>Show</a>"
 	end if
 end if
 
@@ -134,20 +136,21 @@ end if
 
 		loop
 	else
-		response.write "Aradığınız sayfa bulunamadı!"
+		response.write "ArNameğınız sayfa bulunamName!"
 		response.end
 	end if
 	if not changeable then
 		columns = c_columns
 	end if
 	if table="" or columns="" then
-		response.write "Bu sayfa sütun ayarları yapmanıza izin vermiyor!"
+		response.write "Bu sayfa Column ayarları yapmanıza izin vermiyor!"
 		response.write table&"- "&columns
 		response.end
 	end if
 
 	if request.Cookies(page_name&"_column_order")<>"" then columns = request.Cookies(page_name&"_column_order") end if
-	
+	form_caption = "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr><td colspan='3' align='center'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"'>Reset Settings</a><br>Column settings for : <i>"&page_name&"</i></td></tr><tr><td><input id='call_b' type='checkbox' onchange='uncheckall(this.checked)' checked><b>Add to Columns</b></td><td><b>Column Name</b></td><td><b>Show Order</b></td></tr>"
+		
 if request("column_editor")=1 then
 	Set Rs = Server.CreateObject("Adodb.Recordset")
 	Set Rs2 = Server.CreateObject("Adodb.Recordset")
@@ -170,7 +173,7 @@ if request("column_editor")=1 then
 		selected_columns = " "
 		counter = 0
 		counter2 = 0
-		response.write "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr><td colspan='3' align='center'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"'>Ayarlari Kaldir</a><br><i>"&page_name&"</i> sayfasi icin sütun ayarları:</td></tr><tr><td><input id='call_b' type='checkbox' onchange='uncheckall(this.checked)' checked><b>Listede Göster</b></td><td><b>Sütun Adi</b></td><td><b>Gösterilme Sırası</b></td></tr>"
+		response.write form_caption
 		Rs2.open "SELECT TOP 1 "&columns&" FROM "&table,conn
 		
 		for i=0 to ubound(g_tablolar)
@@ -217,7 +220,7 @@ if request("column_editor")=1 then
 			response.write "SQL1: "&sql&"<br>SQL2:"&sql2&"<br>"
 			response.end
 		end if
-		response.write "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr><td colspan='3'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"'>Ayarlari Kaldir</a></td></tr><tr><td><b>Göster</b></td><td><b>Sütun</b></td><td><b>Sıra</b></td></tr>"
+		response.write form_caption
 		selected_columns = ""
 		counter2 = 0
 		for each x in Rs.fields
@@ -246,7 +249,7 @@ if request("column_editor")=1 then
 			end if
 		next
 	end if
-	response.write chr(13)&"<tr align='center'><td colspan='3'><input type='hidden' name='sonuc' id='sonuc'><input type='hidden' id='cc' value='"&counter2&"'><input type='hidden' name='page_name' value='"&page_name&"'><input type='hidden' name='table' value="""&table&"""><input type='hidden' name='columns' value="""&columns&"""><input type='submit' name='edit_column' value='Ayarla'></td></tr></table></form>"
+	response.write chr(13)&"<tr align='center'><td colspan='3'><input type='hidden' name='sonuc' id='sonuc'><input type='hidden' id='cc' value='"&counter2&"'><input type='hidden' name='page_name' value='"&page_name&"'><input type='hidden' name='table' value="""&table&"""><input type='hidden' name='columns' value="""&columns&"""><input type='submit' name='edit_column' value='Submit'></td></tr></table></form>"
 end if
 
 
