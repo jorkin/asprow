@@ -19,16 +19,8 @@
 		response.write "Error occured : "&err.description
 		response.end
 	else
-		sayac = 0
-		for each x in Rs.fields
-			if sayac = 0 then
-				g_IDColumn = x.name
-			else
-				g_colsWOID = g_colsWOID&x.name&", "
-			end if
-			sayac = sayac + 1
-		next
-		 g_colsWOID = Left(g_colsWOID,Len(g_colsWOID)-2)
+		g_IDColumn = getID(g_tablename)
+		g_colsWOID = Left(g_colsWOID,Len(g_colsWOID)-2)
 	end if
 	Rs.Close
 	
