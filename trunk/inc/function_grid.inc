@@ -488,4 +488,21 @@ Function getFileName()
   arPath = Split(lsPath, "/")
   GetFileName =arPath(UBound(arPath,1))&""
 End Function
+
+Function getID(mytable)
+	getID = ""
+	Set adox = CreateObject("ADOX.Catalog")
+	adox.activeConnection = conn
+	for each table in adox.tables
+		if ucase(table.name)=ucase(mytable) then
+			For Each idxADOX In table.Indexes
+				if idxADOX.PrimaryKey then 
+					getID =  idxADOX.columns(0).name 
+					exit for
+				end if
+			next
+		exit for
+		end if
+	next
+end Function
 %>
