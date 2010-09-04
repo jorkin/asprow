@@ -20,9 +20,14 @@
 		response.end
 	else
 		g_IDColumn = getID(g_tablename)
-		g_colsWOID = Left(g_colsWOID,Len(g_colsWOID)-2)
 	end if
 	Rs.Close
+	
+	
+	g_colsWOID = request.querystring("gnrCOLUMNS")
+	if g_colsWOID="" then
+		g_colsWOID = "*"
+	end if
 	
 	if g_listTitle="" then
 		g_listTitle = "Generic Grid Page for "&g_tablename
@@ -34,7 +39,7 @@
 		End sub
 		LIST_TITLE = g_listTitle
 		TABLENAME = g_tablename
-		COLUMNS = "*"
+		COLUMNS = g_colsWOID
 		GENERICPAGE= 1
 		RECORD_PAGE = "genericRecord.asp?gnrTABLENAME="&g_tablename
 		CHANGEABLE_COLUMNS = " "
