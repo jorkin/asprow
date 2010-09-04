@@ -25,7 +25,7 @@ if SHOW_ONLYPAGE="" then SHOW_ONLYPAGE = false end if
 if SHOW_WIDTH="" then 
 	SHOW_WIDTH = "80%" 
 else
-	SHOW_WIDTH = SHOW_WIDTH&"%" 
+	SHOW_WIDTH = SHOW_WIDTH
 end if
 
 
@@ -146,7 +146,7 @@ end if
 sayac=1+((getPage-1)*PAGE_COUNT)
 %>
 
-		<table width="<%=SHOW_WIDTH%>%" align="center" cellspacing="0" cellpadding="0">
+		<table width="<%=SHOW_WIDTH%>" align="center" cellspacing="0" cellpadding="0">
 			<tr>
 				<td valign="top">
 					<% if SHOW_TITLE and SHOW_HEADER then%>
