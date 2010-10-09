@@ -201,9 +201,7 @@ sayac=1+((getPage-1)*PAGE_COUNT)
 						response.write "<th scope=""col"" align=""center"">"
 						'Bu tarz fieldlarda order by kullanilamaz
 						if not (x.type=201 or x.type=203 or x.type=205) then
-							response.write "<a href='"&replace(THIS_PAGE&"?order="&x.name &"&orderby="&orderby&getURL&"&page_counter="&getPageCount,"&","&amp;")
-							if GENERICPAGE=1 then response.write "&amp;gnrTABLENAME="&trim(request.querystring("gnrTABLENAME")) end if
-							response.write "'>"
+							response.write "<a href='"&replace(THIS_PAGE&"?order="&x.name &"&orderby="&orderby&getURL&"&page_counter="&getPageCount,"&","&amp;")&"'>"
 						end if
 						response.write PrintTitle(x)
 						if REQUEST_ORDER=x.name and REQUEST_ORDERBY="asc" then
@@ -222,10 +220,7 @@ sayac=1+((getPage-1)*PAGE_COUNT)
 			end if
 			if SHOW_FILTERS then
 				response.write "<form action='"&THIS_PAGE&"' method='get' id='f_form'><tr width='100%'><td bgcolor=""white"" align=""left"">"
-				if GENERICPAGE=1 then
-					response.write "<input type='hidden' name='gnrTABLENAME' value='"&trim(request.querystring("gnrTABLENAME"))&"'>"
-				end if
-				response.write "<input type='hidden' name='order' value='"&REQUEST_ORDER&"'><input type='hidden' name='orderby' value='"&REQUEST_ORDERBY&"'>"
+				response.write getURLFormGNR&"<input type='hidden' name='order' value='"&REQUEST_ORDER&"'><input type='hidden' name='orderby' value='"&REQUEST_ORDERBY&"'>"
 				response.write getURLFormShow&"<input type='hidden' name='custom_style' value='"&request.querystring("custom_style")&"'><input type='hidden' name='page_counter' value='"&getPageCount()&"'></th>"&chr(13)
 				'Filtreleme Inputlari
 				for each x in rs.Fields
