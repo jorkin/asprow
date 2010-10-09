@@ -24,7 +24,7 @@
 	Rs.Close
 	
 	
-	g_colsWOID = request.querystring("gnrCOLUMNS")
+	g_colsWOID = replace(request.querystring("gnrCOLUMNS"),"-",",")
 	if g_colsWOID="" then
 		g_colsWOID = "*"
 	end if
