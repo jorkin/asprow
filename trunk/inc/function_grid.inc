@@ -150,19 +150,31 @@ public function getValue(the_text,table_from,filter)
 	end if
 end function
 
+public function getURLGNR
+	dim show_requests,url
+	url = ""
+	show_requests = Split(Request.Querystring,"&")
+	for i = 0 to ubound(show_requests)
+		if Left(lcase(show_requests(i)),Len("gnr"))="gnr" then
+			url = url &"&"& show_requests(i)
+		end if
+	next
+	getURLGNR = url
+end function
+
 public function getURL
 	dim show_requests,url
 	url = ""
 	show_requests = Split(Request.Querystring,"&")
 	for i = 0 to ubound(show_requests)
-		if Left(ucase(show_requests(i)),Len("q_"))="q_" then
+		if Left(lcase(show_requests(i)),Len("q_"))="q_" then
 			url = url &"&"& show_requests(i)
 		end if
 	next
 	if request.querystring("custom_style")<>"" then 
 		url = url & "&custom_style="&request.querystring("custom_style")
 	end if
-	getURL = url&"&"&getShowURL
+	getURL = url&getShowURL&getURLGNR
 end function
 
 public function getShowURL
@@ -171,22 +183,15 @@ public function getShowURL
 	show_requests = Split(Request.Querystring,"&")
 	for i = 0 to ubound(show_requests)
 		if Left(ucase(show_requests(i)),Len("SHOW_"))="SHOW_" then
-			shows = shows & show_requests(i)&"&"
+			shows = shows & "&" & show_requests(i)
 		end if
 	next
-	if shows<>"" then
-	shows = left(shows,len(shows)-1)
-	end if
 	getShowURL = shows
 end function
 
 public function getBackURL
 	dim backurl
-	backurl = THIS_PAGE&"?order="&request.querystring("order")&"-orderby="&request.querystring("orderby")
-	backurl = backurl &replace(getURL,"&","-")&"-page_counter="&getPageCount&"-page="&getPage
-	if request.querystring("gnrTABLENAME")<>"" then 
-		backurl = backurl & "-gnrTABLENAME="&request.querystring("gnrTABLENAME")
-	end if
+	backurl = THIS_PAGE&"?"&replace(request.querystring,"&","-")
 	getBackURL = backurl
 end function
 
@@ -197,7 +202,6 @@ public function getURLform
 	'if request("page_counter")<>"" then url = url & "<input type='hidden' name='page_counter' value='"&request.querystring("page_counter")&"'>" end if
 	if REQUEST_ORDER<>"" then url = url & "<input type='hidden' name='order' value='"&REQUEST_ORDER&"'>" end if
 	if REQUEST_ORDERBY<>"" then url = url & "<input type='hidden' name='orderby' value='"&REQUEST_ORDERBY&"'>" end if
-	if GENERICPAGE=1 then url = url & "<input type='hidden' name='gnrTABLENAME' value='"&trim(request.querystring("gnrTABLENAME"))&"'>" end if
 	url = ""
 	show_requests = Split(replace(Request.Querystring,"&&","&"),"&")
 	for i = 0 to ubound(show_requests)
@@ -210,7 +214,24 @@ public function getURLform
 			end if
 		end if
 	next
-	getURLform = url&getURLFormShow
+	getURLform = url&getURLFormShow&getURLFormGNR
+end function
+
+public function getURLFormGNR
+	dim url
+	url = ""
+	show_requests = Split(Request.Querystring,"&")
+	for i = 0 to ubound(show_requests)
+		if Left(lcase(show_requests(i)),Len("gnr"))="gnr" then
+			show_requests2 = Split(show_requests(i),"=")
+			arg1 = cstr(show_requests2(0))
+			if ubound(show_requests2)>0 then
+				arg2 = cstr(show_requests2(1))
+				url = url &"<input type='hidden' name='"&arg1&"' value='"&arg2&"'>"
+			end if
+		end if
+	next
+	getURLFormGNR = url
 end function
 
 public function getURLFormShow
