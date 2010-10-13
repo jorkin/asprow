@@ -4,6 +4,7 @@
 	Dim g_IDColumn	'ID column
 	Dim g_colsWOID	'Columns without ID field
 	Dim g_listTitle	'Title of the Page
+	Dim gsql
 	
 	g_listTitle = request.querystring("gnrTitle")
 	g_tablename = trim(request.querystring("gnrTABLENAME"))
@@ -14,7 +15,11 @@
 	g_tablename = replace(g_tablename,"'","''")
 	
 	on error resume next
-	Rs.open "SELECT TOP 1 * FROM "&g_tablename,conn
+	gsql = "SELECT TOP 1 * FROM "&g_tablename
+	if instr(conn.Provider,"MSDASQL")>0 then 
+		gsql = "SELECT * FROM "&g_tablename&" LIMIT 0,1"
+	end if
+	Rs.open gsql,conn
 	if err<>0 then
 		response.write "Error occured : "&err.description
 		response.end
@@ -32,9 +37,7 @@
 	if g_listTitle="" then
 		g_listTitle = "Generic Grid Page for "&g_tablename
 	end if
-%>
-		
-		<%
+	
 		sub user(myFunction)
 		End sub
 		LIST_TITLE = g_listTitle
