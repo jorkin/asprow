@@ -29,10 +29,6 @@ else
 end if
 
 
-
-
-
-
 if LINKED_COLUMN="" then LINKED_COLUMN = getID(TABLENAME) end if
 THIS_PAGE = getFileName()
 call setStyle()
@@ -44,8 +40,8 @@ end if
 if request.Cookies(THIS_PAGE&"_column_order")<>"" then COLUMNS = request.Cookies(THIS_PAGE&"_column_order") end if
 REQUEST_ORDER = REQUEST("order")
 REQUEST_ORDERBY = REQUEST("orderby")
-RECORD_COUNT = getRecordCount
-TOTAL_RECORD_COUNT = getTotalRecordCount
+RECORD_COUNT = clng(getRecordCount)
+TOTAL_RECORD_COUNT = clng(getTotalRecordCount)
 if instr(RECORD_PAGE,"?")>0 then
 	LINK_FORMAT = RECORD_PAGE&"&"&LINKED_COLUMN&"="
 else
@@ -135,6 +131,9 @@ end if
 'Sayfanin SQL'i sayfalamada sorun cikmamasi icin ic ice 3 sqlden olusur asc desc asc seklinde listeyi siralar
 sql = "select top "&LESS_COUNT&" * from (SELECT top "&(PAGE_COUNT*getPage)&" * FROM (SELECT "&COLUMNS&EXTRA_COLUMN&" FROM "&TABLENAME&") AS TBL "&getWhere&getOrderby("asc")&") as TBL "&getOrderby("desc")
 sql = "SELECT TOP "&PAGE_COUNT&" * FROM (" & sql & ") as TBL "&getOrderby("asc")
+if instr(conn.Provider,"MSDASQL")>0 then 
+	sql = "SELECT "&COLUMNS&EXTRA_COLUMN&" FROM "&TABLENAME&" "&getWhere&getOrderby("asc")&" LIMIT "&PAGE_COUNT*(getPage*1-1)&","&PAGE_COUNT
+end if
 call user("after_sql_definations")
 on error resume next
 rs.open sql , conn
