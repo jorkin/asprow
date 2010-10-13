@@ -16,13 +16,17 @@
 %>
 <%
 public function updateFields()
-	Dim updated_records,RsF
+	Dim updated_records,RsF,fsql
 	REC_IDS = Request.Form("REC_IDS")
 	on error resume next
 	if REC_IDS<>"" then
 		updated_records = Split(REC_IDS)
 		Set RsF = Server.CreateObject("Adodb.Recordset")
-		RsF.open "SELECT TOP 1 "&COLUMNS&" FROM "&TABLENAME,conn
+		fsql = "SELECT TOP 1 "&COLUMNS&" FROM "&TABLENAME
+		if instr(conn.Provider,"MSDASQL")>0 then 
+			fsql = "SELECT "&COLUMNS&" FROM "&TABLENAME&" LIMIT 0,1"
+		end if
+		RsF.open fsql,conn
 		for i=0 to ubound(updated_records)
 			sql = "UPDATE "&TABLENAME&" SET "
 			for each x in RsF.fields
@@ -134,17 +138,17 @@ end function
 public function getValue(the_text,table_from,filter)
 	Dim RsF
 	if not Instr(filter,"NEWID")>0 THEN
-	Set RsF = Server.CreateObject("Adodb.Recordset")
-	sql = "SELECT "&the_text&" FROM "&table_from
-	if filter<>"" then
-		sql = sql& " WHERE "&filter
-	end if
-	RsF.open sql,conn
-	if not RsF.eof then
-		getValue = RsF(0)
-	else
-		getValue = ""
-	end if
+		Set RsF = Server.CreateObject("Adodb.Recordset")
+		sql = "SELECT "&the_text&" FROM "&table_from
+		if filter<>"" then
+			sql = sql& " WHERE "&filter
+		end if
+		RsF.open sql,conn
+		if not RsF.eof then
+			getValue = RsF(0)
+		else
+			getValue = ""
+		end if
 	else
 		getValue = ""
 	end if
@@ -252,7 +256,7 @@ public function getURLFormShow
 end function
 
 public function tableInf
-	tableInf = "Listing Records:"&((getPage-1)*PAGE_COUNT+1)&"-"&((getPage-1)*PAGE_COUNT+PAGE_COUNT)&" | Filtered Records: "&RECORD_COUNT&" | Total Records:"&TOTAL_RECORD_COUNT&" | Page Number: <b>"&getPage&"</b> of "&int(RECORD_COUNT/PAGE_COUNT)+1
+	tableInf = "Listing Records:"&((getPage-1)*PAGE_COUNT+1)&"-"&((getPage-1)*PAGE_COUNT+PAGE_COUNT)&" | Filtered Records: "&RECORD_COUNT&" | Total Records:"&TOTAL_RECORD_COUNT&" | Page Number: <b>"&getPage&"</b> of "&clng(RECORD_COUNT/PAGE_COUNT)+1
 End function
 
 public function createPageCounter
@@ -272,11 +276,10 @@ end function
 
 public function createPager(recordCount,page)
 	response.write "<form action="""&THIS_PAGE&""" method=""get"" id=""form_pager"">Page: <select name=""page"" onchange=""form_pager.submit();"">"
-for k=1 to int(recordCount/page)+1
-	response.write "<option value='"&k&"'"
-	if int(request.querystring("page"))=k then response.write " selected" end if
-	response.write ">"&k&"</option>"
-next
+	response.write "<script>"
+	response.write "for(var i=1;i<="&clng(recordCount/page)+1&";i++){document.write(""<option value='""+i+""'"");"
+	response.write "if ("&int(request.querystring("page"))&"==i)document.write("" selected"");document.write("">""+i+""</option>"");}"
+	response.write "</script>"
 	response.write "</select>"
 	response.write getURLform
 	if request.querystring("page_counter")<>"" then response.write "<input type='hidden' name='page_counter' value='"&request.querystring("page_counter")&"'>" end if
@@ -285,9 +288,13 @@ next
 end function
 
 public function getWhere
-dim t
+dim t,fsql
 Set RsF = Server.CreateObject("Adodb.Recordset")
-RsF.Open "SELECT TOP 1 "&COLUMNS&" FROM "&TABLENAME,conn
+fsql = "SELECT TOP 1 "&COLUMNS&" FROM "&TABLENAME
+if instr(conn.Provider,"MSDASQL")>0 then 
+	fsql = "SELECT "&COLUMNS&" FROM "&TABLENAME&" LIMIT 0,1"
+end if
+RsF.open fsql,conn
 t=0
 where = " WHERE 1=1 "
 for each x in RsF.Fields
@@ -324,7 +331,7 @@ getWhere = where
 end function
 
 public function getOrderby(how)
-	Dim ordered
+	Dim ordered,fsql
 	if REQUEST_ORDER<>"" and REQUEST_ORDERBY<>"" and how="" then
 		order = "ORDER BY "& lcase(REQUEST_ORDER) & " "&REQUEST_ORDERBY
 	else
@@ -339,7 +346,11 @@ public function getOrderby(how)
 			ordered = REQUEST_ORDER
 		else
 			Set RsF = Server.CreateObject("Adodb.Recordset")
-			RsF.OPEN "SELECT TOP 1 "&COLUMNS&" FROM "&TABLENAME,conn
+			fsql = "SELECT TOP 1 "&COLUMNS&" FROM "&TABLENAME
+			if instr(conn.Provider,"MSDASQL")>0 then 
+				fsql = "SELECT "&COLUMNS&" FROM "&TABLENAME&" LIMIT 0,1"
+			end if
+			RsF.OPEN fsql,conn
 			for each x in RsF.Fields
 				if x.type<>201 and x.type<>203 and x.type<>205 then
 					ordered = x.name
@@ -375,8 +386,8 @@ public function getRecordCount
 	Dim k
 	k=0
 	Set RsF = Server.CreateObject("Adodb.Recordset")
-	RsF.Open "SELECT count(*) as MIKTAR FROM (SELECT "&COLUMNS&" FROM "&TABLENAME&") AS TBL "&getWhere,conn
-	k = RsF("MIKTAR")
+	RsF.Open "SELECT count(*) as MIKTAR FROM "&TABLENAME&" "&getWhere,conn
+	k = RsF(0)
 	RsF.close
 	getRecordCount = k
 end function
@@ -387,7 +398,7 @@ public function getTotalRecordCount
 	k=0
 	Set RsF = Server.CreateObject("Adodb.Recordset")
 	RsF.Open "SELECT count(*) as MIKTAR FROM "&TABLENAME,conn
-	k = RsF("MIKTAR")
+	k = RsF(0)
 	RsF.close
 	getTotalRecordCount = k
 end function
@@ -430,6 +441,11 @@ public function useAjax(the_id,the_text,table_from,info,style,field)
 	lookSql = "SELECT TOP 1 "&the_text
 	if info<>"" then lookSql = lookSql & ","&info end if
 	lookSql = lookSql & " FROM "&table_from
+	if instr(conn.Provider,"MSDASQL")>0 then 
+		lookSql = "SELECT "&the_text
+		if info<>"" then lookSql = lookSql & ","&info end if
+		lookSql = lookSql & " FROM "&table_from&" LIMIT 0,1"
+	end if
 	RsF.open lookSql,conn
 		html = "<input type=""hidden"""
 		if request.querystring("q_"&field.name)<>"" then
@@ -456,25 +472,31 @@ end function
 public function showAjax(the_id,the_text,the_info,table_from,keyword)
 'on error resume next
 	Dim RsF
-	Dim sql_info
+	Dim sql_info,fsql
 	call user("showAjax_begin")
 	the_text = ""&the_text
 	Set RsF = Server.CreateObject("Adodb.Recordset")
 	if the_info<>"" then
 		sql_info = ","&the_info
 	end if
-	
 	if keyword<>"*" then
 		sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from& " WHERE "&the_text&" LIKE '"&replace(replace(keyword,"'",""),"""","")&"%'"
 	else
 		sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from
 	end if
 	if the_text=the_id then sql = replace(sql,the_text&","&the_text,the_text) end if
-	RsF.open "SELECT TOP 1 "&the_text&" FROM "&table_from,conn
+	fsql =  "SELECT TOP 1 "&the_text&" FROM "&table_from
+	if instr(conn.Provider,"MSDASQL")>0 then 
+		fsql = replace(fsql," TOP 1","")&" LIMIT 0,1"
+	end if
+	RsF.open fsql,conn
 	if not (RsF.fields(0).type=201 or RsF.fields(0).type=203 or RsF.fields(0).type=205) then '201 = adLongVarChar, 203 = adLongVarWChar, 205= adLongVarBinary
 		sql = sql&" ORDER BY "&the_text&" asc"
 	end if
 	RsF.close
+	if instr(conn.Provider,"MSDASQL")>0 then 
+		sql = replace(sql," TOP 25","")&" LIMIT 0,25"
+	end if
 	if the_text<>the_id then
 		RsF.open sql,conn
 		results =  "{ results: [ " & vbCrLf
@@ -513,7 +535,7 @@ public function showAjax(the_id,the_text,the_info,table_from,keyword)
 end function
 
 public function createLookup(the_id,the_text,table_from,filter,style,field)
-	Dim RsF
+	Dim RsF,fsql
 	call user("createLookup_begin")
 	Set RsF = Server.CreateObject("Adodb.Recordset")
 	if the_text<>the_id then	
@@ -524,7 +546,11 @@ public function createLookup(the_id,the_text,table_from,filter,style,field)
 	if filter<>"" then
 		sql = sql& " WHERE "&filter
 	end if
-	RsF.open "SELECT TOP 1 "&the_text&" FROM "&table_from,conn
+	fsql = "SELECT TOP 1 "&the_text&" FROM "&table_from
+	if instr(conn.Provider,"MSDASQL")>0 then 
+		fsql = replace(fsql," TOP 1","")&" LIMIT 0,1"
+	end if
+	RsF.open fsql,conn
 	if not (RsF.fields(0).type=201 or RsF.fields(0).type=203 or RsF.fields(0).type=205) then '201 = adLongVarChar, 203 = adLongVarWChar, 205= adLongVarBinary
 		sql = sql&" ORDER BY "&the_text&" asc"
 	end if

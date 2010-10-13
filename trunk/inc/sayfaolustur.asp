@@ -229,6 +229,9 @@ end if
 			table = request("mytable")
 			on error resume next
 			sql = "SELECT TOP 1 * FROM "&table
+			if instr(conn.Provider,"MSDASQL")>0 then 
+				sql = "SELECT * FROM "&table&" LIMIT 0,1"
+			end if
 			Set RsF2 = Server.CreateObject("Adodb.Recordset")
 			RsF2.open sql,conn
 			if err<>0 then
@@ -245,7 +248,10 @@ end if
 		else
 		
 			Set RsF = Server.CreateObject("Adodb.Recordset")
-			sql = "SELECT * from "&table
+			sql = "SELECT TOP 1 * FROM "&table
+			if instr(conn.Provider,"MSDASQL")>0 then 
+				sql = "SELECT * FROM "&table&" LIMIT 0,1"
+			end if
 			on error resume next
 			RsF.open sql,conn
 			if err>0 then
@@ -306,6 +312,9 @@ end if
 				Set RsF = Server.CreateObject("Adodb.Recordset")
 				REQ_RECORDS_COLUMN = request("record_columns")
 				sql = "SELECT TOP 1 "&REQ_RECORDS_COLUMN&" FROM "&request("record_table")
+				if instr(conn.Provider,"MSDASQL")>0 then 
+					sql = "SELECT "&REQ_RECORDS_COLUMN&" FROM "&request("record_table")&" LIMIT 0,1"&table
+				end if
 				CASES="|"
 				RsF.open sql,conn
 				if request("id_cikar_rec")<>"" then
