@@ -86,6 +86,11 @@ if REQUEST_LINKED_COLUMN<>"" then
 	
 	on error resume next
 	sql = "SELECT top 1 "&COLUMNS&EXTRA_COLUMN&" FROM "&TABLENAME&" "&where_statement
+	
+	if instr(conn.Provider,"MSDASQL")>0 then 
+		sql = "SELECT "&COLUMNS&EXTRA_COLUMN&" FROM "&TABLENAME&" "&where_statement& " LIMIT 0,1 " 
+	end if
+	
 	Set Rs = Server.CreateObject("Adodb.Recordset")
 	rs.open sql,conn
 	
