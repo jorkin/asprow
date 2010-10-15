@@ -177,9 +177,16 @@ if request("column_editor")=1 then
 		response.write form_caption
 		Rs2.open "SELECT TOP 1 "&columns&" FROM "&table,conn
 		
+		if instr(conn.Provider,"MSDASQL")>0 then
+			Rs2.open "SELECT "&columns&" FROM "&table& " LIMIT 0,1 ",conn
+		end if
+		
 		for i=0 to ubound(g_tablolar)
 			if not (instr(g_tablolar(i),"_1")>0 or instr(g_tablolar(i),"_2")>0) then
 				Rs.open "SELECT top 1 * FROM "&g_tablolar(i),conn 
+				if instr(conn.Provider,"MSDASQL")>0 then
+					Rs2.open "SELECT "&columns&" FROM "&table& " LIMIT 0,1 ",conn
+				end if
 				if err=0 then 
 					for each x in Rs.fields
 						if Instr(selected_columns," "&x.name&" ")=0 then
@@ -212,7 +219,17 @@ if request("column_editor")=1 then
 		next
 	else
 		sql = "SELECT TOP 1 * FROM "&table
+		
+		if instr(conn.Provider,"MSDASQL")>0 then
+			sql = "SELECT "&columns&" FROM "&table& " LIMIT 0,1 "
+		end if
+		
 		sql2 = "SELECT TOP 1 "&columns&" FROM "&table
+		
+		if instr(conn.Provider,"MSDASQL")>0 then
+			sql2 = "SELECT "&columns&" FROM "&table& " LIMIT 0,1 "
+		end if
+		
 		on error resume next
 		Rs.Open sql,conn
 		Rs2.Open sql2,conn
