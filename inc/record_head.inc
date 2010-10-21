@@ -135,7 +135,12 @@ public function save_new_record
 	Dim RsF
 	call user("save_new_record_begin")
 	Set RsF = Server.CreateObject("Adodb.Recordset")
-	RsF.open "SELECT top 1 "&COLUMNS&" FROM "&TABLENAME,conn
+	
+	if instr(conn.Provider,"MSDASQL")>0 then
+        RsF.open "SELECT "&COLUMNS&" FROM "&TABLENAME& " LIMIT 0,1 ",conn
+	else	
+		RsF.open "SELECT top 1 "&COLUMNS&" FROM "&TABLENAME,conn
+	end if
 	
 	sql = "INSERT INTO "&TABLENAME&" ("
 	for each x in RsF.Fields
@@ -164,7 +169,13 @@ public function save_new_record
 	end if
 	'Olasi yeni id
 	Set RsT = Server.CreateObject("Adodb.Recordset")
-	RsT.Open "SELECT TOP 1 "&RECORD_ID&" FROM "&TABLENAME&" ORDER BY "&RECORD_ID&" DESC",conn
+		
+	if instr(conn.Provider,"MSDASQL")>0 then
+		RsT.Open "SELECT "&RECORD_ID&" FROM "&TABLENAME&" ORDER BY "&RECORD_ID&" DESC LIMIT 0,1 ",conn
+	else
+		RsT.Open "SELECT TOP 1 "&RECORD_ID&" FROM "&TABLENAME&" ORDER BY "&RECORD_ID&" DESC",conn
+	end if
+	
 	if not RsT.eof then 
 		newid = (RsT(RECORD_ID)+1)
 	else
@@ -233,7 +244,13 @@ public function save_record
 	Dim RsF
 	call user("save_record_begin")
 	Set RsF = Server.CreateObject("Adodb.Recordset")
-	RsF.open "SELECT top 1 "&COLUMNS&" FROM "&TABLENAME,conn
+	
+	if instr(conn.Provider,"MSDASQL")>0 then 
+		RsF.open "SELECT "&COLUMNS&" FROM "&TABLENAME& " LIMIT 0,1 ",conn
+	else
+		RsF.open "SELECT top 1 "&COLUMNS&" FROM "&TABLENAME,conn
+	end if
+	
 	sql = "UPDATE "&TABLENAME&" SET "
 	for each x in RsF.Fields
 		if not x.name=RECORD_ID then
