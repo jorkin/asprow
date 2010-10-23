@@ -357,6 +357,7 @@ if REQUEST_EXPORT_STYLE<>"" then
 	next
 	response.write "</tr>"
 	sayac=1
+	rs.MoveFirst
 	do until rs.EOF
 		'Her kayidin icindeki sutunlar ve her kayidin link idsini baslamadan once temizle
 		if (sayac mod 2)=0 then
