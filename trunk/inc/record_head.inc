@@ -214,7 +214,7 @@ public function save_new_record
 					sql = sql &"NULL,"
 				else
 					if (x.type>1 and x.type<6) or (x.type>15 and x.type<22) then 'Bunlar integer
-						sql = sql & replace(Request.Form(x.name),"'","''")&","
+						sql = sql & replace(replace(Request.Form(x.name),",","."),"'","''")&","
 					else
 						sql = sql & "'"&replace(Request.Form(x.name),"'","''")&"',"
 					end if
@@ -284,7 +284,7 @@ public function save_record
 					sql = sql &"NULL, "
 				else
 					if (x.type>1 and x.type<6) or (x.type>15 and x.type<22) then 'Bunlar integer
-						sql = sql & replace(Request.Form(x.name),"'","''")&", "
+						sql = sql & replace(replace(Request.Form(x.name),",","."),"'","''")&", "
 					else
 						sql = sql & "'"&replace(Request.Form(x.name),"'","''")&"', "
 					end if
