@@ -314,7 +314,13 @@ public function createGLookup(the_id,the_text,table_from,filter,style,field,conn
 	if filter<>"" then
 		fsql = fsql& " WHERE "&filter
 	end if
-	RsF.open "SELECT TOP 1 "&the_text&" FROM "&table_from,ConnF
+	
+	if instr(ConnF.Provider,"MSDASQL")>0 then
+        RsF.open "SELECT "&the_text&" FROM "&table_from& " LIMIT 0,1 ",conn
+	else	
+		RsF.open "SELECT TOP 1 "&the_text&" FROM "&table_from,ConnF
+	end if
+	
 	if not (RsF.fields(0).type=201 or RsF.fields(0).type=203 or RsF.fields(0).type=205) then '201 = adLongVarChar, 203 = adLongVarWChar, 205= adLongVarBinary
 		fsql = fsql&" ORDER BY "&the_text&" asc"
 	end if
@@ -349,7 +355,11 @@ public function createLookup(the_id,the_text,table_from,filter,style,field)
 	if filter<>"" then
 		fsql = fsql& " WHERE "&filter
 	end if
-	RsF.open "SELECT TOP 1 "&the_text&" FROM "&table_from,conn
+	if instr(conn.Provider,"MSDASQL")>0 then
+        RsF.open "SELECT "&the_text&" FROM "&table_from& " LIMIT 0,1 ",conn
+	else	
+		RsF.open "SELECT TOP 1 "&the_text&" FROM "&table_from,conn
+	end if
 	if not (RsF.fields(0).type=201 or RsF.fields(0).type=203 or RsF.fields(0).type=205) then '201 = adLongVarChar, 203 = adLongVarWChar, 205= adLongVarBinary
 		fsql = fsql&" ORDER BY "&the_text&" asc"
 	end if
@@ -481,7 +491,7 @@ public function PrintField(field)
 						print = print &"</script>"&chr(13)
 					end if
 				end if
-			elseif field.type=11 then '11 = boolean
+			elseif field.type=11 or (field.type=16 and instr(conn.Provider,"MSDASQL")>0) then '11 = boolean , 16 = tinyint (mysql boolean kabul etmiyor)
 				print = "<input type='checkbox' name='c-"&field.name&"'  id='"&field.name&"_id' onclick='this.form."&field.name&".value=1-this.form."&field.name&".value;' "&field_style&""
 				on error resume next
 				if not (field.value="" or Isnull(field.value)) then
