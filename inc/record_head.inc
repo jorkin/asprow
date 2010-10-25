@@ -56,10 +56,16 @@ public function useAjax(the_id,the_text,table_from,info,style,field)
 	Dim lookSql
 	call user("useAjax_begin")
 	Set RsF = Server.CreateObject("Adodb.Recordset")
-	lookSql = "SELECT TOP 1 "&the_text
+	
+	if instr(conn.Provider,"MSDASQL")>0 then
+		lookSql = "SELECT "&the_text
+	else
+		lookSql = "SELECT TOP 1 "&the_text
+	end if
+		
 	if info<>"" then lookSql = lookSql & ","&info end if
 	lookSql = lookSql & " FROM "&table_from
-on error resume next
+	on error resume next
 	if field.value<>"" then
 		lookSql = lookSql & " WHERE "&the_id&"="
 		if IsNumeric(field.value) then
@@ -67,6 +73,10 @@ on error resume next
 		else
 			lookSql = lookSql &"'"&field.value&"'"
 		end if
+	end if
+	
+	if instr(conn.Provider,"MSDASQL")>0 then
+		lookSql = lookSql &" limit 0,1"
 	end if
 	RsF.open lookSql,conn
 		html = "<input type=""hidden"" value="""
@@ -101,12 +111,26 @@ public function showAjax(the_id,the_text,the_info,table_from,keyword)
 	if the_info<>"" then
 		sql_info = ","&the_info
 	end if
-	if keyword<>"*" then
-		sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from& " WHERE "&the_text&" LIKE '"&replace(replace(keyword,"'",""),"""","")&"%'"
+	if instr(conn.Provider,"MSDASQL")>0 then
+		if keyword<>"*" then
+			sql = "SELECT "&the_text&","&the_id&sql_info&" FROM "&table_from& " WHERE "&the_text&" LIKE '"&replace(replace(keyword,"'",""),"""","")&"%' limit 0,25"
+		else
+			sql = "SELECT "&the_text&","&the_id&sql_info&" FROM "&table_from&" limit 0,25"
+		end if
 	else
-		sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from
+		if keyword<>"*" then
+			sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from& " WHERE "&the_text&" LIKE '"&replace(replace(keyword,"'",""),"""","")&"%'"
+		else
+			sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from
+		end if
 	end if
-	RsF.open "SELECT TOP 1 "&the_text&" FROM "&table_from,conn
+	
+	if instr(conn.Provider,"MSDASQL")>0 then
+		RsF.open "SELECT "&the_text&" FROM "&table_from&" limit 0,1",conn
+	else
+		RsF.open "SELECT TOP 1 "&the_text&" FROM "&table_from,conn
+	end if
+	
 	if not (RsF.fields(0).type=201 or RsF.fields(0).type=203 or RsF.fields(0).type=205) then '201 = adLongVarChar, 203 = adLongVarWChar, 205= adLongVarBinary
 		sql = sql&" ORDER BY "&the_text&" asc"
 	end if
@@ -305,7 +329,7 @@ end function
 
 public function createGLookup(the_id,the_text,table_from,filter,style,field,connstr)
 	Dim RsF,ConnF
-	call user("createLookup_begin")
+	call user("createGLookup_begin")
 	Set RsF = Server.CreateObject("Adodb.Recordset")
 	Set ConnF=Server.CreateObject("Adodb.Connection")
 	ConnF.Open connstr
@@ -342,7 +366,7 @@ public function createGLookup(the_id,the_text,table_from,filter,style,field,conn
 		result = "<option value=''>Seciniz</option>"&result
 	end if
 	result = "<select name='"&field.name&"'  id='"&field.name&"_id' "&style&">"&result&"</select>"
-	call user("createLookup_end")
+	call user("createGLookup_end")
 	ConnF.close
 	createGLookup = result
 end function
@@ -556,7 +580,6 @@ public function getFieldFor(field)
 		finish = InStr(start,CASES,"|")
 		innerTxt = Mid(CASES,start,finish-start)
 		if (Instr(innerTxt,"makeUploader") or Instr(innerTxt,"useAjax") or Instr(innerTxt,"createLookup") or Instr(innerTxt,"createGLookup") or Instr(innerTxt,"createGenericLookup")) then
-			
 			getFieldFor = Eval(""&innerTxt&"")
 		else
 			getFieldFor = innerTxt
