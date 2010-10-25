@@ -18,7 +18,7 @@
 
 <html>
 	<head>
-			<link rel="stylesheet" type="text/css" href="/css/multistyle/<%=request.querystring("custom_style")%>/Style_doctype.css">
+			<link rel="stylesheet" type="text/css" href="../css/multistyle/<%=request.querystring("custom_style")%>/Style_doctype.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 	<script>
 	function ayarla()
@@ -81,8 +81,8 @@
 	<body>
 <!--#include file="baglanti.inc"-->
 <%
-	Session.codepage = 1254
-	page_name = request("page_name")
+Session.codepage = 1254
+page_name = request("page_name")
 	
 if request("delete_columns")=1 then
 	Response.Cookies(page_name&"_column_order") = ""
@@ -98,60 +98,62 @@ if request("edit_column")<>"" then
 end if
 
 
-	Set fs=Server.CreateObject("Scripting.FileSystemObject")
-	file_path = Server.Mappath(".")&"\.."&"\"&page_name
-	changeable = true
-	If (fs.FileExists(file_path))=true Then
-		set t=fs.OpenTextFile(file_path,1,false)
+Set fs=Server.CreateObject("Scripting.FileSystemObject")
+file_path = replace(Server.Mappath("."),"inc",page_name)
 
-		do while t.AtEndOfStream=false
-			satir = replace(t.ReadLine,"  "," ")
-			do while instr(satir,"  ")>0
-				satir = replace(satir,"  "," ")
-			loop
-			satir = replace(satir,"	","")
-			if Len(satir)>5 then
-				if instrrev(satir,"'")>0 then
-					tek = instrrev(satir,"'")
-					cift = instrrev(satir,"""")
-					if tek>cift then
-						satir = Left(satir,tek-1)
-					end if
-				end if
-				tek = instr(satir,"""")
+changeable = true
+If (fs.FileExists(file_path))=true Then
+	set t=fs.OpenTextFile(file_path,1,false)
+
+	do while t.AtEndOfStream=false
+		satir = replace(t.ReadLine,"  "," ")
+		do while instr(satir,"  ")>0
+			satir = replace(satir,"  "," ")
+		loop
+		satir = replace(satir,"	","")
+		if Len(satir)>5 then
+			if instrrev(satir,"'")>0 then
+				tek = instrrev(satir,"'")
 				cift = instrrev(satir,"""")
-				if Instr(satir,"COLUMNS")<tek and Instr(satir,"COLUMNS")>0 then
-					satir = Mid(satir,tek+1,cift-tek)
-					columns = replace(satir,"""","")
-				end if
-				if Instr(satir,"TABLENAME")<tek  and Instr(satir,"TABLENAME")>0 then
-					
-					satir = Mid(satir,tek,cift-tek)
-					table = replace(satir,"""","")
-				end if
-				if Instr(satir,"CHANGEABLE_COLUMNS")<tek and Instr(satir,"CHANGEABLE_COLUMNS")>0 then
-					changeable = false
-					satir = Mid(satir,tek+1,cift-tek)
-					c_columns = replace(satir,"""","")
+				if tek>cift then
+					satir = Left(satir,tek-1)
 				end if
 			end if
+			tek = instr(satir,"""")
+			cift = instrrev(satir,"""")
+			if Instr(satir,"COLUMNS")=1 then
+				satir = Mid(satir,tek+1,cift-tek)
+				columns = replace(satir,"""","")
+			end if
+			if Instr(satir,"TABLENAME")=1 then
+				
+				satir = Mid(satir,tek,cift-tek)
+				table = replace(satir,"""","")
+			end if
+			if Instr(satir,"CHANGEABLE_COLUMNS")=1 then
+				changeable = false
+				satir = Mid(satir,tek+1,cift-tek)
+				c_columns = replace(satir,"""","")
+			end if
+		end if
+	loop
+else
+	response.write "There are not any page for this criteria!"
+	response.end
+end if
+xcolumns = columns
+if not changeable then
+	columns = c_columns
+end if
+if table="" or columns="" then
+	response.write "This page does not allow you to change column settings!<br /><a href='../"&replace(request("back_url"),"-","&")&"'>Back to Page</a>"
+	response.write table&"- "&columns
+	response.end
+end if
 
-		loop
-	else
-		response.write "There are not any page for this criteria!"
-		response.end
-	end if
-	if not changeable then
-		columns = c_columns
-	end if
-	if table="" or columns="" then
-		response.write "This page does not allow you to change column settings!<br /><a href='../"&replace(request("back_url"),"-","&")&"'>Back to Page</a>"
-		response.write table&"- "&columns
-		response.end
-	end if
-
-	if request.Cookies(page_name&"_column_order")<>"" then columns = request.Cookies(page_name&"_column_order") end if
-	form_caption = "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr class='Footer'><td colspan='3' align='center'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"&back_url="&request("back_url")&"&custom_style="&request("custom_style")&"'>Reset Settings</a><br>Column settings for : <i>"&page_name&"</i></td></tr><tr><td><input id='call_b' type='checkbox' onchange='uncheckall(this.checked)' checked><b>Add to Columns</b></td><td><b>Column Name</b></td><td><b>Show Order</b></td></tr>"
+'if request.Cookies(page_name&"_column_order")<>"" then columns = request.Cookies(page_name&"_column_order") end if
+if request.Cookies(page_name&"_column_order")<>"" then xcolumns = request.Cookies(page_name&"_column_order") end if
+form_caption = "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr class='Footer'><td colspan='3' align='center'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"&back_url="&request("back_url")&"&custom_style="&request("custom_style")&"'>Reset Settings</a><br>Column settings for : <i>"&page_name&"</i></td></tr><tr><td><input id='call_b' type='checkbox' onchange='uncheckall(this.checked)' checked><b>Add to Columns</b></td><td><b>Column Name</b></td><td><b>Show Order</b></td></tr>"
 if request("column_editor")=1 then
 	Set Rs = Server.CreateObject("Adodb.Recordset")
 	Set Rs2 = Server.CreateObject("Adodb.Recordset")
@@ -175,18 +177,20 @@ if request("column_editor")=1 then
 		counter = 0
 		counter2 = 0
 		response.write form_caption
-		Rs2.open "SELECT TOP 1 "&columns&" FROM "&table,conn
-		
 		if instr(conn.Provider,"MSDASQL")>0 then
 			Rs2.open "SELECT "&columns&" FROM "&table& " LIMIT 0,1 ",conn
+		else
+			Rs2.open "SELECT TOP 1 "&columns&" FROM "&table,conn
 		end if
-		
+		Rs2.close
 		for i=0 to ubound(g_tablolar)
 			if not (instr(g_tablolar(i),"_1")>0 or instr(g_tablolar(i),"_2")>0) then
-				Rs.open "SELECT top 1 * FROM "&g_tablolar(i),conn 
-				if instr(conn.Provider,"MSDASQL")>0 then
-					Rs2.open "SELECT "&columns&" FROM "&table& " LIMIT 0,1 ",conn
-				end if
+				rs1sql = ""
+				rs2sql = ""
+				if instr(conn.Provider,"MSDASQL")>0 then rs1sql = "SELECT * FROM "&g_tablolar(i)&" limit 0,1" else rs1sql = "SELECT top 1 * FROM "&g_tablolar(i) end if
+				if instr(conn.Provider,"MSDASQL")>0 then rs2sql = "SELECT "&columns&" FROM "&g_tablolar(i)&" limit 0,1" else rs2sql = "SELECT top 1 "&columns&" FROM "&table end if
+				Rs.open rs1sql,conn
+				Rs2.open rs2sql,conn
 				if err=0 then 
 					for each x in Rs.fields
 						if Instr(selected_columns," "&x.name&" ")=0 then
@@ -218,16 +222,18 @@ if request("column_editor")=1 then
 			end if
 		next
 	else
-		sql = "SELECT TOP 1 * FROM "&table
+	
 		
 		if instr(conn.Provider,"MSDASQL")>0 then
 			sql = "SELECT "&columns&" FROM "&table& " LIMIT 0,1 "
+		else
+			sql = "SELECT TOP 1 "&columns&" FROM "&table
 		end if
 		
-		sql2 = "SELECT TOP 1 "&columns&" FROM "&table
-		
 		if instr(conn.Provider,"MSDASQL")>0 then
-			sql2 = "SELECT "&columns&" FROM "&table& " LIMIT 0,1 "
+			sql2 = "SELECT "&xcolumns&" FROM "&table& " LIMIT 0,1 "
+		else
+			sql2 = "SELECT TOP 1 "&xcolumns&" FROM "&table
 		end if
 		
 		on error resume next
