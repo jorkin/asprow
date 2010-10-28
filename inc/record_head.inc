@@ -111,18 +111,10 @@ public function showAjax(the_id,the_text,the_info,table_from,keyword)
 	if the_info<>"" then
 		sql_info = ","&the_info
 	end if
-	if instr(conn.Provider,"MSDASQL")>0 then
-		if keyword<>"*" then
-			sql = "SELECT "&the_text&","&the_id&sql_info&" FROM "&table_from& " WHERE "&the_text&" LIKE '"&replace(replace(keyword,"'",""),"""","")&"%' limit 0,25"
-		else
-			sql = "SELECT "&the_text&","&the_id&sql_info&" FROM "&table_from&" limit 0,25"
-		end if
+	if keyword<>"*" then
+		sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from& " WHERE "&the_text&" LIKE '"&replace(replace(keyword,"'",""),"""","")&"%'"
 	else
-		if keyword<>"*" then
-			sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from& " WHERE "&the_text&" LIKE '"&replace(replace(keyword,"'",""),"""","")&"%'"
-		else
-			sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from
-		end if
+		sql = "SELECT TOP 25 "&the_text&","&the_id&sql_info&" FROM "&table_from
 	end if
 	
 	if instr(conn.Provider,"MSDASQL")>0 then
@@ -134,6 +126,10 @@ public function showAjax(the_id,the_text,the_info,table_from,keyword)
 	if not (RsF.fields(0).type=201 or RsF.fields(0).type=203 or RsF.fields(0).type=205) then '201 = adLongVarChar, 203 = adLongVarWChar, 205= adLongVarBinary
 		sql = sql&" ORDER BY "&the_text&" asc"
 	end if
+	if instr(conn.Provider,"MSDASQL")>0 then
+		sql = replace(sql,"TOP 25","")&" LIMIT 0,25"
+	end if
+	
 	RsF.close
 	
 	RsF.open sql,conn

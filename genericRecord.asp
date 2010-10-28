@@ -14,7 +14,11 @@
 	g_tablename = replace(g_tablename,"'","''")
 	
 	on error resume next
-	Rs.open "SELECT TOP 1 * FROM "&g_tablename,conn
+	if instr(conn.Provider,"MSDASQL")>0 then 
+		Rs.open "SELECT * FROM "&g_tablename&" limit 0,1",conn
+	else
+		Rs.open "SELECT TOP 1 * FROM "&g_tablename,conn
+	end if
 	if err<>0 then
 		response.write "Error occured : "&err.description
 		response.end

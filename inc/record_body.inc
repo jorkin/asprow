@@ -1,4 +1,4 @@
-﻿<%
+<%
 '    This file is part of ASPROW.
 
 '    ASPROW is free software: you can redistribute it and/or modify
@@ -24,6 +24,7 @@ JAVASCRIPT = ""
 REQUEST_LINKED_COLUMN = request(LINKED_COLUMN)
 call user("after_definations_record_body")
 if request("AJAX")=1 then
+	response.clear()
 	if request("call")="generic" then
 		response.write genericAjax(request.querystring("id_field"),request.querystring("text_field"),request.querystring("table_from"),request.querystring("filter"))
 	else

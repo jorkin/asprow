@@ -126,9 +126,11 @@ If (fs.FileExists(file_path))=true Then
 				columns = replace(satir,"""","")
 			end if
 			if Instr(satir,"TABLENAME")=1 then
-				
 				satir = Mid(satir,tek,cift-tek)
 				table = replace(satir,"""","")
+				if instr(table,"WHERE")>0 then
+					table = Mid(table,1,instr(table,"WHERE"))
+				end if
 			end if
 			if Instr(satir,"CHANGEABLE_COLUMNS")=1 then
 				changeable = false
@@ -180,6 +182,8 @@ if request("column_editor")=1 then
 		if instr(conn.Provider,"MSDASQL")>0 then
 			Rs2.open "SELECT "&columns&" FROM "&table& " LIMIT 0,1 ",conn
 		else
+			response.write "SELECT TOP 1 "&columns&" FROM "&table
+			response.end
 			Rs2.open "SELECT TOP 1 "&columns&" FROM "&table,conn
 		end if
 		Rs2.close
