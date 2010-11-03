@@ -120,6 +120,13 @@ if REQUEST_LINKED_COLUMN<>"" then
 			function form_control()
 			{
 				var zorunlu_fieldlar="<%=REQUIRED_COLUMNS%>".split(" ");
+				var zorunlu_field_isimler = "<%
+					reqs = Split(REQUIRED_COLUMNS," ")
+					for i=0 to ubound(reqs)
+						response.write PrintTitleText(reqs(i))
+						if ubound(reqs)>i then response.write "|" end if
+					next
+				%>".split("|");
 				var durum = "true";
 				var mesaj = "Lutfen asagidaki alanlari bos birakmayiniz:\n\n";
 				for(var i=0;i<zorunlu_fieldlar.length;i++)

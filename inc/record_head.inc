@@ -455,6 +455,18 @@ public function PrintTitle(field)
 	end if
 end function
 
+public function PrintTitleText(fieldname)
+	Dim start,finish,zorunlu
+	start = Instr(CASES,"["&fieldname&"=")	
+	if start>0 then
+		start = start + Len("["&fieldname&"=")
+		finish = Instr(start,CASES,"|")
+		PrintTitleText = (Mid(CASES,start,finish-start)&zorunlu)
+	else
+		PrintTitleText = (CStr(UCase(Left(fieldname,1))&Lcase(Right(fieldname,Len(fieldname)-1)))&zorunlu)
+	end if
+end function
+
 public function PrintField(field)
 	call user("PrintField_begin")
 	print = ""
