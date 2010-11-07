@@ -320,7 +320,15 @@ for each x in RsF.Fields
 			
 		else
 			if request.querystring("q_"&x.name)<>"" then
-					where = where & " AND "&x.name&" LIKE '"&request.querystring("q_"&x.name)&"'"		
+				if IsNumeric(request.querystring("q_"&x.name)) then
+					where = where & " AND "&x.name&" LIKE '"&request.querystring("q_"&x.name)&"'"
+				else
+					if left(request.querystring("q_"&x.name),1)="<" or left(request.querystring("q_"&x.name),1)=">" then
+						where = where & " AND "&x.name&" "&left(request.querystring("q_"&x.name),1)&" '"&right(request.querystring("q_"&x.name),len(request.querystring("q_"&x.name))-1)&"'"
+					else
+						where = where & " AND "&x.name&" LIKE '"&request.querystring("q_"&x.name)&"%'"
+					end if
+				end if							
 			end if
 		end if
 	
