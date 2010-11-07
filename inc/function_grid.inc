@@ -320,7 +320,7 @@ for each x in RsF.Fields
 			
 		else
 			if request.querystring("q_"&x.name)<>"" then
-					where = where & " AND "&x.name&" LIKE '"&request.querystring("q_"&x.name)&"%'"		
+					where = where & " AND "&x.name&" LIKE '"&request.querystring("q_"&x.name)&"'"		
 			end if
 		end if
 	
