@@ -1,4 +1,4 @@
-﻿<%
+ <%
 if SHOW_ONLYPAGE="" then SHOW_ONLYPAGE = request.querystring("SHOW_ONLYPAGE") end if
 if SHOW_HEADER="" then SHOW_HEADER = request.querystring("SHOW_HEADER") end if
 if SHOW_FOOTER="" then SHOW_FOOTER = request.querystring("SHOW_FOOTER") end if
@@ -138,6 +138,12 @@ call user("after_sql_definations")
 on error resume next
 rs.open sql , conn
 if err<>0 then
+  	'Sorun cikmasinin sebebi cookiedeki kolon ayarlari olabilir
+	if request.Cookies(THIS_PAGE&"_column_order") = COLUMNS then
+		request.Cookies(THIS_PAGE&"_column_order") = ""
+		response.redirect THIS_PAGE
+		response.end
+	end if
 	response.write err.description&"<br>"
 	response.write sql
 	response.end
