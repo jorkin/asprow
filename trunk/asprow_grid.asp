@@ -1,8 +1,5 @@
-﻿<!--#include file="inc/grid_head.inc"-->
+ <!--#include file="inc/grid_head.inc"-->
 <%
-//bir degisiklik yaptiktan sonra depoya atmak icin..
-//once kaydet sonra sag tusla commit de.
-// kaydedilen dosya depodakinden farklı olunca otomatikman uzerinde siyah yildiz cikiyor.
 sub user(myFunction)
 	'myFunction: %function_name%_begin , %function_name%_end
 End sub
