@@ -18,25 +18,28 @@
 
 <html>
 	<head>
-			<link rel="stylesheet" type="text/css" href="../css/multistyle/<%=request.querystring("custom_style")%>/Style_doctype.css">
+			<link rel="stylesheet" type="text/css" href="/css/multistyle/<%=request.querystring("custom_style")%>/Style_doctype.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 	<script>
+	var element_number;
 	function ayarla()
 	{
-		var element_number = document.getElementById("cc").value*1;
+		element_number = document.getElementById("cc").value*1;
 		var columns = Array(element_number);
 		var sira = Array(element_number);
 		var counter = 0;
 		for(var k=1;k<=element_number;k++)
 		{
-			if (document.getElementById(k+"_c").checked)
-			{
-				if (document.getElementById(k+"_cc").value=="")
-					document.getElementById(k+"_cc").value=1;
-				sira[counter] = document.getElementById(k+"_cc").value;
-				columns[counter] = document.getElementById(k+"_c").name.replace("_display","");
-				counter++;
-			}
+			try{
+				if (document.getElementById(k+"_c").checked)
+				{
+					if (document.getElementById(k+"_cc").value=="")
+						document.getElementById(k+"_cc").value=1;
+					sira[counter] = document.getElementById(k+"_cc").value;
+					columns[counter] = document.getElementById(k+"_c").name.replace("_display","");
+					counter++;
+				}
+			}catch(e){}
 		}
 	
 		var final_columns = "";
@@ -66,23 +69,22 @@
 	}
 	function uncheckall(bool)
 	{
-		try
+		element_number = document.getElementById("cc").value*1;
+		for(var sayac = 1;sayac<=element_number+1;sayac++)
 		{
-			for(var sayac = 1;;sayac++)
-			{
-				input = document.getElementById(sayac+"_c");
-				input.checked = bool;
-			}
+			try{
+			input = document.getElementById(sayac+"_c");
+			input.checked = bool;
+			}catch(e){}
 		}
-		catch(e){return;}
 	}
 	</script>
 	</head>
 	<body>
 <!--#include file="baglanti.inc"-->
 <%
-Session.codepage = 1254
-page_name = request("page_name")
+	Session.codepage = 1254
+	page_name = request("page_name")
 	
 if request("delete_columns")=1 then
 	Response.Cookies(page_name&"_column_order") = ""
@@ -93,69 +95,70 @@ if request("edit_column")<>"" then
 	
 		Response.Cookies(page_name&"_column_order") = request("sonuc")
 		Response.Cookies(page_name&"_column_order").Expires = date+365
-		response.write "Columns are settled !:<br>Select<br>"&request("sonuc")&"<br> FROM <BR>"&table&"<br><br><a href='../"&replace(request("back_url"),"-","&")&"'>Show</a>"
+		response.write "Columns are settled <i onclick=""{document.getElementById('sqls').style.display='block'}"">!</i>"
+		response.write "<div id='sqls' style='display:none;'><br>Select<br>"&request("sonuc")&"<br> FROM <BR>"&table&"<br><br></div>"
+		response.write "<a href='../"&replace(request("back_url"),"-","&")&"'>Show</a>"
 	end if
 end if
 
 
-Set fs=Server.CreateObject("Scripting.FileSystemObject")
-file_path = replace(Server.Mappath("."),"inc",page_name)
+	Set fs=Server.CreateObject("Scripting.FileSystemObject")
+	file_path = Server.Mappath(".")&"\.."&"\"&page_name
+	changeable = false
+	If (fs.FileExists(file_path))=true Then
+		set t=fs.OpenTextFile(file_path,1,false)
 
-changeable = true
-If (fs.FileExists(file_path))=true Then
-	set t=fs.OpenTextFile(file_path,1,false)
-
-	do while t.AtEndOfStream=false
-		satir = replace(t.ReadLine,"  "," ")
-		do while instr(satir,"  ")>0
-			satir = replace(satir,"  "," ")
-		loop
-		satir = replace(satir,"	","")
-		if Len(satir)>5 then
-			if instrrev(satir,"'")>0 then
-				tek = instrrev(satir,"'")
+		do while t.AtEndOfStream=false
+			satir = replace(t.ReadLine,"  "," ")
+			do while instr(satir,"  ")>0
+				satir = replace(satir,"  "," ")
+			loop
+			satir = replace(satir,"	","")
+			if Len(satir)>5 then
+				if instrrev(satir,"'")>0 then
+					tek = instrrev(satir,"'")
+					cift = instrrev(satir,"""")
+					if tek>cift then
+						satir = Left(satir,tek-1)
+					end if
+				end if
+				tek = instr(satir,"""")
 				cift = instrrev(satir,"""")
-				if tek>cift then
-					satir = Left(satir,tek-1)
+				if Instr(satir,"CHANGEABLE_COLUMNS")>0 and Instr(satir,"CHANGEABLE_COLUMNS")<tek then
+					satir = Mid(satir,tek+1,cift-tek)
+					c_columns = replace(satir,"""","")
+					if len(c_columns)>0 then
+						changeable = true
+					end if
+				elseif Instr(satir,"COLUMNS")<tek and Instr(satir,"COLUMNS")>0 then
+					satir = Mid(satir,tek+1,cift-tek)
+					columns = replace(satir,"""","")
+				elseif Instr(satir,"TABLENAME")<tek  and Instr(satir,"TABLENAME")>0 then
+					satir = Mid(satir,tek,cift-tek)
+					table = replace(satir,"""","")
 				end if
+				
 			end if
-			tek = instr(satir,"""")
-			cift = instrrev(satir,"""")
-			if Instr(satir,"COLUMNS")=1 then
-				satir = Mid(satir,tek+1,cift-tek)
-				columns = replace(satir,"""","")
-			end if
-			if Instr(satir,"TABLENAME")=1 then
-				satir = Mid(satir,tek,cift-tek)
-				table = replace(satir,"""","")
-				if instr(table,"WHERE")>0 then
-					table = Mid(table,1,instr(table,"WHERE"))
-				end if
-			end if
-			if Instr(satir,"CHANGEABLE_COLUMNS")=1 then
-				changeable = false
-				satir = Mid(satir,tek+1,cift-tek)
-				c_columns = replace(satir,"""","")
-			end if
-		end if
-	loop
-else
-	response.write "There are not any page for this criteria!"
-	response.end
-end if
-xcolumns = columns
-if not changeable then
-	columns = c_columns
-end if
-if table="" or columns="" then
-	response.write "This page does not allow you to change column settings!<br /><a href='../"&replace(request("back_url"),"-","&")&"'>Back to Page</a>"
-	response.write table&"- "&columns
-	response.end
-end if
 
-'if request.Cookies(page_name&"_column_order")<>"" then columns = request.Cookies(page_name&"_column_order") end if
-if request.Cookies(page_name&"_column_order")<>"" then xcolumns = request.Cookies(page_name&"_column_order") end if
-form_caption = "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr class='Footer'><td colspan='3' align='center'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"&back_url="&request("back_url")&"&custom_style="&request("custom_style")&"'>Reset Settings</a><br>Column settings for : <i>"&page_name&"</i></td></tr><tr><td><input id='call_b' type='checkbox' onchange='uncheckall(this.checked)' checked><b>Add to Columns</b></td><td><b>Column Name</b></td><td><b>Show Order</b></td></tr>"
+		loop
+	else
+		response.write "There are not any page for this criteria!"
+		response.end
+	end if
+	if changeable then
+		columns = c_columns
+		'response.write columns
+	end if
+	if table="" or columns="" then
+		response.write "This page does not allow you to change column settings!<br /><a href='../"&replace(request("back_url"),"-","&")&"'>Back to Page</a>"
+		'response.write table&"- "&columns
+		response.end
+	end if
+
+	if request.Cookies(page_name&"_column_order")<>"" and (not changeable) then 
+		columns = request.Cookies(page_name&"_column_order")
+	end if
+	form_caption = "<form action='column_editor.asp' method='post' onsubmit='return ayarla();'><table border='1' align='center' width='80%'><tr class='Footer'><td colspan='3' align='center'><a href='column_editor.asp?delete_columns=1&page_name="&page_name&"&back_url="&request("back_url")&"&custom_style="&request("custom_style")&"'>Reset Settings</a><br>Column settings for : <i>"&page_name&"</i></td></tr><tr><td><input id='call_b' type='checkbox' onchange='uncheckall(this.checked)' checked><b>Add to Columns</b></td><td><b>Column Name</b></td><td><b>Show Order</b></td></tr>"
 if request("column_editor")=1 then
 	Set Rs = Server.CreateObject("Adodb.Recordset")
 	Set Rs2 = Server.CreateObject("Adodb.Recordset")
@@ -179,22 +182,18 @@ if request("column_editor")=1 then
 		counter = 0
 		counter2 = 0
 		response.write form_caption
+		Rs2.open "SELECT TOP 1 "&columns&" FROM "&table,conn
+		
 		if instr(conn.Provider,"MSDASQL")>0 then
 			Rs2.open "SELECT "&columns&" FROM "&table& " LIMIT 0,1 ",conn
-		else
-			response.write "SELECT TOP 1 "&columns&" FROM "&table
-			response.end
-			Rs2.open "SELECT TOP 1 "&columns&" FROM "&table,conn
 		end if
-		Rs2.close
+		
 		for i=0 to ubound(g_tablolar)
 			if not (instr(g_tablolar(i),"_1")>0 or instr(g_tablolar(i),"_2")>0) then
-				rs1sql = ""
-				rs2sql = ""
-				if instr(conn.Provider,"MSDASQL")>0 then rs1sql = "SELECT * FROM "&g_tablolar(i)&" limit 0,1" else rs1sql = "SELECT top 1 * FROM "&g_tablolar(i) end if
-				if instr(conn.Provider,"MSDASQL")>0 then rs2sql = "SELECT "&columns&" FROM "&g_tablolar(i)&" limit 0,1" else rs2sql = "SELECT top 1 "&columns&" FROM "&table end if
-				Rs.open rs1sql,conn
-				Rs2.open rs2sql,conn
+				Rs.open "SELECT top 1 * FROM "&g_tablolar(i),conn 
+				if instr(conn.Provider,"MSDASQL")>0 then
+					Rs2.open "SELECT "&columns&" FROM "&table& " LIMIT 0,1 ",conn
+				end if
 				if err=0 then 
 					for each x in Rs.fields
 						if Instr(selected_columns," "&x.name&" ")=0 then
@@ -209,14 +208,16 @@ if request("column_editor")=1 then
 									exit for
 								end if
 							next
-							if found=false then
-								response.write chr(13)&"<tr class='Row'><td><input id='"&counter2&"_c' type='checkbox' name='"&g_tablolar(i)&"."&x.name&"_display'>"
+							if not changeable or (changeable and found=true) then
+								if found=false then
+									response.write chr(13)&"<tr class='Row'><td><input id='"&counter2&"_c' type='checkbox' name='"&g_tablolar(i)&"."&x.name&"_display'>"
+								end if
+								response.write "</td><td> <i>"&g_tablolar(i)&"</i> <b>. "&x.name&"</b></td><td><input type='text' id='"&counter2&"_cc' name='"&g_tablolar(i)&"."&x.name&"_no' size='2'"
+								if found=true then
+									response.write " value='"&counter&"'"
+								end if
+								response.write "></td></tr>"&chr(13)
 							end if
-							response.write "</td><td> <i>"&g_tablolar(i)&"</i> <b>. "&x.name&"</b></td><td><input type='text' id='"&counter2&"_cc' name='"&g_tablolar(i)&"."&x.name&"_no' size='2'"
-							if found=true then
-								response.write " value='"&counter&"'"
-							end if
-							response.write "></td></tr>"&chr(13)
 						end if
 					next
 					Rs.close
@@ -226,18 +227,16 @@ if request("column_editor")=1 then
 			end if
 		next
 	else
-	
+		sql = "SELECT TOP 1 * FROM "&table
 		
 		if instr(conn.Provider,"MSDASQL")>0 then
 			sql = "SELECT "&columns&" FROM "&table& " LIMIT 0,1 "
-		else
-			sql = "SELECT TOP 1 "&columns&" FROM "&table
 		end if
 		
+		sql2 = "SELECT TOP 1 "&columns&" FROM "&table
+		
 		if instr(conn.Provider,"MSDASQL")>0 then
-			sql2 = "SELECT "&xcolumns&" FROM "&table& " LIMIT 0,1 "
-		else
-			sql2 = "SELECT TOP 1 "&xcolumns&" FROM "&table
+			sql2 = "SELECT "&columns&" FROM "&table& " LIMIT 0,1 "
 		end if
 		
 		on error resume next
@@ -266,14 +265,16 @@ if request("column_editor")=1 then
 						exit for
 					end if
 				next
-				if found=false then
-					response.write chr(13)&"<tr class='Row'><td><input id='"&counter2&"_c' type='checkbox' name='"&x.name&"_display'>"
+				if not changeable or (changeable and found=true) then
+					if found=false then
+						response.write chr(13)&"<tr class='Row'><td><input id='"&counter2&"_c' type='checkbox' name='"&x.name&"_display'>"
+					end if
+					response.write "</td><td>"&x.name&"</td><td><input  id='"&counter2&"_cc' type='text' name='"&x.name&"_no' size='2'"
+					if found=true then
+						response.write " value='"&counter&"'"
+					end if
+					response.write "></td></tr>"&chr(13)
 				end if
-				response.write "</td><td>"&x.name&"</td><td><input  id='"&counter2&"_cc' type='text' name='"&x.name&"_no' size='2'"
-				if found=true then
-					response.write " value='"&counter&"'"
-				end if
-				response.write "></td></tr>"&chr(13)
 			end if
 		next
 	end if
