@@ -22,22 +22,19 @@ function createtable()
 			colums[sayac].type = (all_elements[i].value);
 	}
 	var query = "";
-	if (DBTYPE=="ACCESS")
+	query = "CREATE TABLE "+table_name+" ("
+	for(var i = 0;i<colums.length;i++)
 	{
-		query = "CREATE TABLE "+table_name+" ("
-		for(var i = 0;i<colums.length;i++)
-		{
-			query += colums[i].name+" "+colums[i].type
-			if (colums[i].pk)
-				query +=  ", Constraint "+table_name+"_PK Primary Key ("+colums[i].name+")"
-				
-			if ((i+1)!=colums.length)
-				query +=  ",";
-		}
-		query +=  ");";
-		alert(query);
-		return query;
+		query += colums[i].name+" "+colums[i].type
+		if (colums[i].pk)
+			query +=  ", Constraint "+table_name+"_PK Primary Key ("+colums[i].name+")"
+			
+		if ((i+1)!=colums.length)
+			query +=  ",";
 	}
+	query +=  ");";
+	alert(query);
+	return query;
 }
 function tableTemplate()
 {

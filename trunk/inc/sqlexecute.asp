@@ -4,7 +4,7 @@ dim sql
 Session.CodePage = 65001
 sql=trim(request.form("sql"))
 %>
-<script src="/JS/createtable.js"></script>
+<script src="../JS/createtable.js"></script>
 <script>tableTemplate()</script>
 <script>
 	function writeMe(element)
@@ -27,7 +27,7 @@ for each table in adox.tables
 	
 	if table.type="TABLE" then  
 		response.write "<b style='cursor:hand;cursor:pointer;'><u><span id='"&table.name&"_btbl' onclick='writeMe(this)'>"&table.name & "</span></u></b> ("  
-		set rs = conn.execute("SELECT COUNT(*) FROM " & table.name) 
+		set rs = conn.execute("SELECT COUNT(*) FROM [" & table.name&"]") 
 		response.write rs(0) &","& pk_field&"), "
 	end if 
 next 
@@ -35,8 +35,15 @@ response.write "<br /><br />Active Views: "
 for each table in adox.tables  
 	if table.type="VIEW" then  
 		response.write "<b style='cursor:hand;cursor:pointer;'><u><span id='"&table.name&"_btbl' onclick='writeMe(this)'>"&table.name & "</span></u></b> ("  
-		set rs = conn.execute("SELECT COUNT(*) FROM " & table.name) 
-		response.write rs(0) & "), "
+		on error resume next
+		set rs = conn.execute("SELECT COUNT(*) FROM [" & table.name&"]") 
+		if err<>0 then
+			response.write "Invalid Query"
+			err = 0
+		else
+			response.write rs(0)
+		end if
+		response.write  "), "
 	end if 
 next 
 %>
