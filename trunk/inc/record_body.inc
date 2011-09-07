@@ -197,6 +197,14 @@ if REQUEST_LINKED_COLUMN<>"" then
 				myObject.focus();
 			}
 			<% end if %>
+			var cogaltilanId = "<%=REQUEST_LINKED_COLUMN%>";
+			function cogalt(){
+				var par = document.getElementById("cogaltbutton").checked;
+				if (par)
+					document.getElementById("<%=RECORD_ID%>_id").value = "NEWID";
+				else
+					document.getElementById("<%=RECORD_ID%>_id").value = cogaltilanId;
+			}
 		</script>
 		<link rel=stylesheet href="css/stylee.css" type="text/css">
 		<script type="text/javascript" src="js/calendarDateInput.js">
@@ -251,7 +259,7 @@ if REQUEST_LINKED_COLUMN<>"" then
 								%>
 								<tr class="Controls"><td class="th"><label for="<%=x.name%>_id"><%=PrintTitle(x)%></label></td><td><input type="text" size="15" id="<%=x.name%>_id"  name="<%=x.name%>" value="<%=x.value%>" readonly></td></tr>
 								<% else %>
-								<tr class="Controls"><td colspan="2" class="th"><input type="hidden" name="<%=x.name%>" value="<%=x.value%>"></td></tr>
+								<tr class="Controls"><td colspan="2" class="th"><input type="hidden" name="<%=x.name%>" value="<%=x.value%>" id="<%=x.name%>_id"></td></tr>
 								<%
 								end if
 							else
@@ -263,6 +271,7 @@ if REQUEST_LINKED_COLUMN<>"" then
 					end if
 					%>
 					<tr class="Bottom"><td colspan="2"  align="right">
+					<% if COGALT=1 then %><input type="checkbox" id="cogaltbutton" onclick="cogalt()"> Çoğalt<% end if %>
 					<% if KAYDET=1 then %><input name="kaydet" type="submit" class="Button" value="Kaydet"><% end if %>
 					<% if GERIAL=1 then %><input type="reset" class="Button" value="Tümünü Geri Al"><% end if %>
 					<% if SIL=1 then %><input type="submit" name="delete" class="Button" value="Sil"><% end if%>
