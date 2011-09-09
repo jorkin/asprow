@@ -14,6 +14,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with ASPROW.  If not, see <http://www.gnu.org/licenses/>.
 %>
+<!--#include file="rsToJson.inc"-->
 <!--#include file="baglanti.inc"-->
 <%
 Session.codepage = "65001"
@@ -30,7 +31,7 @@ Dim REQUEST_LINKED_COLUMN
 Dim BEFORE_TABLE_HTML
 Dim GENERICPAGE
 Dim PAGE_STYLE
-
+Dim HTML_TEMPLATE
 Dim RECORD_TITLE 	'Record Basligi
 Dim TABLENAME 	'SELECT COLUMNS FROM ______
 Dim COLUMNS 	'SELECT _______ FROM TABLENAME
@@ -41,6 +42,7 @@ Dim LINKED_COLUMN
 Dim THIS_PAGE
 Dim UPLOAD_PERMISSIONS
 Dim GENERICAJAX_PERMISSION
+HTML_TEMPLATE = ""
 BEFORE_TABLE_HTML = ""
 GERIDON=1
 SIL=1

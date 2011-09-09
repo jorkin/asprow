@@ -61,49 +61,49 @@ elseif Request.Form("delete")<>"" then
 	response.redirect LIST_PAGE
 end if
 
-
-
-if REQUEST_LINKED_COLUMN<>"" then
-	if IsNumeric(REQUEST_LINKED_COLUMN) then
-		where_statement = "WHERE "&LINKED_COLUMN &"="&REQUEST_LINKED_COLUMN
+if REQUEST_LINKED_COLUMN="" then
+	REQUEST_LINKED_COLUMN = "NEWID"
+end if
+if IsNumeric(REQUEST_LINKED_COLUMN) then
+	where_statement = "WHERE "&LINKED_COLUMN &"="&REQUEST_LINKED_COLUMN
+else
+	if REQUEST_LINKED_COLUMN="NEWID" then
+		where_statement =""
 	else
-		if REQUEST_LINKED_COLUMN="NEWID" then
-			where_statement =""
-		else
-			where_statement = "WHERE "&LINKED_COLUMN &"='"&REQUEST_LINKED_COLUMN&"'"
-		end if
+		where_statement = "WHERE "&LINKED_COLUMN &"='"&REQUEST_LINKED_COLUMN&"'"
 	end if
-	
-	
-	'3 ARALIK 2009 HATA TESPIT EDILDI //ALP
-	'if not (Instr(COLUMNS,RECORD_ID)>0 or COLUMNS="*") then
-	if RECORD_ID<>"" then
-		if not (Instr(replace(" "&COLUMNS&" ",","," ")," "&RECORD_ID&" ")>0 or COLUMNS="*") then
-			EXTRA_COLUMN=","&RECORD_ID
-		else
-			EXTRA_COLUMN=""
-		end if
+end if
+
+
+'3 ARALIK 2009 HATA TESPIT EDILDI //ALP
+'if not (Instr(COLUMNS,RECORD_ID)>0 or COLUMNS="*") then
+if RECORD_ID<>"" then
+	if not (Instr(replace(" "&COLUMNS&" ",","," ")," "&RECORD_ID&" ")>0 or COLUMNS="*") then
+		EXTRA_COLUMN=","&RECORD_ID
+	else
+		EXTRA_COLUMN=""
 	end if
-	
-	on error resume next
-	sql = "SELECT top 1 "&COLUMNS&EXTRA_COLUMN&" FROM "&TABLENAME&" "&where_statement
-	
-	if instr(conn.Provider,"MSDASQL")>0 then 
-		sql = "SELECT "&COLUMNS&EXTRA_COLUMN&" FROM "&TABLENAME&" "&where_statement& " LIMIT 0,1 " 
-	end if
-	
-	Set Rs = Server.CreateObject("Adodb.Recordset")
-	rs.open sql,conn
-	
-	
-	
-	if err<>0 then
-		response.write "Error 1:"&err.description&"<hr> SQL: "&sql&"<hr>"
-		response.write "<hr>Columns : "&COLUMNS&"<hr>"&EXTRA_COLUMN&"<hr>"
-		response.write "Rs.eof : "&rs.eof
-		response.end
-	end if
-	%>
+end if
+
+on error resume next
+sql = "SELECT top 1 "&COLUMNS&EXTRA_COLUMN&" FROM "&TABLENAME&" "&where_statement
+
+if instr(conn.Provider,"MSDASQL")>0 then 
+	sql = "SELECT "&COLUMNS&EXTRA_COLUMN&" FROM "&TABLENAME&" "&where_statement& " LIMIT 0,1 " 
+end if
+
+Set Rs = Server.CreateObject("Adodb.Recordset")
+rs.open sql,conn
+
+
+
+if err<>0 then
+	response.write "Error 1:"&err.description&"<hr> SQL: "&sql&"<hr>"
+	response.write "<hr>Columns : "&COLUMNS&"<hr>"&EXTRA_COLUMN&"<hr>"
+	response.write "Rs.eof : "&rs.eof
+	response.end
+end if
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 	<head>
@@ -217,17 +217,18 @@ if REQUEST_LINKED_COLUMN<>"" then
 		<title>Kayıt</title>
 	</head>
 	<body><%=BEFORE_TABLE_HTML%>
+	<%if HTML_TEMPLATE="" then%>
 			<form action="<%=THIS_PAGE%>" method="post" onsubmit="return form_control()">
 				<table cellspacing="0" cellpadding="0" border="0" align="center" width="700">
 					<tr>
-					  <td valign="top">
-						<table cellspacing="0" cellpadding="0" border="0" class="Header">
-						  <tr>
-							<td class="HeaderLeft">&nbsp;</td> 
-							<td class="th"><strong><%=RECORD_TITLE%></strong></td> 
-							<td class="HeaderRight">&nbsp;</td> 
-						  </tr>
-						</table>
+						<td valign="top">
+							<table cellspacing="0" cellpadding="0" border="0" class="Header">
+								<tr>
+									<td class="HeaderLeft">&nbsp;</td> 
+									<td class="th"><strong><%=RECORD_TITLE%></strong></td> 
+									<td class="HeaderRight">&nbsp;</td> 
+								</tr>
+							</table>
 						<table class="Record" cellspacing="0" cellpadding="0">
 					<%
 					if REQUEST_LINKED_COLUMN="NEWID" then ' yeni kayit
@@ -236,21 +237,16 @@ if REQUEST_LINKED_COLUMN<>"" then
 								if not (EXTRA_COLUMN<>"") then ' Secilmeyen IDnin yazilmasi sevimsiz olur
 								%>
 								<tr class="Controls"><td class="th"><label for="<%=x.name%>"><%=PrintTitle(x)%></label></td><td><input type="text" size="15" id="<%=x.name%>_id"  name="<%=x.name%>" value="NEWID" readonly></td></tr>
-								<%
-								else
-								%>
+								<%else%>
 								<input type="hidden" name="<%=x.name%>" value="NEWID" id="<%=x.name%>_id">	
-								<%
-								end if
-							else
-						%>
+								<%end if%>
+							<%end if%>
+							<%if LCase(x.name) <> LCase(RECORD_ID) then%>
 							<tr class="Controls"><td class="th"><label for="<%=x.name%>"><%=PrintTitle(x)%></label></td><td>
-							<%
-							response.write PrintField(x)
-							%>
+							<%=PrintField(x)%>
 							</td></tr>
-						<%
-							end if
+						<%end if%>
+					<%
 						next
 					else ' update
 						for each x in rs.Fields
@@ -260,10 +256,9 @@ if REQUEST_LINKED_COLUMN<>"" then
 								<tr class="Controls"><td class="th"><label for="<%=x.name%>_id"><%=PrintTitle(x)%></label></td><td><input type="text" size="15" id="<%=x.name%>_id"  name="<%=x.name%>" value="<%=x.value%>" readonly></td></tr>
 								<% else %>
 								<tr class="Controls"><td colspan="2" class="th"><input type="hidden" name="<%=x.name%>" value="<%=x.value%>" id="<%=x.name%>_id"></td></tr>
-								<%
-								end if
-							else
-						%>
+								<%end if%>
+							<%end if%>
+							<%if LCase(x.name) <> LCase(RECORD_ID) then%>
 							<tr class="Controls"><td class="th"><label for="<%=x.name%>_id"><%=PrintTitle(x)%></label></td><td><%=PrintField(x)%></td></tr>
 					<%
 							end if
@@ -280,11 +275,38 @@ if REQUEST_LINKED_COLUMN<>"" then
 					</td></tr>
 				</table>
 			</table>
-			</form>
+		</form>
 	<% end if %>
-		<script type="text/javascript">
+		
+	<%if HTML_TEMPLATE<>"" then
+		Server.Execute(HTML_TEMPLATE)
+	end if%>
+	<script type="text/javascript">
+		<%if REQUEST_LINKED_COLUMN<>"NEWID" then%>
+			var pushKayit = (<%=rsToJson(rs)%>);
+			function fillKayitForm(){
+				if (pushKayit!=null){
+					for(key in pushKayit.Records[0]){
+						var elementsToModify = document.getElementsByName(key);
+						for(var i=0;i<elementsToModify.length;i++){
+							if (elementsToModify[i].nodeName.toLowerCase() == "input")
+								elementsToModify[i].value = pushKayit.Records[0][key];
+						}
+					}
+				}
+			}
+			fillKayitForm();
+			<%else%>
+			function makeNewId(){
+				var elementsToModify = document.getElementsByName("<%=LINKED_COLUMN%>");
+				for(var i=0;i<elementsToModify.length;i++){
+					elementsToModify[i].value = "NEWID";
+				}
+			}
+			makeNewId();
+		<%end if%>
 		<%=JAVASCRIPT%>
-		</script>
+	</script>
 	</body>
 </html>
 <%

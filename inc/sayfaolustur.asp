@@ -31,8 +31,13 @@ if request("ajax")="" then
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<script>
-		var url,mekan,xmlhttp,intler
+		var url,mekan,intler
 		mekan="";
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+			xmlhttp=new XMLHttpRequest();
+		else
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 		
 		function grid_selected()
 		{
@@ -56,23 +61,23 @@ if request("ajax")="" then
 		showHint();
 		}
 		
+		function saveTemplate(fileName){
+			xmlhttp.open("GET","templatecreator.asp?PAGENAME="+fileName,false);
+			xmlhttp.send(null);
+			var content = encodeURIComponent(xmlhttp.responseText)
+			data = "fname="+fileName.replace(".asp","")+"&content="+content;
+			xmlhttp.open("POST","savefile.asp",false);
+			xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xmlhttp.send(data);
+			if (xmlhttp.responseText=="TRUE"){
+				alert("HTML Şablon oluşturuldu!")
+			}
+			
+		}	
+		
 		function showHint()
 		{
-			if (window.XMLHttpRequest)
-			  {
-			  // code for IE7+, Firefox, Chrome, Opera, Safari
-			  xmlhttp=new XMLHttpRequest();
-			  }
-			else if (window.ActiveXObject)
-			  {
-			  // code for IE6, IE5
-			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			  }
-			else
-			  {
-			  alert("Your browser does not support XMLHTTP!");
-			  return;
-			  }
+			
 				xmlhttp.onreadystatechange=function()
 				{
 				if(xmlhttp.readyState==4)
@@ -185,7 +190,7 @@ if request("ajax")="" then
 <BR>
 <table align="center" border="0" width="90%">
 <tr>
-<td valign="top">
+<td valign="top" width="50%">
 <table align="center" width="100%" border="1" style="border:1px;">
 	<tr><td colspan="2">Grid Tablosu</td></tr>
 	<tr><td>Listenin Basligi</td><td><input type="text" name="grid_baslik" id="grid_baslik_id" value="<%=request("grid_baslik")%>"></td></tr>
@@ -196,9 +201,10 @@ if request("ajax")="" then
 <td valign="top">
 <table align="center" width="100%" border="1" style="border:1px;">
 	<tr><td colspan="2">Record Tablosu</td></tr>
-	<tr><td colspan="2">Kaydet<input type="checkbox" name="C_KAYDET" checked>&nbsp;&nbsp;&nbsp;Geri Al<input type="checkbox" name="C_GERIAL" checked>&nbsp;&nbsp;&nbsp;Sil<input type="checkbox" name="C_SIL" checked>&nbsp;&nbsp;&nbsp;Geri Dön<input type="checkbox" name="C_GERIDON" checked></td>
+	<tr><td colspan="2">Çoğalt<input type="checkbox" name="C_COGALT" checked>&nbsp;&nbsp;&nbsp;Kaydet<input type="checkbox" name="C_KAYDET" checked>&nbsp;&nbsp;&nbsp;Geri Al<input type="checkbox" name="C_GERIAL" checked>&nbsp;&nbsp;&nbsp;Sil<input type="checkbox" name="C_SIL" checked>&nbsp;&nbsp;&nbsp;Geri Dön<input type="checkbox" name="C_GERIDON" checked></td>
 	<tr><td>Listenin Basligi</td><td><input type="text" name="record_baslik" id="record_baslik_id" value="<%=request("record_baslik")%>"></td></tr>
 	<tr><td>Dold. Zorunlu Fieldlar</td><td><input type="text" name="record_zorunlu" value="FIELD1 FIELD2 FIELD3"></td></tr>
+	<tr><td>HTML Şablondan Oluştur</td><td><input type="checkbox" name="C_SABLONDAN" value="1" checked>Şablonadı: [RECORDSAYFASI].html olacaktır.</td></tr>
 	<tr><td colspan="2"><table align="center" width="100%">
 	<tr><td id="record_int">-</td><td><input type="button" value="Ekle" onclick="sutun_ekle()"></td></tr>
 	</table></td></tr>
@@ -355,6 +361,7 @@ end if
 			record_texts = record_texts & ("'Sabitlerin Ayarlanmasi") & vbcrlf
 			record_texts = record_texts & ("CASES = """&CASES&"""") & vbcrlf
 			record_texts = record_texts & ("REQUIRED_COLUMNS= """&UCase(replace(replace(request("record_zorunlu"),","," "),"""",""))&"""	'Doldurulmasi zorunlu fieldlar") & vbcrlf
+			if request("C_COGALT")="" then record_texts = record_texts & ("COGALT=0") & vbcrlf end if
 			if request("C_KAYDET")="" then record_texts = record_texts & ("KAYDET=0") & vbcrlf end if
 			if request("C_GERIAL")="" then record_texts = record_texts & ("GERIAL=0") & vbcrlf end if
 			if request("C_SIL")="" then record_texts = record_texts & ("SIL=0") & vbcrlf end if
@@ -362,6 +369,9 @@ end if
 			record_texts = record_texts & ("RECORD_TITLE = """&request("record_baslik")&"""	'Record Basligi") & vbcrlf
 			record_texts = record_texts & ("TABLENAME = """&request("record_table")&"""	'SELECT COLUMNS FROM ______") & vbcrlf
 			record_texts = record_texts & ("COLUMNS = """&REQ_RECORDS_COLUMN&"""	'SELECT _______ FROM TABLENAME") & vbcrlf
+			if request("C_SABLONDAN")<>"" then
+				record_texts = record_texts & ("HTML_TEMPLATE = """&request("record_ad")&".HTML""	'DEFAULT IS EMPTY") & vbcrlf
+			end if
 			record_texts = record_texts & ("LIST_PAGE = """&request("grid_ad")&".asp""	'Liste Sayfasi") & vbcrlf
 			record_texts = record_texts & ("LINKED_COLUMN = """&request("grid")&"""	'Kayitlar hangi kolon adindan yollaniyor") & vbcrlf
 			record_texts = record_texts & ("%"&">") & vbcrlf
@@ -370,11 +380,12 @@ end if
 				record_texts = record_texts & ("<table align='center'><!--#include file="""&request("menu_name")&"""--></table>") & vbcrlf
 			end if
 			call saveFile(MyMapPath&request("record_ad")&".asp",record_texts)
-			
 			response.write request("record_ad")&".asp Dosyasi olusturuldu > <a href='../"&request("record_ad")&".asp'>Link</a><br>" 
 			
-			
-			
+			if request("C_SABLONDAN")<>"" then
+				response.write "<script>saveTemplate('"&request("record_ad")&".asp')</script>"
+			end if
+
 			if request("addtomenu")<>"" then
 				if request("menu_name")<>"" then
 					set fs=Server.CreateObject("Scripting.FileSystemObject")
