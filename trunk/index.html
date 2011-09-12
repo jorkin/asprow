@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>ASPROW Panel Menu</title>
+		<link rel="stylesheet" type="text/css" href="css/panelstyle.css" /> 
+        <script src="js/panel.js" type="text/javascript"></script> 
+        <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script> 
+        <script src="js/jquery.validate.js" type="text/javascript"></script> 
+        <script src="js/jquery-explr-1.4.min.js" type="text/javascript"></script> 
+        <script type="text/javascript">
+			$(document).ready(function() {
+				menuPage = "treemenu.html";
+				getMenu();
+			});
+		</script> 
+	</head>
+	<body bgcolor="#DFDEDE">
+		<table align="center" width="100%" height="100%">
+			<tr>
+				<td id="leftMenuTd" style="width:208px;" height="100%">
+					<div id="closedPanelDiv" class="closedPanel pasif" onclick="collapse()">
+						<div class="button right"></div>
+					</div>
+					<table id="menuTable" width="100%" height="100%" cellspacing="0" cellpadding="0">
+						<tr><td class="title"><div style="float:left;">Menu</div><div class="button left" onclick="collapse()"></div></td></tr>
+						<tr><td id="treeMenuContent" class="contentBg" valign="top">
+							
+						</td></tr>
+					</table>
+				</td>
+				<td>
+					<table width="100%" height="100%" cellspacing="0" cellpadding="0">
+						<tr><td class="title" id="menubuttons">
+						</td></tr>
+						<tr><td class="contentBg" id="pageContent"></td></tr>
+					</table>
+				
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
